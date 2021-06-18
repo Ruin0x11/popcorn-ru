@@ -139,6 +139,7 @@ class MediaService
         $response = $searchBuilder
             ->setEndpoint('anime')
             ->addFilter('text', $title)
+            ->addFilter('subtype', 'ONA|OVA|TV|movie')
             ->addLimit(1)
             ->search()
             ->get(true);
