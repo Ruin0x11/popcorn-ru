@@ -27,9 +27,15 @@ final class NyaaSiTest extends SpiderTestCase
         $torrent = $torrentRepo->findOneBy(["provider" => "NyaaSi"]);
         \Doctrine\Common\Util\Debug::dump($torrent);
 
+        $this->assertEquals("NyaaSi", $torrent->getProvider());
+        $this->assertEquals("[VCB-Studio] Puella Magi Madoka Magica/魔法少女まどか☆マギカ TV+Movies 10bit 1080p HEVC BDRip [Rev Fin]", $torrent->getProviderTitle());
         $this->assertEquals("55.36 GB", $torrent->getFilesize());
-        $this->assertEquals("en", $torrent->getSeed());
+        $this->assertEquals("1080p", $torrent->getQuality());
+        $this->assertEquals("ja", $torrent->getLanguage());
         $this->assertEquals(10, $torrent->getSeed());
         $this->assertEquals(13, $torrent->getPeer());
+        $this->assertEquals(308, count($torrent->getFiles()));
+        $this->assertEquals(1, preg_match("#/Original soundtrack.cue$#", $torrent->getFiles()[0]->getName()));
+        $this->assertEquals(6656, $torrent->getFiles()[0]->getSize());
     }
 }

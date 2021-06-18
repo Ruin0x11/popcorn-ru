@@ -156,11 +156,11 @@ class NyaaSi extends AbstractSpider
 
         $categoryUrl = $crawler->filter(".panel-body > .row > .col-md-5")->first()->filter("a")->eq(1)->attr("href");
         parse_str(parse_url($categoryUrl, PHP_URL_QUERY), $params);
-        $category = $params['c'][0];
+        $category = $params['c'];
 
         $lang = "en";
         if ($category == "1_4") { // Anime - Raw
-            $lang = "jp";
+            $lang = "ja";
         }
 
         if ($this->isBatchRelease($anitomy)) {
@@ -234,7 +234,7 @@ class NyaaSi extends AbstractSpider
                     $size = $size * pow(1024, 4);
                 }
             }
-            $fileName = $c->getNode(0)->childNodes[1]->nodeValue;
+            $fileName = rtrim($c->getNode(0)->childNodes[1]->nodeValue);
             $files[] = new File($fileName, $size);
         }
 
