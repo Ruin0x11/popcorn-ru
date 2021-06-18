@@ -6,12 +6,29 @@ use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
 use App\Spider\NyaaSi;
 use App\Spider\Dto\TopicDto;
+use App\Spider\Dto\ForumDto;
 use App\Entity\Torrent\ShowTorrent;
 use App\Entity\Anime;
 use VCR\VCR;
 
 final class NyaaSiTest extends SpiderTestCase
 {
+    public function testNyaaSiGetPage(): void
+    {
+        $spider = $this->getService(NyaaSi::class);
+
+        $topic = new ForumDto("1_2");
+
+        VCR::insertCassette("nyaaSiGetPage");
+        $page = iterator_to_array($spider->getPage($topic));
+        VCR::eject();
+
+        $this->assertEquals(75, count($page));
+        $this->assertEquals("/view/1399535", $page[0]->id);
+        $this->assertEquals(106, $page[0]->seed);
+        $this->assertEquals(174, $page[0]->leech);
+    }
+
     public function testNyaaSiGetTopicEnglishTranslated(): void
     {
         $spider = $this->getService(NyaaSi::class);

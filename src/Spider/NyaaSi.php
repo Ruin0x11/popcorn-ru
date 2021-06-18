@@ -2,6 +2,7 @@
 
 namespace App\Spider;
 
+use DateTime;
 use App\Entity\File;
 use App\Entity\Torrent\BaseTorrent;
 use App\Service\EpisodeService;
@@ -28,10 +29,6 @@ class NyaaSi extends AbstractSpider
         $this->client = new Client([
             'base_uri' => self::BASE_URL,
             RequestOptions::TIMEOUT => 10,
-            'curl' => [
-                CURLOPT_PROXYTYPE => CURLPROXY_SOCKS5_HOSTNAME
-            ],
-            'cookies' => new FileCookieJar(sys_get_temp_dir() . '/torrentgalaxy.cookie.json', true),
             'headers' => [
                 'User-Agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13'
             ]
@@ -53,7 +50,8 @@ class NyaaSi extends AbstractSpider
         return [
             "1_2", // Anime - English-translated
             "1_4", // Anime - Raw
-            "4_1", // Live Action - English-translated
+            // "4_1", // TODO Live Action - English-translated
+            // "4_4", // TODO Live Action - Raw
         ];
     }
 
@@ -80,7 +78,7 @@ class NyaaSi extends AbstractSpider
 
         foreach ($lines as $n => $line) {
             /** @var Crawler $line */
-            if (preg_match('#href="(/view/[^"]+)"#', $line->html(), $m)) {
+            if (preg_match('#href="(/view/[0-9]+)"#', $line->html(), $m)) {
                 $unixTimestamp = $line->filter('td')->eq(4)->attr('data-timestamp');
                 $time = new DateTime("@$unixTimestamp");
                 if ($time < $after) {
