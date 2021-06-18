@@ -340,20 +340,45 @@ class MediaService
         $startDate = $kitsu->attributes->startDate;
         if ($startDate) {
             $startDate = DateTime::createFromFormat("Y-m-d", $startDate);
+            $startDate->settime(0, 0);
             $year = $startDate->format('Y');
         }
 
+        $lastUpdated = 0;
+        $endDate = $kitsu->attributes->endDate;
+        if ($endDate) {
+            $endDate = DateTime::createFromFormat("Y-m-d", $endDate);
+            $endDate->settime(0, 0);
+            $lastUpdated = $endDate->getTimestamp();
+        }
+
         $anime
+            ->setImdb('')
+            ->setTvdb('')
             ->setKitsu($kitsu->id)
             ->setTitle($kitsu->attributes->canonicalTitle)
             ->setSynopsis($kitsu->attributes->synopsis)
             ->setYear($year)
-            ->setCountry('Japan')
+            ->setCountry('JP')
             ->setAirDay('') // TODO: инфы нет
             ->setAirTime('') // TODO: инфы нет
+            ->setNetwork('')
             ->setRuntime((string)$kitsu->attributes->episodeLength)
             ->setStatus($kitsu->attributes->status)
-            ->setSlug($kitsu->attributes->slug);
+            ->setSlug($kitsu->attributes->slug)
+            ->setLastUpdated($lastUpdated);
+
+        $searchBuilder = new SearchBuilder();
+        $episodes = $searchBuilder
+            ->setEndpoint('anime/' . $kitsu->id . '/episodes')
+            ->search()
+            ->get(true);
+
+        $numOfSeasons = 0;
+        foreach ($episodes as $episode) {
+            $numOfSeasons = max($numOfSeasons, $episode["attributes"]["seasonNumber"]);
+        }
+        $anime->setNumSeasons($numOfSeasons);
 
         $type = "movie";
         if ($kitsu->attributes->subtype == "TV") {
