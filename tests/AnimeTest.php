@@ -5,6 +5,7 @@ use S1njar\Kitsu\Builder\SearchBuilder;
 use Symfony\Component\HttpClient\Psr18Client;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+use Symfony\Component\DomCrawler\Crawler;
 use Tmdb\Event\Listener\Request\AcceptJsonRequestListener;
 use Tmdb\Event\Listener\Request\AdultFilterRequestListener;
 use Tmdb\Event\Listener\Request\ApiTokenRequestListener;

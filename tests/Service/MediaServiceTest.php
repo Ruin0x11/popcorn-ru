@@ -7,7 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
 class MediaServiceTest extends KernelTestCase
 {
-    public function testFetchAnimeShowTvdb()
+    public function testFetchByKitsuShowTvdb()
     {
         self::bootKernel();
 
@@ -15,7 +15,7 @@ class MediaServiceTest extends KernelTestCase
 
         $mediaService = $container->get(MediaService::class);
 
-        $anime = $mediaService->fetchAnime("290");
+        $anime = $mediaService->fetchByKitsu("290");
 
         $this->assertEquals("tt0433722", $anime->getImdb());
         $this->assertEquals("75092", $anime->getTvdb());
@@ -33,7 +33,7 @@ class MediaServiceTest extends KernelTestCase
         $this->assertEquals("show", $anime->getType());
     }
 
-    public function testFetchAnimeShowNoTvdbMapping()
+    public function testFetchByKitsuShowNoTvdbMapping()
     {
         self::bootKernel();
 
@@ -41,7 +41,7 @@ class MediaServiceTest extends KernelTestCase
 
         $mediaService = $container->get(MediaService::class);
 
-        $anime = $mediaService->fetchAnime("43620");
+        $anime = $mediaService->fetchByKitsu("43620");
 
         $this->assertEquals("tt13248076", $anime->getImdb());
         $this->assertEquals("390028", $anime->getTvdb());
@@ -59,14 +59,14 @@ class MediaServiceTest extends KernelTestCase
         $this->assertEquals("show", $anime->getType());
     }
 
-    public function testFetchAnimeMovieNoTvdb() {
+    public function testFetchByKitsuMovieNoTvdb() {
         self::bootKernel();
 
         $container = self::$container;
 
         $mediaService = $container->get(MediaService::class);
 
-        $anime = $mediaService->fetchAnime("13618");
+        $anime = $mediaService->fetchByKitsu("13618");
 
         $this->assertEquals("tt7089878", $anime->getImdb());
         $this->assertEquals("", $anime->getTvdb());

@@ -56,6 +56,9 @@
     "aviat/query": {
         "version": "v3.0.1"
     },
+    "beberlei/assert": {
+        "version": "v3.3.1"
+    },
     "brick/math": {
         "version": "0.9.2"
     },
@@ -325,6 +328,9 @@
     },
     "php-tmdb/symfony": {
         "version": "4.0.x-dev"
+    },
+    "php-vcr/php-vcr": {
+        "version": "dev-curl_replace_assertion"
     },
     "phpdocumentor/reflection-common": {
         "version": "2.2.0"

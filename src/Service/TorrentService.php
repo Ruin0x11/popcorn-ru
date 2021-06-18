@@ -85,6 +85,10 @@ class TorrentService
     {
         return $this->mediaInfo->searchShowByTitle($title);
     }
+    public function searchAnimeByTitle(string $title)
+    {
+        return $this->mediaInfo->searchAnimeByTitle($title);
+    }
 
     public function getMediaByImdb(string $imdbId): ?BaseMedia
     {
@@ -105,6 +109,24 @@ class TorrentService
         }
 
         return $media;
+    }
+
+    public function getAnimeByKitsu(string $kitsuId): ?Anime
+    {
+        $anime = $this->animeRepo->findByKitsu($kitsuId);
+
+        if (!$anime) {
+            $anime = $this->mediaInfo->fetchByKitsu($kitsuId);
+            if (!$anime) {
+                $this->logger->warning('Not found anime', ['kitsu' => $kitsuId]);
+                return null;
+            }
+            $anime->sync();
+            $this->em->persist($anime);
+            $this->em->flush();
+        }
+
+        return $anime;
     }
 
     public function findExistOrCreateTorrent(string $provider, string $externalId, BaseTorrent $new): BaseTorrent

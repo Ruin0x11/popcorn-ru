@@ -133,6 +133,23 @@ class MediaService
         return null;
     }
 
+    public function searchAnimeByTitle(string $title): ?string
+    {
+        $searchBuilder = new SearchBuilder();
+        $response = $searchBuilder
+            ->setEndpoint('anime')
+            ->addFilter('text', $title)
+            ->addLimit(1)
+            ->search()
+            ->get(true);
+
+        if (!empty($response)) {
+            return $response[0]["id"];
+        }
+
+        return null;
+    }
+
     private function imdbToTvdb(string $imdbId): ?string
     {
         $search = $this->client->getFindApi()->findBy($imdbId, ['external_source' => 'imdb_id']);
@@ -218,7 +235,7 @@ class MediaService
         return $this->getKitsuExternalId($kitsuId, "thetvdb/series");
     }
 
-    public function fetchAnime(string $kitsuId): ?Anime
+    public function fetchByKitsu(string $kitsuId): ?Anime
     {
         return $this->updateAnime($kitsuId, new Anime());
     }

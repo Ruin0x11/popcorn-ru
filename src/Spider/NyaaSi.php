@@ -31,7 +31,10 @@ class NyaaSi extends AbstractSpider
             'curl' => [
                 CURLOPT_PROXYTYPE => CURLPROXY_SOCKS5_HOSTNAME
             ],
-            'cookies' => new FileCookieJar(sys_get_temp_dir() . '/torrentgalaxy.cookie.json', true)
+            'cookies' => new FileCookieJar(sys_get_temp_dir() . '/torrentgalaxy.cookie.json', true),
+            'headers' => [
+                'User-Agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13'
+            ]
         ]);
     }
 
@@ -119,29 +122,29 @@ class NyaaSi extends AbstractSpider
         $title = $crawler->filter('h3.panel-title')->first()->text();
         $this->context["title"] = $title;
 
-        $anitomy = anitomy_parse(title);
-        if (!$anitomy["anime_title"]) {
+        $anitomy = anitomy_parse($title);
+        $animeTitle = @$anitomy["anime_title"];
+        if (!$animeTitle) {
             $this->logger->info('Anitomy failed to parse', $this->context);
             return;
         }
         $this->context["anitomy"] = $anitomy;
 
-        $kitsu = $this->getKitsu($anitomy["anime_title"]);
-
+        $kitsu = $this->torrentService->searchAnimeByTitle($animeTitle);
         if (!$kitsu) {
             $this->logger->info('No Kitsu', $this->context);
             return;
         }
         $this->context["kitsu"] = $kitsu;
 
-        $quality = $anitomy["video_resolution"];
+        $quality = @$anitomy["video_resolution"];
         if (!$quality) {
             $quality = "480p";
         }
 
         $footer = $crawler->filter('.card-footer-item')->first();
 
-        preg_match('#"(magnet[^"]+)"#', $torrentTable->html(), $m);
+        preg_match('#"(magnet[^"]+)"#', $footer->html(), $m);
         if (empty($m[1])) {
             $this->logger->warning('No Magnet torrent', $this->context);
             return;
@@ -150,12 +153,20 @@ class NyaaSi extends AbstractSpider
 
         $files = $this->getFiles($crawler);
 
-        $lang = anitomy["language"];
+        $lang = "en"; // Assumes English-translated category
 
-        if (preg_match('#S(\d\d)E(\d\d)#', $title, $m)) {
-            $torrent = $this->getEpisodeTorrentByImdb($topic->id, $imdb, (int)$m[1], (int)$m[2]);
+        if ($this->isBatchRelease($anitomy)) {
+            $torrent = $this->getTorrentByKitsu($topic->id, $kitsu);
         } else {
-            $torrent = $this->getTorrentByImdb($topic->id, $imdb);
+            $episode = @$anitomy["episode_number"];
+            if (!$episode) {
+                return;
+            }
+            $season = 1;
+            if (preg_match('#\bS(\d+)\b#', $title, $m)) {
+                $season = (int)$m[1];
+            }
+            $torrent = $this->getEpisodeTorrentByKitsu($topic->id, $kitsu, $season, (int)$episode);
         }
 
         if (!$torrent) {
@@ -167,7 +178,7 @@ class NyaaSi extends AbstractSpider
             ->setSeed($topic->seed)
             ->setPeer($topic->seed + $topic->leech)
             ->setQuality($quality)
-            ->setLanguage($this->langName2IsoCode($lang))
+            ->setLanguage($lang)
         ;
 
         $torrent->setFiles($files);
@@ -175,5 +186,58 @@ class NyaaSi extends AbstractSpider
         $this->torrentService->updateTorrent($torrent);
 
         $this->logger->debug('Saved torrent', $this->context);
+    }
+
+    protected function getFiles(Crawler $crawler): array
+    {
+        $files = $crawler->filter('.torrent-file-list > ul > li')->each(\Closure::fromCallable([$this, 'subTree']));
+        $flat = array();
+        array_walk_recursive($files, function($a) use (&$flat) { $flat[] = $a; });
+        return array_filter($flat);
+    }
+
+    private function subTree(Crawler $c): array
+    {
+        $files = [];
+        $isFolder = $c->filter("a")->first();
+        if (isFolder) {
+            $dir = ltrim($c->text(), './');
+
+            $items = $c->children('ul > li')->each(\Closure::fromCallable([$this, 'subTree']));
+            $subfiles = array();
+            array_walk_recursive($items, function($a) use (&$subfiles) { $subfiles[] = $a; });
+            foreach($subfiles as $item) {
+                /** @var File $item */
+                $item->setName($dir . '/' . $item->getName());
+                $files[] = $item;
+            }
+        } else {
+            $size = 0;
+            if (preg_match("#\(([\d.]+) (.*)\)#", $c->filter('.file-size')->text(), $m)) {
+                $size = (double) $m[1];
+                $unit = $m[2];
+                if ($unit == "KiB") {
+                    $size = $size * pow(1024, 1);
+                }
+                elseif ($unit == "MiB") {
+                    $size = $size * pow(1024, 2);
+                }
+                elseif ($unit == "GiB") {
+                    $size = $size * pow(1024, 3);
+                }
+                elseif ($unit == "TiB") {
+                    $size = $size * pow(1024, 4);
+                }
+            }
+            $fileName = $c->getNode(0)->childNodes[1]->nodeValue;
+            $files[] = new File($fileName, size);
+        }
+
+        return $files;
+    }
+
+    private function isBatchRelease($anitomy): bool {
+        $release = @$anitomy["release_information"];
+        return $release == "Complete" || $release == "Batch" || preg_match("#\b[0]?1[\s]*-[\s]*(\d+)\b#");
     }
 }

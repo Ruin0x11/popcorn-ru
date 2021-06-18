@@ -32,6 +32,10 @@ services:
     _instanceof:
         App\Spider\SpiderInterface:
             tags: ['tracker.spider']
+            public: true
+
+        Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository:
+            public: true
 
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name

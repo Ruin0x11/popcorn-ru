@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78c82df25d933866683baf5a5a952924",
+    "content-hash": "9da767d3fbbcfab5aff209a6dbfbca8c",
     "packages": [
         {
             "name": "alanly/traktor",
@@ -9288,6 +9288,73 @@
     ],
     "packages-dev": [
         {
+            "name": "beberlei/assert",
+            "version": "v3.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/beberlei/assert.git",
+                "reference": "5e721d7e937ca3ba2cdec1e1adf195f9e5188372"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/beberlei/assert/zipball/5e721d7e937ca3ba2cdec1e1adf195f9e5188372",
+                "reference": "5e721d7e937ca3ba2cdec1e1adf195f9e5188372",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
+                "php": "^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "*",
+                "phpstan/phpstan": "*",
+                "phpunit/phpunit": ">=6.0.0",
+                "yoast/phpunit-polyfills": "^0.1.0"
+            },
+            "suggest": {
+                "ext-intl": "Needed to allow Assertion::count(), Assertion::isCountable(), Assertion::minCount(), and Assertion::maxCount() to operate on ResourceBundles"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Assert\\": "lib/Assert"
+                },
+                "files": [
+                    "lib/Assert/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Richard Quadling",
+                    "email": "rquadling@gmail.com",
+                    "role": "Collaborator"
+                }
+            ],
+            "description": "Thin assertion library for input validation in business models.",
+            "keywords": [
+                "assert",
+                "assertion",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/beberlei/assert/issues",
+                "source": "https://github.com/beberlei/assert/tree/v3.3.1"
+            },
+            "time": "2021-04-18T20:11:03+00:00"
+        },
+        {
             "name": "doctrine/data-fixtures",
             "version": "1.5.0",
             "source": {
@@ -9669,6 +9736,62 @@
                 "source": "https://github.com/phar-io/version/tree/3.1.0"
             },
             "time": "2021-02-23T14:00:09+00:00"
+        },
+        {
+            "name": "php-vcr/php-vcr",
+            "version": "dev-curl_replace_assertion",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dbrumann/php-vcr",
+                "reference": "b9716062670d7ab65a2fe258222fbeb821185464"
+            },
+            "require": {
+                "beberlei/assert": "^3.2.5",
+                "ext-curl": "*",
+                "php": ">=7.2",
+                "symfony/event-dispatcher": "^2.4|^3.0|^4.0|^5.0",
+                "symfony/yaml": "~2.1|^3.0|^4.0|^5.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "mikey179/vfsstream": "^1.6",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-beberlei-assert": "^0.12.0",
+                "phpunit/phpunit": "^8.4.0",
+                "sebastian/version": "^1.0.3|^2.0",
+                "thecodingmachine/phpstan-strict-rules": "^0.12"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "VCR\\": "src/VCR/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "./vendor/bin/phpunit"
+                ],
+                "lint": [
+                    "./vendor/bin/php-cs-fixer fix --verbose --diff --dry-run"
+                ],
+                "fix": [
+                    "./vendor/bin/php-cs-fixer fix --verbose --diff"
+                ],
+                "phpstan": [
+                    "phpstan analyse -c phpstan.neon --no-progress -vvv"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Philipp",
+                    "email": "mail@adrian-philipp.com"
+                }
+            ],
+            "description": "Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.",
+            "time": "2021-05-16T06:33:42+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -11789,6 +11912,7 @@
         "php-tmdb/symfony": 20,
         "ruin0x11/anitomy": 20,
         "s1njar/kitsu-php": 20,
+        "php-vcr/php-vcr": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

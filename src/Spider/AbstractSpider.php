@@ -135,6 +135,35 @@ abstract class AbstractSpider implements SpiderInterface
         );
     }
 
+    protected function getTorrentByKitsu(string $topicId, string $kitsu): ?ShowTorrent
+    {
+        $anime = $this->torrentService->getAnimeByKitsu($kitsu);
+        if (!$anime) {
+            return null;
+        }
+        $newTorrent = null;
+        $newTorrent = new ShowTorrent();
+        $newTorrent->setShow($anime);
+
+        return $this->torrentService->findExistOrCreateTorrent($this->getName(), $topicId, $newTorrent);
+    }
+
+    protected function getEpisodeTorrentByKitsu(string $topicId, string $kitsu, int $s, int $e)
+    {
+        $media = $this->torrentService->getMediaByKitsu($kitsu);
+        $episode = $this->episodeService->getEpisode($media, $s, $e);
+        if (!($episode instanceof Episode)) {
+            return null;
+        }
+        $newTorrent = new EpisodeTorrent();
+        $newTorrent->setEpisode($episode);
+        return $this->torrentService->findExistOrCreateTorrent(
+            $this->getName(),
+            $topicId,
+            $newTorrent
+        );
+    }
+
     protected function langName2IsoCode(string $lang): string
     {
         static $languagesMap = [

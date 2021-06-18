@@ -35,7 +35,9 @@
         "symfony/yaml": "^5.1"
     },
     "require-dev": {
+        "doctrine/data-fixtures": "^1.5",
         "doctrine/doctrine-fixtures-bundle": "^3.3",
+        "php-vcr/php-vcr": "dev-curl_replace_assertion",
         "phpunit/phpunit": "^9.5",
         "roave/security-advisories": "dev-master",
         "symfony/browser-kit": "^5.3",
@@ -77,6 +79,10 @@
         {
             "type": "git",
             "url": "https://github.com/php-tmdb/symfony"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/dbrumann/php-vcr"
         }
     ],
     "scripts": {
