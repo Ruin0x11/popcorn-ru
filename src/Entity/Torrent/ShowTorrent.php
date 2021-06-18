@@ -4,7 +4,7 @@ namespace App\Entity\Torrent;
 
 use App\Entity\BaseMedia;
 use App\Entity\File;
-use App\Entity\Show;
+use App\Entity\BaseShow;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -14,13 +14,13 @@ use Doctrine\ORM\Mapping as ORM;
 class ShowTorrent extends BaseTorrent
 {
     /**
-     * @var Show
+     * @var BaseShow
      * @ORM\ManyToOne(targetEntity="App\Entity\BaseShow", inversedBy="torrents")
      * @ORM\JoinColumn(name="media_id")
      */
     protected $show;
-    public function getShow(): Show { return $this->show; }
-    public function setShow(Show $show): self { $this->show = $show; return $this; }
+    public function getShow(): BaseShow { return $this->show; }
+    public function setShow(BaseShow $show): self { $this->show = $show; return $this; }
 
     public function getMedia(): BaseMedia { return $this->show;}
 

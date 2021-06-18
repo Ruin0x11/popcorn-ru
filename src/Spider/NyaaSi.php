@@ -52,6 +52,7 @@ class NyaaSi extends AbstractSpider
     {
         return [
             "1_2", // Anime - English-translated
+            "1_4", // Anime - Raw
             "4_1", // Live Action - English-translated
         ];
     }
@@ -142,7 +143,7 @@ class NyaaSi extends AbstractSpider
             $quality = "480p";
         }
 
-        $footer = $crawler->filter('.card-footer-item')->first();
+        $footer = $crawler->filter('.panel-footer')->first();
 
         preg_match('#"(magnet[^"]+)"#', $footer->html(), $m);
         if (empty($m[1])) {
@@ -153,15 +154,19 @@ class NyaaSi extends AbstractSpider
 
         $files = $this->getFiles($crawler);
 
-        $lang = "en"; // Assumes English-translated category
+        $categoryUrl = $crawler->filter(".panel-body > .row > .col-md-5")->first()->filter("a")->eq(1)->attr("href");
+        parse_str(parse_url($categoryUrl, PHP_URL_QUERY), $params);
+        $category = $params['c'][0];
+
+        $lang = "en";
+        if ($category == "1_4") { // Anime - Raw
+            $lang = "jp";
+        }
 
         if ($this->isBatchRelease($anitomy)) {
             $torrent = $this->getTorrentByKitsu($topic->id, $kitsu);
         } else {
             $episode = @$anitomy["episode_number"];
-            if (!$episode) {
-                return;
-            }
             $season = 1;
             if (preg_match('#\bS(\d+)\b#', $title, $m)) {
                 $season = (int)$m[1];
@@ -199,9 +204,9 @@ class NyaaSi extends AbstractSpider
     private function subTree(Crawler $c): array
     {
         $files = [];
-        $isFolder = $c->filter("a")->first();
-        if (isFolder) {
-            $dir = ltrim($c->text(), './');
+        $folder = $c->filter("a.folder");
+        if ($folder->count() > 0) {
+            $dir = $folder->text();
 
             $items = $c->children('ul > li')->each(\Closure::fromCallable([$this, 'subTree']));
             $subfiles = array();
@@ -230,7 +235,7 @@ class NyaaSi extends AbstractSpider
                 }
             }
             $fileName = $c->getNode(0)->childNodes[1]->nodeValue;
-            $files[] = new File($fileName, size);
+            $files[] = new File($fileName, $size);
         }
 
         return $files;
@@ -238,6 +243,9 @@ class NyaaSi extends AbstractSpider
 
     private function isBatchRelease($anitomy): bool {
         $release = @$anitomy["release_information"];
-        return $release == "Complete" || $release == "Batch" || preg_match("#\b[0]?1[\s]*-[\s]*(\d+)\b#");
+        return !@$anitomy["episode_number"]
+            || $release == "Complete"
+            || $release == "Batch"
+            || preg_match("#\b[0]?1[\s]*-[\s]*(\d+)\b#", $anitomy["anime_title"]);
     }
 }

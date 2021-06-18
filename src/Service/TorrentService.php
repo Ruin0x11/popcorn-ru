@@ -12,6 +12,7 @@ use App\Processors\ShowTorrentProcessor;
 use App\Processors\TorrentActiveProcessor;
 use App\Repository\MovieRepository;
 use App\Repository\ShowRepository;
+use App\Repository\AnimeRepository;
 use App\Repository\TorrentRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Enqueue\Client\ProducerInterface;
@@ -36,6 +37,9 @@ class TorrentService
 
     /** @var ShowRepository */
     protected $showRepo;
+
+    /** @var AnimeRepository */
+    protected $animeRepo;
 
     /** @var ProducerInterface */
     private $producer;
@@ -65,12 +69,14 @@ class TorrentService
         TorrentRepository $torrentRepo,
         MovieRepository $movieRepo,
         ShowRepository $showRepo,
+        AnimeRepository $animeRepo,
         LoggerInterface $logger
     ) {
         $this->mediaInfo = $mediaInfo;
         $this->torrentRepo = $torrentRepo;
         $this->movieRepo = $movieRepo;
         $this->showRepo = $showRepo;
+        $this->animeRepo = $animeRepo;
         $this->producer = $producer;
         $this->em = $em;
         $this->logger = $logger;
@@ -111,7 +117,7 @@ class TorrentService
         return $media;
     }
 
-    public function getAnimeByKitsu(string $kitsuId): ?Anime
+    public function getAnimeByKitsu(string $kitsuId): ?\App\Entity\Anime
     {
         $anime = $this->animeRepo->findByKitsu($kitsuId);
 

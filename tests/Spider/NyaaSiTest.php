@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
 use App\Spider\NyaaSi;
 use App\Spider\Dto\TopicDto;
-use App\Repository\TorrentRepository;
+use App\Entity\Torrent\ShowTorrent;
 use VCR\VCR;
 
 final class NyaaSiTest extends SpiderTestCase
@@ -15,14 +15,21 @@ final class NyaaSiTest extends SpiderTestCase
     {
         $spider = $this->getService(NyaaSi::class);
 
-        $topic = new TopicDto("/view/962260", 1, 5, 10);
+        $topic = new TopicDto("/view/848234", 10, 3, 10);
 
         VCR::insertCassette("nyaaSiGetTopic");
         $spider->getTopic($topic);
         VCR::eject();
 
-        $torrentRepo = $this->getService(TorrentRepository::class);
+        $entityManager = $this->getService('doctrine')->getManager();
+        $torrentRepo = $entityManager->getRepository(ShowTorrent::class);
 
-        $this->assertEquals(0, 1);
+        $torrent = $torrentRepo->findOneBy(["provider" => "NyaaSi"]);
+        \Doctrine\Common\Util\Debug::dump($torrent);
+
+        $this->assertEquals("55.36 GB", $torrent->getFilesize());
+        $this->assertEquals("en", $torrent->getSeed());
+        $this->assertEquals(10, $torrent->getSeed());
+        $this->assertEquals(13, $torrent->getPeer());
     }
 }

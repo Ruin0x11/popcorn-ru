@@ -20,6 +20,11 @@ class AnimeRepository extends MediaRepository
         parent::__construct($search, $registry, Anime::class);
     }
 
+    public function findByKitsu(string $kitsuId): ?Anime
+    {
+        return $this->findOneBy(['kitsu' => $kitsuId]);
+    }
+
     public function findOrCreateAnimeByImdb(string $imdbId): Anime
     {
         $movie = $this->findByImdb($imdbId);

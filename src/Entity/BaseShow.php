@@ -12,6 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Generator;
 
 /**
+ * @ORM\Table(name="show")
  * @ORM\Entity
  * @ORM\InheritanceType("SINGLE_TABLE")
  * @ORM\DiscriminatorColumn(name="show_type", type="string")
