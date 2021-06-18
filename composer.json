@@ -10,6 +10,7 @@
         "ext-iconv": "*",
         "ext-json": "*",
         "alanly/traktor": "dev-master",
+        "alextartan/guzzle-psr18-adapter": "^4.0",
         "enqueue/dbal": "^0.10",
         "enqueue/enqueue-bundle": "^0.10",
         "friendsofsymfony/elastica-bundle": "^5.2",

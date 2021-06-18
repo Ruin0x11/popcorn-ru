@@ -2,6 +2,9 @@
     "alanly/traktor": {
         "version": "dev-master"
     },
+    "alextartan/guzzle-psr18-adapter": {
+        "version": "4.0.4"
+    },
     "amphp/amp": {
         "version": "v2.5.2"
     },

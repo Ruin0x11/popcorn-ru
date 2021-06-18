@@ -8,7 +8,7 @@ tmdb_symfony:
       adapter: Symfony\Component\EventDispatcher\EventDispatcher
     secure: false
     http:
-      client: Symfony\Component\HttpClient\Psr18Client
+      client: AlexTartan\GuzzlePsr18Adapter\Client
       request_factory: Nyholm\Psr7\Factory\Psr17Factory
       response_factory: Nyholm\Psr7\Factory\Psr17Factory
       stream_factory: Nyholm\Psr7\Factory\Psr17Factory
@@ -17,8 +17,8 @@ tmdb_symfony:
     enabled: false
 
 services:
-  Symfony\Component\HttpClient\Psr18Client:
-    class: Symfony\Component\HttpClient\Psr18Client
+  AlexTartan\GuzzlePsr18Adapter\Client:
+    class: AlexTartan\GuzzlePsr18Adapter\Client
 
   Nyholm\Psr7\Factory\Psr17Factory:
     class: Nyholm\Psr7\Factory\Psr17Factory

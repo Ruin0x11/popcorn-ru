@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9da767d3fbbcfab5aff209a6dbfbca8c",
+    "content-hash": "21d62ab5dd359adef03f0114f615efc3",
     "packages": [
         {
             "name": "alanly/traktor",
@@ -43,6 +43,66 @@
             "description": "A Trakt.tv API client library in PHP, compatible with PSR-4 and Composer.",
             "homepage": "https://github.com/alanly/traktor",
             "time": "2021-06-18T10:17:57+00:00"
+        },
+        {
+            "name": "alextartan/guzzle-psr18-adapter",
+            "version": "4.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alextartan/guzzle-psr18-adapter.git",
+                "reference": "2dc27e34e1ea20fcccbc3447d0a9d42f8249e87a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alextartan/guzzle-psr18-adapter/zipball/2dc27e34e1ea20fcccbc3447d0a9d42f8249e87a",
+                "reference": "2dc27e34e1ea20fcccbc3447d0a9d42f8249e87a",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7",
+                "php": ">=7.4||>=8.0",
+                "psr/http-client": "^1.0.0",
+                "psr/http-message": "^1.0.0"
+            },
+            "require-dev": {
+                "ext-mbstring": "*",
+                "ext-xml": "*",
+                "infection/infection": "^0.20",
+                "php-coveralls/php-coveralls": "^2.4",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
+                "phpunit/phpunit": "^9",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "3.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AlexTartan\\GuzzlePsr18Adapter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Tartan",
+                    "email": "alex.tartan@gmail.com"
+                }
+            ],
+            "description": "Lightweight wrapper over Guzzle to comply with PSR18",
+            "keywords": [
+                "Guzzle",
+                "adapter",
+                "psr18"
+            ],
+            "support": {
+                "issues": "https://github.com/alextartan/guzzle-psr18-adapter/issues",
+                "source": "https://github.com/alextartan/guzzle-psr18-adapter/tree/4.0.4"
+            },
+            "time": "2021-01-01T00:13:59+00:00"
         },
         {
             "name": "brick/math",
