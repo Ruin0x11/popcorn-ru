@@ -33,7 +33,7 @@ class MediaServiceTest extends KernelTestCase
         $this->assertEquals("show", $anime->getType());
     }
 
-    public function testFetchAnimeShowNoTvdb()
+    public function testFetchAnimeShowNoTvdbMapping()
     {
         self::bootKernel();
 
@@ -43,11 +43,11 @@ class MediaServiceTest extends KernelTestCase
 
         $anime = $mediaService->fetchAnime("43620");
 
-        $this->assertEquals("", $anime->getImdb());
-        $this->assertEquals("", $anime->getTvdb());
+        $this->assertEquals("tt13248076", $anime->getImdb());
+        $this->assertEquals("390028", $anime->getTvdb());
         $this->assertEquals("wonder-egg-priority", $anime->getSlug());
         $this->assertEquals("JP", $anime->getCountry());
-        $this->assertEquals("", $anime->getNetwork());
+        $this->assertEquals("NTV", $anime->getNetwork());
         $this->assertEquals("", $anime->getAirDay());
         $this->assertEquals("", $anime->getAirTime());
         $this->assertEquals("finished", $anime->getStatus());
@@ -57,5 +57,30 @@ class MediaServiceTest extends KernelTestCase
         $this->assertEquals("43620", $anime->getKitsu());
         $this->assertEquals("43299", $anime->getMal());
         $this->assertEquals("show", $anime->getType());
+    }
+
+    public function testFetchAnimeMovieNoTvdb() {
+        self::bootKernel();
+
+        $container = self::$container;
+
+        $mediaService = $container->get(MediaService::class);
+
+        $anime = $mediaService->fetchAnime("13618");
+
+        $this->assertEquals("tt7089878", $anime->getImdb());
+        $this->assertEquals("", $anime->getTvdb());
+        $this->assertEquals("liz-to-aoi-tori", $anime->getSlug());
+        $this->assertEquals("JP", $anime->getCountry());
+        $this->assertEquals("", $anime->getNetwork());
+        $this->assertEquals("", $anime->getAirDay());
+        $this->assertEquals("", $anime->getAirTime());
+        $this->assertEquals("finished", $anime->getStatus());
+        $this->assertEquals("1", $anime->getNumSeasons());
+        $this->assertEquals(1524268800, $anime->getLastUpdated());
+
+        $this->assertEquals("13618", $anime->getKitsu());
+        $this->assertEquals("35677", $anime->getMal());
+        $this->assertEquals("movie", $anime->getType());
     }
 }

@@ -133,6 +133,25 @@ class MediaService
         return null;
     }
 
+    private function imdbToTvdb(string $imdbId): ?string
+    {
+        $search = $this->client->getFindApi()->findBy($imdbId, ['external_source' => 'imdb_id']);
+        if (!empty($search['movie_results'])) {
+            $id = $search['movie_results'][0]['id'];
+            /** @var TmdbMovie $movieInfo */
+            $movieInfo = $this->movieRepo->load($id);
+            return (string)$movieInfo->getExternalIds()->getTvdbId();
+        }
+        if (!empty($search['tv_results'])) {
+            $id = $search['tv_results'][0]['id'];
+            /** @var TmdbShow $showInfo */
+            $showInfo = $this->showRepo->load($id);
+            return (string)$showInfo->getExternalIds()->getTvdbId();
+        }
+
+        return null;
+    }
+
     public function fetchByImdb(string $imdbId): ?BaseMedia
     {
         $search = $this->client->getFindApi()->findBy($imdbId, ['external_source' => 'imdb_id']);
@@ -225,7 +244,17 @@ class MediaService
             $anime->setMal($malId);
         }
 
+        $imdbId = $anime->getType() == "show"
+            ? $this->searchShowByTitle($anime->getTitle())
+            : $this->searchMovieByTitleAndYear($anime->getTitle(), $anime->getYear());
+        if ($imdbId) {
+            $anime->setImdb($imdbId);
+        }
+
         $tvdbId = $this->kitsuToTvdb($kitsuId);
+        if (!$tvdbId && $imdbId) {
+            $tvdbId = $this->imdbToTvdb($imdbId);
+        }
         if (!$tvdbId) {
             return $anime;
         }
@@ -249,7 +278,7 @@ class MediaService
             $anime->setType("show")
                   ->setImdb($showInfo->getExternalIds()->getImdbId())
                   ->setNumSeasons($showInfo->getNumberOfSeasons())
-                  ->setLastUpdated($showInfo->getLastAirDate() ? $showInfo->getLastAirDate()->getTimestamp() : 0);
+                  ->setLastUpdated($showInfo->getLastAirDate() ? $showInfo->getLastAirDate()->getTimestamp() : $anime->getLastUpdated());
             /** @var Country $country */
             $country = current($showInfo->getOriginCountry()->toArray());
             /** @var Network $network */
