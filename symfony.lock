@@ -203,6 +203,12 @@
     "enqueue/null": {
         "version": "0.10.9"
     },
+    "ezimuel/guzzlestreams": {
+        "version": "3.0.1"
+    },
+    "ezimuel/ringphp": {
+        "version": "1.1.2"
+    },
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.3"
     },
@@ -226,12 +232,6 @@
     },
     "guzzlehttp/psr7": {
         "version": "1.8.2"
-    },
-    "guzzlehttp/ringphp": {
-        "version": "1.1.1"
-    },
-    "guzzlehttp/streams": {
-        "version": "3.0.0"
     },
     "http-interop/http-factory-guzzle": {
         "version": "1.0.0"
@@ -280,6 +280,9 @@
     },
     "nikic/php-parser": {
         "version": "v4.10.5"
+    },
+    "nyholm/dsn": {
+        "version": "2.0.0"
     },
     "nyholm/psr7": {
         "version": "1.0",

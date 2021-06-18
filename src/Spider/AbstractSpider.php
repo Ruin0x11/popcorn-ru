@@ -150,7 +150,7 @@ abstract class AbstractSpider implements SpiderInterface
 
     protected function getEpisodeTorrentByKitsu(string $topicId, string $kitsu, int $s, int $e)
     {
-        $media = $this->torrentService->getMediaByKitsu($kitsu);
+        $media = $this->torrentService->getAnimeByKitsu($kitsu);
         $episode = $this->episodeService->getEpisode($media, $s, $e);
         if (!($episode instanceof Episode)) {
             return null;

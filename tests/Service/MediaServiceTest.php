@@ -2,6 +2,7 @@
 
 namespace App\Tests\Service;
 
+use VCR\VCR;
 use App\Service\MediaService;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
@@ -15,7 +16,9 @@ class MediaServiceTest extends KernelTestCase
 
         $mediaService = $container->get(MediaService::class);
 
+        VCR::insertCassette("fetchByKitsuShowTvdb");
         $anime = $mediaService->fetchByKitsu("290");
+        VCR::eject();
 
         $this->assertEquals("tt0433722", $anime->getImdb());
         $this->assertEquals("75092", $anime->getTvdb());
@@ -41,7 +44,9 @@ class MediaServiceTest extends KernelTestCase
 
         $mediaService = $container->get(MediaService::class);
 
+        VCR::insertCassette("fetchByKitsuShowNoTvdbMapping");
         $anime = $mediaService->fetchByKitsu("43620");
+        VCR::eject();
 
         $this->assertEquals("tt13248076", $anime->getImdb());
         $this->assertEquals("390028", $anime->getTvdb());
@@ -59,14 +64,16 @@ class MediaServiceTest extends KernelTestCase
         $this->assertEquals("show", $anime->getType());
     }
 
-    public function testFetchByKitsuMovieNoTvdb() {
+    public function testFetchByKitsuMovieNoTvdbMapping() {
         self::bootKernel();
 
         $container = self::$container;
 
         $mediaService = $container->get(MediaService::class);
 
+        VCR::insertCassette("fetchByKitsuMovieNoTvdbMapping");
         $anime = $mediaService->fetchByKitsu("13618");
+        VCR::eject();
 
         $this->assertEquals("tt7089878", $anime->getImdb());
         $this->assertEquals("", $anime->getTvdb());

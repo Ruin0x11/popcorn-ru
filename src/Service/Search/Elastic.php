@@ -5,6 +5,7 @@ namespace App\Service\Search;
 use App\Entity\BaseMedia;
 use App\Entity\Movie;
 use App\Entity\Show;
+use App\Entity\Anime;
 use App\Request\PageRequest;
 use Doctrine\ORM\Mapping\ClassMetadata;
 use Doctrine\ORM\QueryBuilder;
@@ -17,17 +18,20 @@ class Elastic implements SearchInterface
 
     protected TransformedFinder $moviesFiner;
     protected TransformedFinder $showFiner;
+    protected TransformedFinder $animesFiner;
 
     /**
      * Elastic constructor.
      *
      * @param TransformedFinder $moviesFiner
      * @param TransformedFinder $showFiner
+     * @param TransformedFinder $animesFiner
      */
-    public function __construct(TransformedFinder $moviesFiner, TransformedFinder $showFiner)
+    public function __construct(TransformedFinder $moviesFiner, TransformedFinder $showFiner, TransformedFinder $animesFiner)
     {
         $this->moviesFiner = $moviesFiner;
         $this->showFiner = $showFiner;
+        $this->animesFiner = $animesFiner;
     }
 
     public static function isIndexMovie(Movie $movie)
@@ -38,6 +42,11 @@ class Elastic implements SearchInterface
     public static function isIndexShow(Show $show)
     {
         return $show->getEpisodes()->count() > 0;
+    }
+
+    public static function isIndexAnime(Anime $anime)
+    {
+        return $anime->getEpisodes()->count() > 0;
     }
 
     public function search(QueryBuilder $qb, ClassMetadata $class, PageRequest $pageRequest, string $locale, int $offset, int $limit): array
@@ -82,7 +91,8 @@ class Elastic implements SearchInterface
 
         $query->setSort($this->buildSort($pageRequest->sort, $pageRequest->order));
 
-        $finder = $class->getName() === Show::class ? $this->showFiner : $this->moviesFiner;
+        $finder = $class->getName() === Show::class ? $this->showFiner :
+                ($class->getName() === Anime::class ? $this->animesFiner : $this->moviesFiner);
         /** @var BaseMedia[] $result */
         return $finder->find($query);
     }

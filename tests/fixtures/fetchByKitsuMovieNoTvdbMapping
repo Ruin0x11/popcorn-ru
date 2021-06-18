@@ -1,0 +1,611 @@
+
+-
+    request:
+        method: GET
+        url: 'https://kitsu.io/api/edge/anime/13618'
+        headers:
+            Host: kitsu.io
+            Accept-Encoding: ''
+            User-Agent: GuzzleHttp/7
+            Content-Type: application/json
+            Accept: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 18 Jun 2021 18:34:04 GMT'
+            Content-Type: application/vnd.api+json
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            etag: 'W/"c12cd2dc912af4819223df7eadc6c05f"'
+            cache-control: 'max-age=0, private, must-revalidate'
+            x-request-id: 635568e5-4b1e-4954-aa39-2bbf632bd77c
+            x-runtime: '0.012362'
+            vary: Origin
+            CF-Cache-Status: DYNAMIC
+            cf-request-id: 0ac1ffdf210000ebc962945000000001
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=5nTaYQ7WHd6UnrDjaI82QR%2FDMc6gONUHzBNYcNNnlteW44%2FTpR12U2AjuibI%2B1MjByHIt1%2F2rI2Cq5qIJRNvN50QgGi%2BKcoZgye6Db1Kre%2F5snMszoA%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"report_to":"cf-nel","max_age":604800}'
+            Strict-Transport-Security: 'max-age=31536000; preload'
+            Server: cloudflare
+            CF-RAY: 66169c11cb7bebc9-LAX
+            alt-svc: 'h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400'
+        body: '{"data":{"id":"13618","type":"anime","links":{"self":"https://kitsu.io/api/edge/anime/13618"},"attributes":{"createdAt":"2017-07-06T04:52:14.325Z","updatedAt":"2021-06-18T00:00:10.323Z","slug":"liz-to-aoi-tori","synopsis":"Mizore Yoroizuka and Nozomi Kasaki are a pair of best friends in their final year of high school. Their shared obsession? The school''s brass band club. With Mizore on the oboe and Nozomi on the flute, they spend their days in happiness--until the club begins to practice songs inspired by the fairy tale Liz und ein Blauer Vogel (Liz and the Blue Bird). Immersed in this story, Mizore and Nozomi begin to realize that there may be no such thing as being together forever.\n\n(Source: ANN)","description":"Mizore Yoroizuka and Nozomi Kasaki are a pair of best friends in their final year of high school. Their shared obsession? The school''s brass band club. With Mizore on the oboe and Nozomi on the flute, they spend their days in happiness--until the club begins to practice songs inspired by the fairy tale Liz und ein Blauer Vogel (Liz and the Blue Bird). Immersed in this story, Mizore and Nozomi begin to realize that there may be no such thing as being together forever.\n\n(Source: ANN)","coverImageTopOffset":0,"titles":{"en":"Liz and the Blue Bird","en_jp":"Liz to Aoi Tori","ja_jp":"リズと青い鳥"},"canonicalTitle":"Liz to Aoi Tori","abbreviatedTitles":["Liz und ein BlauerVogel","Hibike! Euphonium Movie: Mizore to Nozomi no Monogatari","Gekijouban Hibike! Euphonium: Mizore to Nozomi no Monogatari","Hibike! Euphonium: The Story of Mizore and Nozomi","Liz and the Blue Bird"],"averageRating":"79.73","ratingFrequencies":{"2":"59","4":"5","5":"0","6":"8","7":"4","8":"66","9":"2","10":"73","11":"8","12":"125","13":"17","14":"348","15":"44","16":"425","17":"91","18":"394","19":"49","20":"547"},"userCount":6124,"favoritesCount":78,"startDate":"2018-04-21","endDate":"2018-04-21","nextRelease":null,"popularityRank":1781,"ratingRank":638,"ageRating":"PG","ageRatingGuide":"Teens 13 or older","subtype":"movie","status":"finished","tba":"","posterImage":{"tiny":"https://media.kitsu.io/anime/poster_images/13618/tiny.jpg?1597697052","small":"https://media.kitsu.io/anime/poster_images/13618/small.jpg?1597697052","medium":"https://media.kitsu.io/anime/poster_images/13618/medium.jpg?1597697052","large":"https://media.kitsu.io/anime/poster_images/13618/large.jpg?1597697052","original":"https://media.kitsu.io/anime/poster_images/13618/original.jpg?1597697052","meta":{"dimensions":{"tiny":{"width":110,"height":156},"small":{"width":284,"height":402},"medium":{"width":390,"height":554},"large":{"width":550,"height":780}}}},"coverImage":{"tiny":"https://media.kitsu.io/anime/cover_images/13618/tiny.jpg?1597702810","small":"https://media.kitsu.io/anime/cover_images/13618/small.jpg?1597702810","large":"https://media.kitsu.io/anime/cover_images/13618/large.jpg?1597702810","original":"https://media.kitsu.io/anime/cover_images/13618/original.jpg?1597702810","meta":{"dimensions":{"tiny":{"width":840,"height":200},"small":{"width":1680,"height":400},"large":{"width":3360,"height":800}}}},"episodeCount":1,"episodeLength":90,"totalLength":90,"youtubeVideoId":"MBDaON4IPnc","showType":"movie","nsfw":false},"relationships":{"genres":{"links":{"self":"https://kitsu.io/api/edge/anime/13618/relationships/genres","related":"https://kitsu.io/api/edge/anime/13618/genres"}},"categories":{"links":{"self":"https://kitsu.io/api/edge/anime/13618/relationships/categories","related":"https://kitsu.io/api/edge/anime/13618/categories"}},"castings":{"links":{"self":"https://kitsu.io/api/edge/anime/13618/relationships/castings","related":"https://kitsu.io/api/edge/anime/13618/castings"}},"installments":{"links":{"self":"https://kitsu.io/api/edge/anime/13618/relationships/installments","related":"https://kitsu.io/api/edge/anime/13618/installments"}},"mappings":{"links":{"self":"https://kitsu.io/api/edge/anime/13618/relationships/mappings","related":"https://kitsu.io/api/edge/anime/13618/mappings"}},"reviews":{"links":{"self":"https://kitsu.io/api/edge/anime/13618/relationships/reviews","related":"https://kitsu.io/api/edge/anime/13618/reviews"}},"mediaRelationships":{"links":{"self":"https://kitsu.io/api/edge/anime/13618/relationships/media-relationships","related":"https://kitsu.io/api/edge/anime/13618/media-relationships"}},"characters":{"links":{"self":"https://kitsu.io/api/edge/anime/13618/relationships/characters","related":"https://kitsu.io/api/edge/anime/13618/characters"}},"staff":{"links":{"self":"https://kitsu.io/api/edge/anime/13618/relationships/staff","related":"https://kitsu.io/api/edge/anime/13618/staff"}},"productions":{"links":{"self":"https://kitsu.io/api/edge/anime/13618/relationships/productions","related":"https://kitsu.io/api/edge/anime/13618/productions"}},"quotes":{"links":{"self":"https://kitsu.io/api/edge/anime/13618/relationships/quotes","related":"https://kitsu.io/api/edge/anime/13618/quotes"}},"episodes":{"links":{"self":"https://kitsu.io/api/edge/anime/13618/relationships/episodes","related":"https://kitsu.io/api/edge/anime/13618/episodes"}},"streamingLinks":{"links":{"self":"https://kitsu.io/api/edge/anime/13618/relationships/streaming-links","related":"https://kitsu.io/api/edge/anime/13618/streaming-links"}},"animeProductions":{"links":{"self":"https://kitsu.io/api/edge/anime/13618/relationships/anime-productions","related":"https://kitsu.io/api/edge/anime/13618/anime-productions"}},"animeCharacters":{"links":{"self":"https://kitsu.io/api/edge/anime/13618/relationships/anime-characters","related":"https://kitsu.io/api/edge/anime/13618/anime-characters"}},"animeStaff":{"links":{"self":"https://kitsu.io/api/edge/anime/13618/relationships/anime-staff","related":"https://kitsu.io/api/edge/anime/13618/anime-staff"}}}}}'
+        curl_info:
+            url: 'https://kitsu.io/api/edge/anime/13618'
+            content_type: application/vnd.api+json
+            http_code: 200
+            header_size: 1220
+            request_size: 112
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.159574
+            namelookup_time: 0.001197
+            connect_time: 0.032099
+            pretransfer_time: 0.078947
+            size_upload: !!float 0
+            size_download: !!float 5816
+            speed_download: !!float 36447
+            speed_upload: !!float 0
+            download_content_length: !!float -1
+            upload_content_length: !!float 0
+            starttransfer_time: 0.159288
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 104.21.58.52
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 192.168.1.144
+            local_port: 38842
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 78901
+            connect_time_us: 32099
+            namelookup_time_us: 1197
+            pretransfer_time_us: 78947
+            redirect_time_us: 0
+            starttransfer_time_us: 159288
+            total_time_us: 159574
+-
+    request:
+        method: GET
+        url: 'https://kitsu.io/api/edge/anime/13618/episodes'
+        headers:
+            Host: kitsu.io
+            Accept-Encoding: ''
+            User-Agent: GuzzleHttp/7
+            Content-Type: application/json
+            Accept: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 18 Jun 2021 18:34:04 GMT'
+            Content-Type: application/vnd.api+json
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            etag: 'W/"dad12c188ecb7a5304e5ff45a0ab0490"'
+            cache-control: 'max-age=0, private, must-revalidate'
+            x-request-id: 7f5cbbbf-aac0-46fb-b77c-1fb5c0352443
+            x-runtime: '0.023956'
+            vary: Origin
+            CF-Cache-Status: DYNAMIC
+            cf-request-id: 0ac1ffdfd90000367380a58000000001
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=cU8kjE%2BrMZrW8%2B%2F6HSU1IcIvL9BBxCGYjX28g4heN%2F6NVxdk2tsR63PIFynbfhNk75xawITTT6ho87h%2FFpHwZScdEV96bZnr6%2FnqqE%2Fl0H4C%2F5v6smE%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"report_to":"cf-nel","max_age":604800}'
+            Strict-Transport-Security: 'max-age=31536000; preload'
+            Server: cloudflare
+            CF-RAY: 66169c12fd853673-LAX
+            alt-svc: 'h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400'
+        body: '{"data":[{"id":"201351","type":"episodes","links":{"self":"https://kitsu.io/api/edge/episodes/201351"},"attributes":{"createdAt":"2017-07-06T04:52:15.229Z","updatedAt":"2018-11-27T20:44:42.560Z","synopsis":"","description":"","titles":{},"canonicalTitle":null,"seasonNumber":1,"number":1,"relativeNumber":1,"airdate":null,"length":90,"thumbnail":null},"relationships":{"media":{"links":{"self":"https://kitsu.io/api/edge/episodes/201351/relationships/media","related":"https://kitsu.io/api/edge/episodes/201351/media"}},"videos":{"links":{"self":"https://kitsu.io/api/edge/episodes/201351/relationships/videos","related":"https://kitsu.io/api/edge/episodes/201351/videos"}}}}],"meta":{"count":1},"links":{"first":"https://kitsu.io/api/edge/anime/13618/episodes?page%5Blimit%5D=10&page%5Boffset%5D=0","last":"https://kitsu.io/api/edge/anime/13618/episodes?page%5Blimit%5D=10&page%5Boffset%5D=0"}}'
+        curl_info:
+            url: 'https://kitsu.io/api/edge/anime/13618/episodes'
+            content_type: application/vnd.api+json
+            http_code: 200
+            header_size: 1224
+            request_size: 121
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.179052
+            namelookup_time: 0.002046
+            connect_time: 0.032887
+            pretransfer_time: 0.093065
+            size_upload: !!float 0
+            size_download: !!float 895
+            speed_download: !!float 4998
+            speed_upload: !!float 0
+            download_content_length: !!float -1
+            upload_content_length: !!float 0
+            starttransfer_time: 0.178919
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 172.67.201.18
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 192.168.1.144
+            local_port: 47634
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 92982
+            connect_time_us: 32887
+            namelookup_time_us: 2046
+            pretransfer_time_us: 93065
+            redirect_time_us: 0
+            starttransfer_time_us: 178919
+            total_time_us: 179052
+-
+    request:
+        method: GET
+        url: 'https://kitsu.io/api/edge/anime/13618/genres'
+        headers:
+            Host: kitsu.io
+            Accept-Encoding: ''
+            User-Agent: GuzzleHttp/7
+            Content-Type: application/json
+            Accept: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 18 Jun 2021 18:34:04 GMT'
+            Content-Type: application/vnd.api+json
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            etag: 'W/"e75da3dd0aafbd6e43afc0ac194bab4f"'
+            cache-control: 'max-age=0, private, must-revalidate'
+            x-request-id: 0a539ba4-d3b5-4b99-8e8f-a440b7cd7ed3
+            x-runtime: '0.022803'
+            vary: Origin
+            CF-Cache-Status: DYNAMIC
+            cf-request-id: 0ac1ffe095000004ffa1a8e000000001
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=QrJub7z7xjxlRZrjarl6YZMRqgG0jPDK8pXw0zhWQNExlTyOIwTjwQA3IPgRk7C4TUO4%2B2bGEGCH9LY9JjV8kBzfiAskUODnWvy0ieYdsP1M2pUHZ3k%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"report_to":"cf-nel","max_age":604800}'
+            Strict-Transport-Security: 'max-age=31536000; preload'
+            Server: cloudflare
+            CF-RAY: 66169c142b8f04ff-LAX
+            alt-svc: 'h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400'
+        body: '{"data":[{"id":"24","type":"genres","links":{"self":"https://kitsu.io/api/edge/genres/24"},"attributes":{"createdAt":"2013-02-20T16:00:27.537Z","updatedAt":"2013-02-20T16:00:27.537Z","name":"School","slug":"school","description":null}},{"id":"35","type":"genres","links":{"self":"https://kitsu.io/api/edge/genres/35"},"attributes":{"createdAt":"2013-02-20T16:00:51.053Z","updatedAt":"2013-02-20T16:00:51.053Z","name":"Music","slug":"music","description":null}},{"id":"4","type":"genres","links":{"self":"https://kitsu.io/api/edge/genres/4"},"attributes":{"createdAt":"2013-02-20T16:00:15.686Z","updatedAt":"2016-06-10T11:23:00.431Z","name":"Drama","slug":"drama","description":""}}],"meta":{"count":3},"links":{"first":"https://kitsu.io/api/edge/anime/13618/genres?page%5Blimit%5D=10&page%5Boffset%5D=0","last":"https://kitsu.io/api/edge/anime/13618/genres?page%5Blimit%5D=10&page%5Boffset%5D=0"}}'
+        curl_info:
+            url: 'https://kitsu.io/api/edge/anime/13618/genres'
+            content_type: application/vnd.api+json
+            http_code: 200
+            header_size: 1210
+            request_size: 119
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.173026
+            namelookup_time: 0.000999
+            connect_time: 0.031488
+            pretransfer_time: 0.077883
+            size_upload: !!float 0
+            size_download: !!float 897
+            speed_download: !!float 5184
+            speed_upload: !!float 0
+            download_content_length: !!float -1
+            upload_content_length: !!float 0
+            starttransfer_time: 0.172972
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 104.21.58.52
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 192.168.1.144
+            local_port: 38844
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 77829
+            connect_time_us: 31488
+            namelookup_time_us: 999
+            pretransfer_time_us: 77883
+            redirect_time_us: 0
+            starttransfer_time_us: 172972
+            total_time_us: 173026
+-
+    request:
+        method: GET
+        url: 'https://kitsu.io/api/edge/anime/13618/mappings?filter%5BexternalSite%5D=myanimelist/anime&page%5Blimit%5D=1&'
+        headers:
+            Host: kitsu.io
+            Accept-Encoding: ''
+            User-Agent: GuzzleHttp/7
+            Content-Type: application/json
+            Accept: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 18 Jun 2021 18:34:05 GMT'
+            Content-Type: application/vnd.api+json
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            etag: 'W/"2a66a3f322ff15d14530c4d93fdb44ba"'
+            cache-control: 'max-age=0, private, must-revalidate'
+            x-request-id: 5f9f8ce5-1007-4a3c-b42f-66a54ec3e965
+            x-runtime: '0.034692'
+            vary: Origin
+            CF-Cache-Status: DYNAMIC
+            cf-request-id: 0ac1ffe14a000004cc640f9000000001
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=147zivUu%2F5tj7Y9dKhsDH2kiiKCLRFBDQvSCQxo5QQ7ISL6EhUFll2A0uBP1b385D1nq2T8yUBdPmekWruyIyiFyTfEx2oPh8ELy%2FjM6KL6O3jhnX8Q%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"report_to":"cf-nel","max_age":604800}'
+            Strict-Transport-Security: 'max-age=31536000; preload'
+            Server: cloudflare
+            CF-RAY: 66169c154cd404cc-LAX
+            alt-svc: 'h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400'
+        body: '{"data":[{"id":"63809","type":"mappings","links":{"self":"https://kitsu.io/api/edge/mappings/63809"},"attributes":{"createdAt":"2017-07-06T04:53:43.154Z","updatedAt":"2017-07-06T04:53:43.154Z","externalSite":"myanimelist/anime","externalId":"35677"},"relationships":{"item":{"links":{"self":"https://kitsu.io/api/edge/mappings/63809/relationships/item","related":"https://kitsu.io/api/edge/mappings/63809/item"}}}}],"meta":{"count":1},"links":{"first":"https://kitsu.io/api/edge/anime/13618/mappings?filter%5BexternalSite%5D=myanimelist%2Fanime&page%5Blimit%5D=1&page%5Boffset%5D=0","last":"https://kitsu.io/api/edge/anime/13618/mappings?filter%5BexternalSite%5D=myanimelist%2Fanime&page%5Blimit%5D=1&page%5Boffset%5D=0"}}'
+        curl_info:
+            url: 'https://kitsu.io/api/edge/anime/13618/mappings?filter%5BexternalSite%5D=myanimelist/anime&page%5Blimit%5D=1&'
+            content_type: application/vnd.api+json
+            http_code: 200
+            header_size: 1212
+            request_size: 183
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.180769
+            namelookup_time: 0.00087
+            connect_time: 0.031407
+            pretransfer_time: 0.073159
+            size_upload: !!float 0
+            size_download: !!float 722
+            speed_download: !!float 3994
+            speed_upload: !!float 0
+            download_content_length: !!float -1
+            upload_content_length: !!float 0
+            starttransfer_time: 0.180621
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 172.67.201.18
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 192.168.1.144
+            local_port: 47636
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 73078
+            connect_time_us: 31407
+            namelookup_time_us: 870
+            pretransfer_time_us: 73159
+            redirect_time_us: 0
+            starttransfer_time_us: 180621
+            total_time_us: 180769
+-
+    request:
+        method: GET
+        url: 'http://api.themoviedb.org/3/search/movie?api_key=255946d78706eda1da6dc4f3a2e217e4&query=Liz+to+Aoi+Tori&year=2018'
+        headers:
+            Host: api.themoviedb.org
+            Accept-Encoding: ''
+            Accept: 'application/json; charset=utf-8'
+            User-Agent: 'php-tmdb/symfony/4.0.0 php-tmdb/api/4.0.0'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Content-Type: application/json;charset=utf-8
+            Content-Length: '532'
+            Connection: keep-alive
+            Date: 'Fri, 18 Jun 2021 18:34:05 GMT'
+            Server: openresty
+            Access-Control-Allow-Origin: '*'
+            Access-Control-Allow-Methods: 'GET, HEAD, POST, PUT, DELETE, OPTIONS'
+            Access-Control-Expose-Headers: 'ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After, Content-Length, Content-Range'
+            ETag: 97b8fedb8053b6f8f50afc43c340538f
+            Cache-Control: 'public, max-age=600'
+            Vary: 'Accept-Encoding,Accept-Encoding'
+            X-Cache: 'Miss from cloudfront'
+            Via: '1.1 9f81bea25ba920ede749daf13506a051.cloudfront.net (CloudFront)'
+            X-Amz-Cf-Pop: HIO50-C2
+            X-Amz-Cf-Id: tPCd69Up6zebxu8G2P6hM4nZwkj2BDPX0e-2Z6Pgnx3s7WfkzlKLVA==
+        body: '{"page":1,"results":[{"adult":false,"backdrop_path":"/mG3CYBXgCPi0yYHSygKNtqGpEkd.jpg","genre_ids":[16,18,10402],"id":482150,"original_language":"ja","original_title":"リズと青い鳥","overview":"Two girls grow closer as they practice for their last duet before graduating, a piece called \"Liz And The Blue Bird\".","popularity":9.644,"poster_path":"/7xRIkqWJy4cNpUxPo5aZ24O0Tyx.jpg","release_date":"2018-04-21","title":"Liz and the Blue Bird","video":false,"vote_average":7,"vote_count":53}],"total_pages":1,"total_results":1}'
+        curl_info:
+            url: 'http://api.themoviedb.org/3/search/movie?api_key=255946d78706eda1da6dc4f3a2e217e4&query=Liz+to+Aoi+Tori&year=2018'
+            content_type: application/json;charset=utf-8
+            http_code: 200
+            header_size: 721
+            request_size: 227
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.163204
+            namelookup_time: 0.017514
+            connect_time: 0.024101
+            pretransfer_time: 0.02417
+            size_upload: !!float 0
+            size_download: !!float 532
+            speed_download: !!float 3259
+            speed_upload: !!float 0
+            download_content_length: !!float 532
+            upload_content_length: !!float 0
+            starttransfer_time: 0.163139
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 204.246.191.30
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 192.168.1.144
+            local_port: 36380
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 24101
+            namelookup_time_us: 17514
+            pretransfer_time_us: 24170
+            redirect_time_us: 0
+            starttransfer_time_us: 163139
+            total_time_us: 163204
+-
+    request:
+        method: GET
+        url: 'http://api.themoviedb.org/3/movie/482150?api_key=255946d78706eda1da6dc4f3a2e217e4&append_to_response=alternative_titles%2Cexternal_ids%2Cchanges%2Ccredits%2Cimages%2Ckeywords%2Clists%2Crelease_dates%2Creviews%2Csimilar%2Crecommendations%2Ctranslations%2Cvideos'
+        headers:
+            Host: api.themoviedb.org
+            Accept-Encoding: ''
+            Accept: 'application/json; charset=utf-8'
+            User-Agent: 'php-tmdb/symfony/4.0.0 php-tmdb/api/4.0.0'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Content-Type: application/json;charset=utf-8
+            Content-Length: '56766'
+            Connection: keep-alive
+            Date: 'Fri, 18 Jun 2021 18:34:05 GMT'
+            Server: openresty
+            Access-Control-Allow-Origin: '*'
+            Access-Control-Allow-Methods: 'GET, HEAD, POST, PUT, DELETE, OPTIONS'
+            Access-Control-Expose-Headers: 'ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After, Content-Length, Content-Range'
+            Cache-Control: 'public, max-age=28800'
+            X-Memc: HIT
+            X-Memc-Key: 30e9db4cb18e46caadfc4e9d37465a43f14e5289
+            X-Memc-Age: '5536'
+            X-Memc-Expires: '10081'
+            ETag: 'W/"4fa1c9c0e11c08a72c5db8c0a39d73cc"'
+            Vary: 'Accept-Encoding,Accept-Encoding,Accept-Encoding'
+            X-Cache: 'Miss from cloudfront'
+            Via: '1.1 bc24eca5e5d9f4acf2b3c88b0346cbb9.cloudfront.net (CloudFront)'
+            X-Amz-Cf-Pop: HIO50-C2
+            X-Amz-Cf-Id: hhHsnqEXYudMASPyHmurwZfGZQEKtqDZz_Bzou6dJcmVvTwjg1o0Og==
+        body: '{"adult":false,"backdrop_path":"/mG3CYBXgCPi0yYHSygKNtqGpEkd.jpg","belongs_to_collection":{"id":567611,"name":"Sound! Euphonium Collection","poster_path":"/7qBSzz3gx9eXAFyCZCiieSoiinU.jpg","backdrop_path":null},"budget":0,"genres":[{"id":16,"name":"Animation"},{"id":18,"name":"Drama"},{"id":10402,"name":"Music"}],"homepage":"http://liz-bluebird.com","id":482150,"imdb_id":"tt7089878","original_language":"ja","original_title":"リズと青い鳥","overview":"Two girls grow closer as they practice for their last duet before graduating, a piece called \"Liz And The Blue Bird\".","popularity":9.644,"poster_path":"/7xRIkqWJy4cNpUxPo5aZ24O0Tyx.jpg","production_companies":[{"id":5438,"logo_path":"/nrvweD25GIYmfTIaFyIncLy4p3G.png","name":"Kyoto Animation","origin_country":"JP"}],"production_countries":[{"iso_3166_1":"JP","name":"Japan"}],"release_date":"2018-04-21","revenue":0,"runtime":90,"spoken_languages":[{"english_name":"Japanese","iso_639_1":"ja","name":"日本語"}],"status":"Released","tagline":"The truth will break your heart","title":"Liz and the Blue Bird","video":false,"vote_average":7.0,"vote_count":53,"alternative_titles":{"titles":[{"iso_3166_1":"JP","title":"Liz and a Blue Bird","type":"English literal title"},{"iso_3166_1":"JP","title":"Liz to aoitori","type":"Japanese title (romaji)"},{"iso_3166_1":"DE","title":"Liz und der Blaue Vogel","type":""},{"iso_3166_1":"JP","title":"劇場版 響け! ユーフォニアム みぞれと希美の物語","type":"Japanese working title"},{"iso_3166_1":"JP","title":"Sound! Euphonium: The Story of Mizore and Nozomi","type":"English working title"},{"iso_3166_1":"JP","title":"Gekijouban hibike! Euphonium: Mizore to Nozomi no monogatari","type":"Japanese working title (romaji)"},{"iso_3166_1":"JP","title":"Hibike! Euphonium Movie: Mizore to Nozomi no monogatari","type":"Japanese working title (romaji)"},{"iso_3166_1":"JP","title":"Rizu to aoitori","type":"Japanese title (romaji)"},{"iso_3166_1":"KR","title":"리즈와 파랑새","type":""},{"iso_3166_1":"CN","title":"利兹与青鸟","type":""}]},"external_ids":{"imdb_id":"tt7089878","facebook_id":null,"instagram_id":null,"twitter_id":"liz_bluebird"},"changes":{"changes":[]},"credits":{"cast":[{"adult":false,"gender":1,"id":1588597,"known_for_department":"Acting","name":"Atsumi Tanezaki","original_name":"Atsumi Tanezaki","popularity":3.677,"profile_path":"/iFMNs0tg9hBobmmUFtgG1PqWKv9.jpg","cast_id":6,"character":"Mizore Yoroizuka (voice)","credit_id":"5a33bc519251415478026bc0","order":0},{"adult":false,"gender":1,"id":1168909,"known_for_department":"Acting","name":"Nao Toyama","original_name":"Nao Toyama","popularity":4.373,"profile_path":"/1tl5iuYb2VvCfTzC9iPaBxASrXs.jpg","cast_id":5,"character":"Nozomi Kasaki (voice)","credit_id":"5a33bc33c3a368148f0253ee","order":1},{"adult":false,"gender":1,"id":1522605,"known_for_department":"Acting","name":"Ayaka Asai","original_name":"Ayaka Asai","popularity":0.689,"profile_path":"/sBDzVkIRNc0dzzDpRXOZtnooXWJ.jpg","cast_id":13,"character":"Hazuki Katou (voice)","credit_id":"5ad6005d0e0a2660b3018121","order":2},{"adult":false,"gender":1,"id":1309253,"known_for_department":"Acting","name":"Tomoyo Kurosawa","original_name":"Tomoyo Kurosawa","popularity":2.568,"profile_path":"/rBbnk9Hg7iXMaRPtDU2HuUZSr6k.jpg","cast_id":21,"character":"Kumiko Oumae (voice)","credit_id":"5ad601579251415dcc016405","order":3},{"adult":false,"gender":1,"id":1324927,"known_for_department":"Acting","name":"Chika Anzai","original_name":"Chika Anzai","popularity":2.933,"profile_path":"/lk3Az9O67qrXR69rctwDDHWqi9d.jpg","cast_id":14,"character":"Reina Kousaka (voice)","credit_id":"5ad60070c3a3680c0f018044","order":4},{"adult":false,"gender":2,"id":1221114,"known_for_department":"Acting","name":"Yuichi Nakamura","original_name":"Yuichi Nakamura","popularity":6.758,"profile_path":"/wb8behVKjBHX9XXrEydvNINCYwH.jpg","cast_id":22,"character":"Masahiro Hashimoto (voice)","credit_id":"5ad601759251415dc901615f","order":5},{"adult":false,"gender":0,"id":2024493,"known_for_department":"Acting","name":"Konomi Fujimura","original_name":"Konomi Fujimura","popularity":1.38,"profile_path":"/h8okAbOmohrwqhe1MaCboXayuiZ.jpg","cast_id":16,"character":"Natsuki Nakagawa (voice)","credit_id":"5ad600ddc3a3680c0f018187","order":6},{"adult":false,"gender":2,"id":9705,"known_for_department":"Acting","name":"Takahiro Sakurai","original_name":"Takahiro Sakurai","popularity":10.056,"profile_path":"/cXVu8xUA3CFHB0RJLyTcrUP38j3.jpg","cast_id":20,"character":"Noboru Taki (voice)","credit_id":"5ad601390e0a2660aa017154","order":7},{"adult":false,"gender":0,"id":2024495,"known_for_department":"Acting","name":"Shiori Sugiura","original_name":"Shiori Sugiura","popularity":0.996,"profile_path":"/9dJ8kNfxmzSP6eBxFhO8mZEZzaW.jpg","cast_id":19,"character":"Ririka Kenzaki (voice)","credit_id":"5ad6012e0e0a2660bf0161f4","order":8},{"adult":false,"gender":0,"id":1182806,"known_for_department":"Acting","name":"Miyu Honda","original_name":"Miyu Honda","popularity":0.833,"profile_path":"/grWKgyiQUNPqJuQMKIPuJiYMzem.jpg","cast_id":17,"character":"Liz (voice)","credit_id":"5ad600f40e0a2660b6017d77","order":9},{"adult":false,"gender":1,"id":1339188,"known_for_department":"Acting","name":"Moe Toyota","original_name":"Moe Toyota","popularity":1.686,"profile_path":"/rmZbdlw0aykMGENGVbV4jjmGPcV.jpg","cast_id":18,"character":"Sapphire ''Midori'' Kawashima (voice)","credit_id":"5ad601160e0a2660ad018380","order":10},{"adult":false,"gender":1,"id":220710,"known_for_department":"Acting","name":"Houko Kuwashima","original_name":"Houko Kuwashima","popularity":3.179,"profile_path":"/uZSmoh5jSdLwmkLaCnC3Xju6TTN.jpg","cast_id":15,"character":"Satomi Niiyama (voice)","credit_id":"5ad600859251415dcc016304","order":11},{"adult":false,"gender":1,"id":1256108,"known_for_department":"Acting","name":"Yuri Yamaoka","original_name":"Yuri Yamaoka","popularity":0.765,"profile_path":"/pV0FSVoOorDDBZp6KhTRngQQmKy.jpg","cast_id":23,"character":"Yûko Yoshikawa (voice)","credit_id":"5ad601929251415dc9016182","order":12}],"crew":[{"adult":false,"gender":1,"id":78373,"known_for_department":"Writing","name":"Reiko Yoshida","original_name":"Reiko Yoshida","popularity":2.954,"profile_path":"/5LUxL8rdUtMdqxx8pnWp6PM0wKp.jpg","credit_id":"5ad5ff39c3a3680bff01441e","department":"Writing","job":"Screenplay"},{"adult":false,"gender":2,"id":24003,"known_for_department":"Sound","name":"Yōta Tsuruoka","original_name":"Yōta Tsuruoka","popularity":1.22,"profile_path":"/pKx6YaitQUVmoSyIrg7I85DW8g1.jpg","credit_id":"5ad5ffbb9251415dc3015cab","department":"Sound","job":"Sound Director"},{"adult":false,"gender":2,"id":144662,"known_for_department":"Editing","name":"Kengo Shigemura","original_name":"Kengo Shigemura","popularity":0.702,"profile_path":null,"credit_id":"5a33bb1fc3a36814a802831e","department":"Editing","job":"Editor"},{"adult":false,"gender":1,"id":144664,"known_for_department":"Visual Effects","name":"Naomi Ishida","original_name":"Naomi Ishida","popularity":0.6,"profile_path":null,"credit_id":"5ad5ffa1c3a3680bfc017f15","department":"Visual Effects","job":"Color Designer"},{"adult":false,"gender":2,"id":144672,"known_for_department":"Visual Effects","name":"Futoshi Nishiya","original_name":"Futoshi Nishiya","popularity":0.84,"profile_path":"/rx2nHs1XBk1FOHXzh1fY9owLeSZ.jpg","credit_id":"5ad5ff8f9251415dc0015c3c","department":"Visual Effects","job":"Character Designer"},{"adult":false,"gender":1,"id":1072778,"known_for_department":"Directing","name":"Naoko Yamada","original_name":"Naoko Yamada","popularity":2.227,"profile_path":"/lfrRvCqgVwGWLL4hesk8Uoe5rPW.jpg","credit_id":"59e8cec7c3a3681a57000f4e","department":"Directing","job":"Director"},{"adult":false,"gender":1,"id":1072778,"known_for_department":"Directing","name":"Naoko Yamada","original_name":"Naoko Yamada","popularity":2.227,"profile_path":"/lfrRvCqgVwGWLL4hesk8Uoe5rPW.jpg","credit_id":"5da7ed46944a57001324682a","department":"Writing","job":"Storyboard"},{"adult":false,"gender":1,"id":1072778,"known_for_department":"Directing","name":"Naoko Yamada","original_name":"Naoko Yamada","popularity":2.227,"profile_path":"/lfrRvCqgVwGWLL4hesk8Uoe5rPW.jpg","credit_id":"5da7ed5ba2423200177a89da","department":"Art","job":"Storyboard Designer"},{"adult":false,"gender":0,"id":1368259,"known_for_department":"Art","name":"Mutsuo Shinohara","original_name":"Mutsuo Shinohara","popularity":0.98,"profile_path":null,"credit_id":"5ad5ff6bc3a3680c0901690b","department":"Art","job":"Art Direction"},{"adult":false,"gender":0,"id":1565044,"known_for_department":"Camera","name":"Kazuya Takao","original_name":"Kazuya Takao","popularity":0.84,"profile_path":null,"credit_id":"5a33bb10c3a3680b881b2741","department":"Camera","job":"Director of Photography"},{"adult":false,"gender":0,"id":1565258,"known_for_department":"Writing","name":"Ayano Takeda","original_name":"Ayano Takeda","popularity":0.6,"profile_path":null,"credit_id":"5ad5ff4f0e0a2660bf015fde","department":"Writing","job":"Original Story"},{"adult":false,"gender":2,"id":1677276,"known_for_department":"Sound","name":"Kensuke Ushio","original_name":"Kensuke Ushio","popularity":0.6,"profile_path":"/A3FnNDo5WKMnAGHPlAMpRED4s9j.jpg","credit_id":"5a33bb779251415478026ae6","department":"Sound","job":"Original Music Composer"},{"adult":false,"gender":2,"id":2334661,"known_for_department":"Sound","name":"Masahiro Owada","original_name":"Masahiro Owada","popularity":0.6,"profile_path":"/ziNlHbUeb87ALXMQ4DEluLuLkkl.jpg","credit_id":"60bc13ad5b124000590d33cb","department":"Sound","job":"Music Supervisor"}]},"images":{"backdrops":[{"aspect_ratio":1.777777777777778,"file_path":"/mG3CYBXgCPi0yYHSygKNtqGpEkd.jpg","height":2160,"iso_639_1":null,"vote_average":5.384,"vote_count":2,"width":3840},{"aspect_ratio":1.777777777777778,"file_path":"/hGp9UXEl8jOrkfSBQuQFJaswLeH.jpg","height":1080,"iso_639_1":null,"vote_average":5.264,"vote_count":8,"width":1920}],"posters":[{"aspect_ratio":0.66650390625,"file_path":"/idcaXePicXXvzaXkPn6rGyqMCjQ.jpg","height":2048,"iso_639_1":"en","vote_average":5.39,"vote_count":6,"width":1365},{"aspect_ratio":0.7066666666666667,"file_path":"/7yj6Gqca7DxwNp6qZefsHNFpg6U.jpg","height":1200,"iso_639_1":"xx","vote_average":5.318,"vote_count":3,"width":848},{"aspect_ratio":0.66796875,"file_path":"/53VSBeHmXanVKG9sfW8ngvfOpRe.jpg","height":1024,"iso_639_1":"ja","vote_average":5.312,"vote_count":1,"width":684},{"aspect_ratio":0.6666666666666666,"file_path":"/7xRIkqWJy4cNpUxPo5aZ24O0Tyx.jpg","height":3000,"iso_639_1":"en","vote_average":5.258,"vote_count":6,"width":2000},{"aspect_ratio":0.7063572149344097,"file_path":"/at5bFdv8tIA9G0bbM5iz38uaDON.jpg","height":991,"iso_639_1":"ja","vote_average":5.258,"vote_count":6,"width":700},{"aspect_ratio":0.6666666666666666,"file_path":"/pjLBTj6bJAlq2nMQCtQcHGV37Rk.jpg","height":3000,"iso_639_1":"de","vote_average":5.246,"vote_count":2,"width":2000},{"aspect_ratio":0.7067137809187279,"file_path":"/68DRticTg3sw8g2OnAPAaHNs8PV.jpg","height":1415,"iso_639_1":"xx","vote_average":5.246,"vote_count":2,"width":1000},{"aspect_ratio":0.6672550750220653,"file_path":"/xCw6DLetGVaic40h22bpAgtPtHW.jpg","height":1133,"iso_639_1":"ja","vote_average":5.18,"vote_count":3,"width":756},{"aspect_ratio":0.707,"file_path":"/hIJs1CCl7KZfJI2SJmUkG2EzZss.jpg","height":1000,"iso_639_1":"de","vote_average":5.172,"vote_count":1,"width":707},{"aspect_ratio":0.6666666666666666,"file_path":"/lpBSkZvXKzpNjm95WSl9kivhe0E.jpg","height":3000,"iso_639_1":"fr","vote_average":5.172,"vote_count":1,"width":2000},{"aspect_ratio":0.7066666666666667,"file_path":"/4ePPnps85M9Zlnyr3OqSB5MqmD7.jpg","height":1200,"iso_639_1":"ja","vote_average":5.172,"vote_count":1,"width":848},{"aspect_ratio":0.7444168734491315,"file_path":"/meVzX2PCvaVHrnz2PKKij163jcJ.jpg","height":806,"iso_639_1":"en","vote_average":5.172,"vote_count":1,"width":600},{"aspect_ratio":0.7471980074719801,"file_path":"/63Em0hVK6ZYOoEZ225ERMwvWPwq.jpg","height":803,"iso_639_1":"ja","vote_average":5.172,"vote_count":1,"width":600},{"aspect_ratio":0.6979990693345742,"file_path":"/4YHRpIATc4C5fC7wfHX2dNIFHLK.jpg","height":2149,"iso_639_1":"ko","vote_average":5.172,"vote_count":1,"width":1500},{"aspect_ratio":0.6977072310405644,"file_path":"/cujoMkD4W8hLS05x4dcgltpjTMh.jpg","height":2835,"iso_639_1":"ko","vote_average":5.172,"vote_count":1,"width":1978},{"aspect_ratio":0.6944444444444444,"file_path":"/k1LJ9oEDSV8aMEHHbENysb8JOZD.jpg","height":864,"iso_639_1":"en","vote_average":5.138,"vote_count":8,"width":600},{"aspect_ratio":0.6671378091872792,"file_path":"/d9StaP2yTZveCHgSIeaTs6gR802.jpg","height":1415,"iso_639_1":"en","vote_average":5.128,"vote_count":6,"width":944},{"aspect_ratio":0.6663740122914837,"file_path":"/ogthb7mGOitzCf7FJbsxbiZI7JL.jpg","height":1139,"iso_639_1":"en","vote_average":5.128,"vote_count":6,"width":759},{"aspect_ratio":0.7067137809187279,"file_path":"/cO4Q4r1EdPhpXLhDSXy0bZnK7HY.jpg","height":1415,"iso_639_1":"ja","vote_average":5.106,"vote_count":2,"width":1000},{"aspect_ratio":0.707,"file_path":"/gUzB3hPwA6bwwpBhaS9gwjJYrOD.jpg","height":1000,"iso_639_1":"ja","vote_average":5.106,"vote_count":2,"width":707},{"aspect_ratio":0.7071302298173247,"file_path":"/9jScF0q4X4pIrWyAMnvJUsZzS3p.jpg","height":1697,"iso_639_1":"ja","vote_average":0.0,"vote_count":0,"width":1200}]},"keywords":{"keywords":[{"id":233,"name":"japan"},{"id":1673,"name":"brass band"},{"id":3205,"name":"fairy tale"},{"id":4127,"name":"one-sided love"},{"id":5248,"name":"female friendship"},{"id":18005,"name":"high school friends"},{"id":210024,"name":"anime"},{"id":214532,"name":"school club"}]},"lists":{"page":1,"results":[{"description":"Animes completados","favorite_count":0,"id":146145,"item_count":448,"iso_639_1":"pt","list_type":"movie","name":"Animes","poster_path":null},{"description":"","favorite_count":0,"id":7092101,"item_count":13405,"iso_639_1":"en","list_type":"movie","name":"for radarr","poster_path":null},{"description":"","favorite_count":0,"id":7058788,"item_count":168,"iso_639_1":"en","list_type":"movie","name":"Anime Movies","poster_path":null},{"description":"","favorite_count":0,"id":6713104,"item_count":2392,"iso_639_1":"en","list_type":"movie","name":"Top Animes - IMDb","poster_path":null},{"description":"","favorite_count":0,"id":7055983,"item_count":1809,"iso_639_1":"fr","list_type":"movie","name":"Vue ","poster_path":null},{"description":"","favorite_count":0,"id":7055985,"item_count":1400,"iso_639_1":"fr","list_type":"movie","name":"Movie","poster_path":null},{"description":"Ma Collection de DVD -:)","favorite_count":0,"id":7087251,"item_count":112,"iso_639_1":"fr","list_type":"movie","name":"↬ Films Animations Japonais ~ Collections","poster_path":null},{"description":"btw","favorite_count":0,"id":7079126,"item_count":75,"iso_639_1":"en","list_type":"movie","name":"Top films between 2015 and 2021 (2015-2021 maxr:4000)","poster_path":null},{"description":"btw","favorite_count":0,"id":7079044,"item_count":39,"iso_639_1":"en","list_type":"movie","name":"Custom chart: top films of all-time","poster_path":null},{"description":"btw","favorite_count":0,"id":7079042,"item_count":49,"iso_639_1":"en","list_type":"movie","name":"Custom chart: top films of all-time","poster_path":null},{"description":"Anime  movies","favorite_count":0,"id":95529,"item_count":137,"iso_639_1":"en","list_type":"movie","name":"Anime Movies","poster_path":null},{"description":"","favorite_count":0,"id":4468926,"item_count":679,"iso_639_1":"en","list_type":"movie","name":"Movies I Want to Watch","poster_path":null},{"description":"Test list.","favorite_count":0,"id":107553,"item_count":1739,"iso_639_1":"en","list_type":"movie","name":"Test","poster_path":null},{"description":"","favorite_count":0,"id":7062652,"item_count":20,"iso_639_1":"en","list_type":"movie","name":"stuff i like a lot","poster_path":null},{"description":"","favorite_count":0,"id":6695881,"item_count":1193,"iso_639_1":"en","list_type":"movie","name":"Top Titles from Japan - IMDb","poster_path":null},{"description":"Liste des films que j''ai vu lors d''avant-premières réservées à la presse, de projections presse et/ou en \"streaming\" à partir d''URL privées fournit par les distributeurs/producteurs.","favorite_count":0,"id":7055030,"item_count":56,"iso_639_1":"fr","list_type":"movie","name":"Visionnages entant que  presse","poster_path":null},{"description":"Théoriquement des films d''animation non tirés des grands studios japonais ou américains (Ghibli, Disney, Pixar, Dreamworks, Paramount, 20th Century Fox)","favorite_count":0,"id":79777,"item_count":48,"iso_639_1":"fr","list_type":"movie","name":"Films d''animation hors studios","poster_path":null},{"description":"anime movies","favorite_count":0,"id":86596,"item_count":122,"iso_639_1":"en","list_type":"movie","name":"anime","poster_path":null},{"description":"All films I wanted to watch from their  interesting premises and others'' recommendations   🎥👏","favorite_count":0,"id":137050,"item_count":8,"iso_639_1":"en","list_type":"movie","name":"Want to watch ","poster_path":null},{"description":"Watch the movie \"Liz and the Blue Bird\" online you can for free in good quality without registration. We will give you the link to watch Liz and the Blue Bird movie. We are one of the few that don''t overload your project is, thereby let users to watch any video without ads and sending SMS messages, which is often used by cyber criminals in order to capitalize on unsuspecting citizens. Select one of the players that are below and start browsing. Movie Liz and the Blue Bird to watch online for free on your Android phone conveniently as using an iPhone (iPhone), iPad and other popular smartphones and tablet completely free.\r\nAt my high school in the U.S., it was said that while the athletes were the talk of the school, it was actually the band kids who were embroiled in the jui, Captive Management Husbandry Manuals. This Husbandry Manual Register is in two parts; 1. The first section is an index of Bird Taxonomic Orders. Photos of All mega and rare species (RBA - the UK birders news service). I''m preparing a class for the Master Gardener chapter that I''m a member of on making bird-feeders utilizing natural sources, recycled materials and re-purposed items. Blues Hex Color Codes: Hexadecimal codes for named colors, Euphonium: Liz and the Blue Bird.” Neither is it “Liz and the Blue Bird: Sound! Euphonium.” As connected as it is to Sound! Euphonium--sharing both a cast and setting--it is very much being promoted as a stand-alone film. Latest Kane County bird sightings, Caption This! Blue Jay Meeting - Birds and Blooms. \r\n\r\n\r\n Liz and the Blue Bird - Review - Anime News Network. Bird Patrol We really need your help to get the word out! Will you help us let vets and pet shops in your area know about the World Wide Bird HotLine?. Coronation Street''s Vera Duckworth, Liz Dawn dies aged 77, Animal Songs for Young Children, Liz and the Blue Bird; Violet Evergarden; Love, Chunibyo and Other Delusions! -Take On Me-Free! -Take Your Marks-Sound! Euphonium The Movie -May the melody reach you!-, Educational Children''s Music using songs for teaching the introductions to different animals. Browse All Poems - Love Poems - Poem Hunter. \r\n\r\n\r\n Liz and the Blue Bird, Maquia, 2 More to be Shown At. No mess, no grow, no waste wild bird food mix from Haith''s®, To report rare bird sightings and submit photographs for this page, please email Chris Charlesworth at c_charlesworth23@hotmail. Blue jays gather for what looks like an important bird meeting. How would you caption this funny photo?. The Blue Bird (1976 film) - Wikipedia, Watch Liz and the Blue Bird 2018 Movie on Putlocker Free Online. First brand new story film of Sound! Euphonium series, about Mizore and Nozomi. Watch Liz and the Blue Bird Online Putlocker Full Movie. \r\n\r\n\r\n The garden-roof coop: DIY Wine Bottle Bird-Feeders, Liz and the Blue Bird (movie) - Anime News Network, \"Liz and the blue bird\" Long PV『リズと青い鳥』ロングPV | Anime Tv, BIRD BREEDERS UK- Parrotts, Budgerigars, Cockatoos and, Hearts Grow Distant in \"Liz and the Blue Bird\" Extended PV. Anime :- Liz and the Blue Bird \"Liz and the Blue Bird\" April 21, 2018 Roadshow Synopsis Armursuka Miboto High School 3rd grade Oboe charge. Kimiki Nimi hig, The Blue Bird is a 1976 American/Soviet fantasy film directed by George Cukor.The screenplay by Hugh Whitemore, Alfred Hayes, and Aleksei Kapler is based on L''Oiseau bleu by Maurice Maeterlinck. \r\n\r\n\r\n You may also like: employee is terrified of balloons, wife is hitchhiking to work, and more; update on the bird phobia letter and the employee who won’t come back unless her coworker is fired. Watch Liz and the Blue Bird 2018 Online Putlocker Full, Pony Canyon USA Teases Worldwide Release for Liz and the Blue Bird Film (Mar 31, 2018) You can contribute information to this page, but first you must login or register:. Nereyda Bird Posing Nude in Lui Magazine! - Big Tits and, BC Rare Bird Alert: Okanagan, Interior and the Kootenays.\r\nDownload, Liz, and, the, Blue, Bird, IMDB<br><br>Liz, and, the, Blue, Bird, '', Leaked, Movie, Titles<br><br>Download, Liz, and, the, Blue, Bird, Streaming, Full<br><br>Download, Liz, and, the, Blue, Bird, HD, 1080p\r\n","favorite_count":0,"id":74988,"item_count":1,"iso_639_1":"en","list_type":"movie","name":"Free Movie Liz and the Blue Bird tamil Full Length kickass","poster_path":null}],"total_pages":2,"total_results":23},"release_dates":{"results":[{"iso_3166_1":"JP","release_dates":[{"certification":"","iso_639_1":"","note":"","release_date":"2018-04-21T00:00:00.000Z","type":3},{"certification":"","iso_639_1":"","note":"DVD / BD","release_date":"2018-12-05T00:00:00.000Z","type":5}]},{"iso_3166_1":"FR","release_dates":[{"certification":"","iso_639_1":"","note":"Annecy International Animation Film Festival","release_date":"2018-06-11T00:00:00.000Z","type":2},{"certification":"U","iso_639_1":"","note":"","release_date":"2019-04-17T00:00:00.000Z","type":3}]},{"iso_3166_1":"US","release_dates":[{"certification":"","iso_639_1":"","note":"","release_date":"2018-11-09T00:00:00.000Z","type":2}]},{"iso_3166_1":"DE","release_dates":[{"certification":"6","iso_639_1":"de","note":"","release_date":"2019-09-20T00:00:00.000Z","type":5}]}]},"reviews":{"page":1,"results":[],"total_pages":0,"total_results":0},"similar":{"page":1,"results":[{"overview":"Japan, 1943, during World War II. Young Suzu leaves her village near Hiroshima to marry and live with her in-laws in Kure, a military harbor. Her creativity to overcome deprivation quickly makes her indispensable at home. Inhabited by an ancestral wisdom, Suzu impregnates the simple gestures of everyday life with poetry and beauty. The many hardships, the loss of loved ones, the frequent air raids of the enemy, nothing alters her enthusiasm…","release_date":"2016-11-12","adult":false,"backdrop_path":"/uF1yztPWLKU3CcdlaUWEHovoeQo.jpg","genre_ids":[18,16,10749,10752,36],"vote_count":385,"original_language":"ja","original_title":"この世界の片隅に","poster_path":"/9Z4H4M2F8OQTB04YC1Opds8MFBb.jpg","title":"In This Corner of the World","video":false,"vote_average":8.1,"id":378108,"popularity":26.961},{"genre_ids":[16,18,10402,10749],"original_language":"ja","original_title":"映画 ギヴン","poster_path":"/xKCtoYHUyX8zAg68eemnYa2orep.jpg","video":false,"vote_average":8.8,"title":"Given","vote_count":176,"adult":false,"id":632632,"backdrop_path":"/u1wHUA0R48FH4WV3sGqjwx3aNZm.jpg","overview":"The film centers on the love relationship among the band''s bassist Haruki Nakayama, drummer Akihiko Kaji, and Akihiko''s roommate and ex-boyfriend Ugetsu Murata.","release_date":"2020-08-22","popularity":107.401},{"adult":false,"backdrop_path":"/s0NLzm7xlAh1IXDaOFZvXIU64tN.jpg","genre_ids":[16,18,10749,35],"id":624812,"original_language":"ja","original_title":"思い、思われ、ふり、ふられ","overview":"Yuna and Akari are two high school girls with very different views on love: Yuna dreams about romance through rose-coloured glasses, while Akari is down-to-earth and practical. Meanwhile, high school boys Kazuomi and Rio also have different views on love: Kazuomi is an airhead who can''t grasp the concept of love, while Rio grabs onto any confession as an opportunity—so long as the girl looks cute. Will these four classmates end up leading a youthful romance that meets their expectations?","poster_path":"/vtYC1vUveZbuiIGwsuqubNxeCk4.jpg","release_date":"2020-09-18","title":"Love Me, Love Me Not","video":false,"vote_average":7.5,"vote_count":4,"popularity":15.653},{"adult":false,"backdrop_path":"/1aaBzyYSvopc1ZCVbAFd6i2ZIKn.jpg","genre_ids":[16,18,35],"id":739360,"original_language":"ja","original_title":"映画 さよなら私のクラマー ファーストタッチ","overview":"14-year-old Nozomi Onda has only one thing on her mind: playing beautiful soccer. There''s just one problem: no matter how much she longs to participate in official matches, she''d have physically superior boys as opponents. But when a boy from her past confronts her on the street, she decides she can''t wait any longer.","poster_path":"/4ccYQSU7pgOTtShFMvUde2QLjp0.jpg","release_date":"2021-06-11","title":"Farewell, My Dear Cramer: First Touch","video":false,"vote_average":0.0,"vote_count":0,"popularity":5.387},{"adult":false,"backdrop_path":"/w8mUnylYIkKfwzCIeyxXSQt055N.jpg","genre_ids":[16,10749,878,35],"id":630027,"original_language":"ja","original_title":"フラグタイム","overview":"Misuzu Moritani is an introvert who has always had difficulty interacting with her classmates, quickly becoming flustered whenever someone tries to talk to her. Sometimes, she will use her ability to stop time for three minutes to escape troublesome social situations.  One day, as Misuzu watches the suspended environment around her, she observes that her classmate, Haruka Murakami, is somehow able to move despite her temporal influence. From that moment on, Misuzu experiences new wonders as she explores more of the world she has long avoided; no matter where time may take her, Misuzu can count on Haruka to always be at her side.","poster_path":"/sJcyc9MdcleYlBG9HWd2DnGUJHe.jpg","release_date":"2019-11-22","title":"Fragtime","video":false,"vote_average":6.0,"vote_count":16,"popularity":4.983},{"adult":false,"backdrop_path":"/3RMLbSEXOn1CzLoNT7xFeLfdxhq.jpg","genre_ids":[10749,16],"id":372754,"original_language":"ja","original_title":"同級生","overview":"Rihito Sajo, an honor student with a perfect score on the entrance exam and Hikaru Kusakabe, in a band and popular among girls, would have never crossed paths. Until one day they started talking at the practice for their school’s upcoming chorus festival. After school, the two meet regularly, as Hikaru helps Rihito to improve his singing skills. While they listen to each other’s voice and harmonize, their hearts start to beat together.","poster_path":"/cIfRCA5wEvj9tApca4UDUagQEiM.jpg","release_date":"2016-02-20","title":"Dou kyu sei – Classmates","video":false,"vote_average":7.9,"vote_count":94,"popularity":9.718},{"adult":false,"backdrop_path":"/mAaKxURFBRkLVfpqKOFVND78F13.jpg","genre_ids":[16,18],"id":589082,"original_language":"ja","original_title":"薄暮","overview":"Hakubo tells the story of two young people who live in rural Fukushima: Sachi Koyama, a girl who excels at playing the violin, and Yuusuke Kijinami, a boy who loves to paint. After an awkward, chance encounter, the two meet and begin to fall in love, but Yuusuke is still living in the shadow of the 2011 Tohoku earthquake and tsunami.","poster_path":"/7iUoLTDTk5IgUJTboct2RHuuTMG.jpg","release_date":"2019-06-21","title":"Twilight","video":false,"vote_average":6.5,"vote_count":14,"popularity":43.209},{"release_date":"2013-04-24","adult":false,"backdrop_path":"/kqMYb35r3NCsFeaV1EfBg3rzZWE.jpg","genre_ids":[878,16,28],"vote_count":122,"original_language":"ja","original_title":"アイアンマン：ライズ・オブ・テクノヴォア","poster_path":"/eHDez1uN5X2ZAq4niX7HvhyZIIO.jpg","video":false,"id":169934,"vote_average":5.8,"title":"Iron Man: Rise of Technovore","overview":"Iron Man enlists the help of ruthless vigilante the Punisher to track down War Machine''s murderer. All the while, he''s being pursued by S.H.I.E.L.D. agents Black Widow and Hawkeye, who suspect his involvement in a recent terrorist plot.","popularity":14.588},{"backdrop_path":"/s1eUjN5hLpez9QoBK8t4rUoopgN.jpg","genre_ids":[28,12,35,14,16],"original_language":"ja","original_title":"劇場版 FAIRY TAIL 『DRAGON CRY』","poster_path":"/4CtvjdvuRj3iPlvtpvFomhTxjXR.jpg","video":false,"vote_average":6.5,"vote_count":329,"overview":"Natsu Dragneel and his friends travel to the island Kingdom of Stella, where they will reveal dark secrets, fight the new enemies and once again save the world from destruction.","release_date":"2017-05-06","title":"Fairy Tail: Dragon Cry","id":433422,"adult":false,"popularity":42.764},{"poster_path":"/1X19j2albvewAdnTNHx2fFXjOcC.jpg","adult":false,"backdrop_path":"/nDAbr3NSkkOMIkFrQ3ycVxzgaMc.jpg","id":351460,"vote_count":3245,"vote_average":4.2,"title":"Death Note","video":false,"release_date":"2017-08-25","genre_ids":[14,53,80,18],"original_language":"en","overview":"A young man comes to possess a supernatural notebook, the Death Note, that grants him the power to kill any person simply by writing down their name on the pages. He then decides to use the notebook to kill criminals and change the world, but an enigmatic detective attempts to track him down and end his reign of terror.","original_title":"Death Note","popularity":23.664},{"adult":false,"backdrop_path":"/jmDJDvfWMGDrmpUZxwlSbcdxFcV.jpg","genre_ids":[28,16,14],"id":83091,"original_language":"ja","original_title":"聖闘士星矢 神々の熱き戦い","overview":"In Siberia, Hyōga saves a man that is being attacked. Injured, the man manages only to say something about Asgard. Some days later, Saori, Seiya, Shiryū and Shun are wondering about Hyōga and decide to go to Asgard to investigate. At Valhalla, the Lord of Asgard, Dolbar, says he has not heard of any Hyōga and neither has his right hand, Loki. However, at all times Seiya and the others can feel an evil cosmo emanating from Loki and the other Odin Saints called God Warriors. Shiryū, in particular, notices a familiar cosmo coming from Midgard, a mysterious, masked God Warrior. Dolbar makes it clear that he is trying to take control of both Asgard and the Sanctuary, imprisoning Athena in a strange dimension within the giant statue of Odin. Midgard reveals himself as Hyōga and tries to kill Shiryū to prove himself to Dolbar. Thus, it is the task of the Bronze Saints to defeat Dolbar, Loki and the rest of the God Warriors, to save Athena and Hyōga.","poster_path":"/AvnpsjCYUcmnAW1khPBzZQKPviw.jpg","release_date":"1988-03-12","title":"Saint Seiya: The Heated Battle of the Gods","video":false,"vote_average":7.5,"vote_count":103,"popularity":20.016},{"video":false,"vote_average":7.2,"overview":"The plot involves the coming of Lucifer to the Sanctuary, where his underlings systematically dispose of the surviving Gold Saints. Athena goes to Lucifer to ask for peace, placing herself in peril. The Bronze Saints must then come to her rescue, destroying Lucifer''s Fallen Angels (Seima Tenshi in Japanese) in the process.","release_date":"1989-03-18","vote_count":127,"adult":false,"backdrop_path":"/2QbyWDvb6GylplTD77rNAZNepaU.jpg","title":"Saint Seiya: Warriors of the Final Holy Battle","genre_ids":[28,16,14],"id":83088,"original_language":"ja","original_title":"聖闘士星矢 最終聖戦の戦士たち","poster_path":"/oZ0FjRgvLy2Z8DB5UrPWdZsjRyQ.jpg","popularity":23.543},{"adult":false,"backdrop_path":"/rQm5DzVwy1HE4K24fJZrOElnt8t.jpg","genre_ids":[28,16,14],"id":66105,"original_language":"ja","original_title":"聖闘士星矢 真紅の少年伝説","overview":"Athena receives the visit of Phoebus Abel, her older brother and God of the Corona. He informs her that he has come to destroy humanity as punishment for their corruption, just as it was done in ancient times. He dismisses Seiya and the Bronze Saints, as she will now be guarded by Abel''s three Corona Saints, Atlas of Carina, Jaow of Lynx and Berenike of Coma Berenices, and the five resurrected Gold Saints who died in the Sanctuary battle: Saga of Gemini, Deathmask of Cancer, Shura of Capricorn, Camus of Aquarius and Aphrodite of Pisces. When Athena rebels against Abel''s plan, he attacks her, sending her soul to Elysion, the final resting place from which there is no return. The Bronze Saints immediately rush to the Sanctuary to save her and ultimately overcome Abel.","poster_path":"/7I7x2eMUwjroTmHfIn4WCr9Ls27.jpg","release_date":"1988-07-23","title":"Saint Seiya: Legend of Crimson Youth","video":false,"vote_average":7.4,"vote_count":118,"popularity":22.808},{"poster_path":"/53iOetezK5fJsABy1XykJw4WRq3.jpg","video":true,"vote_average":8.2,"overview":"Recap of episodes 14-25.","id":330081,"title":"Attack on Titan: Wings of Freedom","adult":false,"backdrop_path":"/9791KUEDAcbSiRQpQK7e6UyeHy1.jpg","vote_count":173,"genre_ids":[28,14,16,12],"release_date":"2015-06-27","original_language":"ja","original_title":"劇場版「進撃の巨人」後編～自由の翼～","popularity":54.424},{"vote_average":7.1,"overview":"Student Yuki has never seen one of the giant monsters she always hears about on the news and that threaten her city. But when she meets the lethargic Tetsu one day, things change suddenly. Because Tetsu moves around the houses with a creature called Cencoroll, which he can control with mind control and which can transform into a wide variety of objects. But not only Yuki is fascinated by Cencoroll: the boy Shu tries to take Cencoroll from Tetsu with the help of his own telepathy monster, whereupon the four engage in a bitter fight, in which Yuki also intervenes and the entire city is converted into a battle arena.","release_date":"2019-06-29","adult":false,"backdrop_path":"/ksMcPijqq5uayFEUkeJlSYXrrp3.jpg","vote_count":9,"genre_ids":[16,878],"id":539140,"original_language":"ja","original_title":"センコロール コネクト","poster_path":"/2ayrhipQ6wETRZyixZW8UPKztEG.jpg","title":"Cencoroll Connect","video":false,"popularity":56.837},{"backdrop_path":"/m5DxRZhJO7aluDyHW40M8cEBZAv.jpg","genre_ids":[16,35,14],"original_language":"ja","original_title":"映画 中二病でも恋がしたい! -Take On Me-","poster_path":"/grlNqxlne3pRBB5kvEc2aHtrSKv.jpg","video":false,"vote_average":7.3,"vote_count":38,"overview":"Yuuta and Rikka are in their third year of high school. One day in Spring, Touka declares that she will take Rikka to Italy with her, as her job has stabilized there and thinks they should migrate together as a family. Touka is also worried about Rikka not being competent enough to advance to universities in Japan. The gangs from the club suggested Yuuta, who doesn''t want to be separated, to elope with Rikka!! A runaway drama throughout Japan begins.","release_date":"2018-01-06","title":"Love, Chunibyo & Other Delusions! Take On Me","id":460399,"adult":false,"popularity":25.345},{"adult":false,"backdrop_path":"/xv9mCcrT3GAvk4IhbdaXxv4ylqt.jpg","genre_ids":[35,16,12,18],"id":494471,"original_language":"ja","original_title":"劇場版 のんのんびより ばけーしょん","overview":"The movie for Non Non Biyori series.\r Summer vacation is drawing to an end. When Suguru wins a free trip to Okinawa, all of the five students of Asahigaoka branch school are excited to end their vacation with a bang. Along with Hikage, Konomi, and their teacher and the candy store owner, everyone goes to Okinawa for a fun three-day trip. There, Natsumi makes friends with Aoi, the girl who helps out at the hotel they stay in.","poster_path":"/9Zytm8p0hUoUIVOFDrlGm0yCDE0.jpg","release_date":"2018-08-25","title":"Non Non Biyori: Vacation","video":false,"vote_average":6.2,"vote_count":11,"popularity":17.019},{"poster_path":"/hL3NqRE2ccR4Y2sYSJTrmalRjrz.jpg","id":476292,"title":"Maquia: When the Promised Flower Blooms","vote_average":8.4,"overview":"Maquia is a member of a special race called the Iorph who can live for hundreds of years. However, Maquia has always felt lonely despite being surrounded by her people, as she was orphaned from a young age. She daydreams about the outside world, but dares not travel from her home due to the warnings of the clan''s chief.  One day the kingdom of Mezarte invades her homeland. They already have what is left of the giant dragons, the Renato, under their control, and now their king wishes to add the immortality to his bloodline.  They ravage the Iorph homeland and kill most of its inhabitants. Caught in the midst of the attack, Maquia is carried off by one of the Renato. It soon dies, and she is left deserted in a forest, now truly alone save for the cries of a single baby off in the distance. Maquia finds the baby in a destroyed village and decides to raise him as her own, naming him Ariel. Although she knows nothing of the human world, how to raise a child that ages much faster than her.","release_date":"2018-02-24","adult":false,"backdrop_path":"/5nkKy7eEDsXqsxFLJy3GxZhE90J.jpg","vote_count":358,"genre_ids":[16,14,10749,18],"video":false,"original_language":"ja","original_title":"さよならの朝に約束の花をかざろう","popularity":42.824},{"genre_ids":[16,28],"original_language":"ja","original_title":"困難","poster_path":"/z1swR82ZjqElZ35LrdzSb4oamQj.jpg","video":false,"vote_average":7.3,"overview":"The 104th Training Corps'' most recent mission is a trek on horseback into the forest. Although a test of their ability to stay alert even in non-threatening situations, the task is boring and can lead to in-fighting. This is especially true for one of the groups, lead by Marco Bott. Some want to stay true to the mission they have been tasked with, and the rest would rather slack off, occupying themselves with more exciting activities. But when trouble strikes, they are completely unprepared.","release_date":"2014-08-08","vote_count":3,"id":798711,"adult":false,"backdrop_path":null,"title":"Attack on Titan: Distress","popularity":24.384},{"backdrop_path":"/9Hqweszu1tQylbksxhi2uJdhPNA.jpg","genre_ids":[28,16,18,14,10749],"original_language":"ja","original_title":"劇場版「Fate/stay night [Heaven’s Feel]」Ⅰ.presage flower","poster_path":"/6nEtmBg07DA5BWjcrmD49rxHsVQ.jpg","video":false,"vote_average":7.6,"title":"Fate/stay night: Heaven''s Feel I. Presage Flower","overview":"Shiro Emiya is a young magus who attends Homurahara Academy in Fuyuki City. One day after cleaning the Archery Dojo in his school, he catches a glimpse of a fight between superhuman beings, and he gets involved in the Holy Grail War, a ritual where magi called Masters fight each other with their Servants to win the Holy Grail. Shiro joins the battle to stop an evildoer from winning the Grail and to save innocent people, but everything goes wrong when a mysterious \"Shadow\" begins to indiscriminately kill people in Fuyuki...","id":283984,"vote_count":116,"release_date":"2017-10-14","adult":false,"popularity":28.633}],"total_pages":22,"total_results":431},"recommendations":{"page":1,"results":[{"adult":false,"backdrop_path":"/1YRtgjLb5xxUb2rsNRnr54Oc0B2.jpg","genre_ids":[16,53],"id":10494,"media_type":"movie","title":"Perfect Blue","original_language":"ja","original_title":"パーフェクトブルー","overview":"A retired pop singer turned actress'' sense of reality is shaken when she is stalked by an obsessed fan and seemingly a ghost of her past.","popularity":20.802,"poster_path":"/79vujbsWEbX4dzffBV541QXN6sf.jpg","release_date":"1997-07-25","video":false,"vote_average":8.249,"vote_count":1326},{"adult":false,"backdrop_path":"/q5HZvtyqG8Vz39Ee9uTQbLeEml.jpg","genre_ids":[16,18],"id":378064,"media_type":"movie","title":"A Silent Voice: The Movie","original_language":"ja","original_title":"映画 聲の形","overview":"Shouya Ishida starts bullying the new girl in class, Shouko Nishimiya, because she is deaf. But as the teasing continues, the rest of the class starts to turn on Shouya for his lack of compassion. When they leave elementary school, Shouko and Shouya do not speak to each other again... until an older, wiser Shouya, tormented by his past behaviour, decides he must see Shouko once more. He wants to atone for his sins, but is it already too late...?","popularity":78.344,"poster_path":"/tuFaWiqX0TXoWu7DGNcmX3UW7sT.jpg","release_date":"2016-09-17","video":false,"vote_average":8.419,"vote_count":2385},{"adult":false,"backdrop_path":"/2lBOQK06tltt8SQaswgb8d657Mv.jpg","genre_ids":[10752,18,28,53],"id":530915,"media_type":"movie","title":"1917","original_language":"en","original_title":"1917","overview":"At the height of the First World War, two young British soldiers must cross enemy territory and deliver a message that will stop a deadly attack on hundreds of soldiers.","popularity":38.627,"poster_path":"/iZf0KyrE25z1sage4SYFLCCrMi9.jpg","release_date":"2019-12-25","video":false,"vote_average":7.95,"vote_count":8278},{"adult":false,"backdrop_path":"/Ab8mkHmkYADjU7wQiOkia9BzGvS.jpg","genre_ids":[16,10751,14],"id":129,"media_type":"movie","title":"Spirited Away","original_language":"ja","original_title":"千と千尋の神隠し","overview":"A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.","popularity":66.718,"poster_path":"/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg","release_date":"2001-07-20","video":false,"vote_average":8.532,"vote_count":11445},{"adult":false,"backdrop_path":"/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg","genre_ids":[12,878,28],"id":299534,"media_type":"movie","title":"Avengers: Endgame","original_language":"en","original_title":"Avengers: Endgame","overview":"After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos'' actions and restore order to the universe once and for all, no matter what consequences may be in store.","popularity":151.6,"poster_path":"/or06FN3Dka5tukK1e9sl16pB3iy.jpg","release_date":"2019-04-24","video":false,"vote_average":8.269,"vote_count":18336},{"adult":false,"backdrop_path":"/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg","genre_ids":[35,53,18],"id":496243,"media_type":"movie","title":"Parasite","original_language":"ko","original_title":"기생충","overview":"All unemployed, Ki-taek''s family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.","popularity":109.31,"poster_path":"/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg","release_date":"2019-05-30","video":false,"vote_average":8.518,"vote_count":11530}],"total_pages":1,"total_results":6},"translations":{"translations":[{"iso_3166_1":"DE","iso_639_1":"de","name":"Deutsch","english_name":"German","data":{"homepage":"","overview":"Mizore ist im letzten Jahr der Highschool und muss sich entscheiden, wie ihr weiterer Lebensweg aussehen soll. Seit der ersten Klasse hat sie sich immer an ihre Mitschülerin Nozomi gehalten, die sie auch dazu bewegt hat, dem Musikklub der Schule beizutreten. Gemeinsam studieren sie dort für einen Musikwettbewerb das Musikstück \"Liz und der Blaue Vogel\" ein, das auf einer Märchenvorlage beruht. Während der Proben erkennen die Freundinnen, dass sie nicht nur ihr Talent, sondern auch ihre Freundschaft unter Beweis stellen müssen und das Erwachsenwerden auch eine emotionale Reise ist ...","runtime":90,"tagline":"","title":"Liz und der blaue Vogel"}},{"iso_3166_1":"GR","iso_639_1":"el","name":"ελληνικά","english_name":"Greek","data":{"homepage":"","overview":"","runtime":0,"tagline":"","title":"Liz and the Blue Bird"}},{"iso_3166_1":"US","iso_639_1":"en","name":"English","english_name":"English","data":{"homepage":"http://liz-bluebird.com","overview":"Two girls grow closer as they practice for their last duet before graduating, a piece called \"Liz And The Blue Bird\".","runtime":90,"tagline":"The truth will break your heart","title":"Liz and the Blue Bird"}},{"iso_3166_1":"ES","iso_639_1":"es","name":"Español","english_name":"Spanish","data":{"homepage":"","overview":"Mizore, una chica callada y reservada que toca el oboe, y Nozomi, una chica popular y amigable que toca la flauta, son dos buenas amigas que forman parte de la banda sinfónica del Instituto Kitauji, que un día decide tocar Liz y el pájaro azul, una canción inspirada en un cuento de hadas sobre la relación entre una niña y un pájaro.  Inmersas en la historia de dicho cuento de hadas, Mizore y Nozomi comienzan a darse cuenta de que tal vez no exista la posibilidad de estar juntas para siempre.","runtime":90,"tagline":"","title":"Liz to Aoi Tori"}},{"iso_3166_1":"MX","iso_639_1":"es","name":"Español","english_name":"Spanish","data":{"homepage":"","overview":"","runtime":0,"tagline":"","title":"Liz to Aoi Tori"}},{"iso_3166_1":"FR","iso_639_1":"fr","name":"Français","english_name":"French","data":{"homepage":"","overview":"Nozomi est une jeune femme extravertie et très populaire, doublée d’une talentueuse flutiste. Mizore, plus discrète et timide, joue du hautbois. Mizore, se sent très proche et dépendante de Nozomi, qu’elle affectionne et admire. Elle craint que la fin de leur dernière année de lycée soit aussi la fin de leur histoire compliquée, entre rivalité musicale et désir platonique. Les 2 amies se préparent à jouer en duo pour la compétition musicale du lycée Kita Uji. Quand leur orchestre commence à travailler sur les musiques de Liz und ein Blauer Vogel (Liz et l’Oiseau Bleu), NOZOMI et MIZORE croient voir dans cette oeuvre bucolique le reflet de leur histoire d’adolescentes. La réalité rejoindra-t-elle le conte ?","runtime":89,"tagline":"La vérité va briser votre coeur","title":"Liz et l''oiseau bleu"}},{"iso_3166_1":"IL","iso_639_1":"he","name":"עִבְרִית","english_name":"Hebrew","data":{"homepage":"","overview":"סרט המגולל את סיפורן של מיזורה ונוזומי מהסדרה \"צליל! אופוניום\" בשנתן האחרונה בתיכון. \"ליז והציפור הכחולה\" הוא ספר ילדים. על בסיס אותו ספר הולחנה יצירה, אותה תזמורת קיטאוג''י הולכת לנגן בתחרות הקרובה. שני כלים מרכזיים ביצירה הם האבוב והחליל, הכלים עליהם מנגנות מיזורה ונוזומי בהתאמה. כשאר המצב בין השתיים נהיה קצת לא ברור ואף מדרדר, דבר זה משפיע על נגינתן. האם הן יצליחו להתגבר על הקשיים, ולמצוא דרך להתמודד עם הפרידה הבלתי נמנעת?","runtime":0,"tagline":"","title":"ליז והציפור הכחולה"}},{"iso_3166_1":"IT","iso_639_1":"it","name":"Italiano","english_name":"Italian","data":{"homepage":"","overview":"Mizore e Nozomi sono due amiche con personalità differenti; la prima è infatti estremamente introversa, mentre la seconda è popolare e benvoluta da tutti. Le due ragazze, che suonano rispettivamente un oboe e un flauto, si trovano in seguito a dover duettare un brano intitolato Liz e l''uccellino azzurro, che presenta numerosi punti in comune con il loro rapporto d''amicizia.","runtime":89,"tagline":"","title":"Liz and the Blue Bird"}},{"iso_3166_1":"JP","iso_639_1":"ja","name":"日本語","english_name":"Japanese","data":{"homepage":"","overview":"北宇治高等学校吹奏楽部所属の鎧塚みぞれと傘木希美は、それぞれオーボエとフルートを担当する親友同士。高校3年生の二人にとって最後の出場となるコンクールで選ばれた自由曲「リズと青い鳥」には、オーボエとフルート掛け合いのソロパートがあった。希美はその曲が自分たちのようだと無邪気に話していたが……。  『映画　「聲の形」』などの山田尚子が監督を務め、武田綾乃の青春小説「響け！　ユーフォニアム　北宇治高校吹奏学部、波乱の第二楽章」をアニメーション化。高校最後の年を迎えた2人の少女が過ごす日々を映し出す。山田監督作『けいおん』シリーズや『映画　「聲の形」』でも組んだ吉田玲子が脚本を、テレビアニメ「氷菓」や『Free!』シリーズなどを手掛けてきた京都アニメーションが、アニメーション制作を担当。","runtime":90,"tagline":"ずっとずっと、一緒だと思っていた。","title":"リズと青い鳥"}},{"iso_3166_1":"KR","iso_639_1":"ko","name":"한국어/조선말","english_name":"Korean","data":{"homepage":"","overview":"“너에겐 날개가 있고, 끝없이 펼쳐진 하늘도 있어”  늘 혼자였던 ‘리즈’ 앞에 어떤 소녀가 나타났어.  두 사람은 둘도 없는 친구가 되지만, 결국 헤어졌지.  왜냐면 그 소녀는 사실 ‘파랑새’였거든.  “이 동화, 꼭 우리 얘기 같지 않니?”  외톨이 ‘미조레’에게 다가와 친구가 되어준 ‘노조미’,  평생 단짝일 줄 알았던 둘은 어느새 고3 마지막 콩쿠르 합주곡 [리즈와 파랑새]를 준비한다.  머지않은 졸업이 두렵기만 한 미조레에게  노조미는 ‘동화는 언제나 해피엔딩!’이라며 더 활짝 웃어 보이는데…  이들의 마지막 연주는 아름답게 울려 퍼질 수 있을까?","runtime":0,"tagline":"외톨이 ‘미조레’와 그녀에게 유일하게 다가와준 ‘노조미’, 단짝이 된 두 소녀가 고등학교 마지막 콩쿠르곡을 함께 준비하며 겪게 되는 우정과 성장을 담은 아름다운 감성 애니메이션","title":"리즈와 파랑새"}},{"iso_3166_1":"NL","iso_639_1":"nl","name":"Nederlands","english_name":"Dutch","data":{"homepage":"","overview":"Mizore en Nozomi zijn beste vrienden, die bezig zijn aan hun laatste schooljaar. Beide zijn ze bezeten van de brassband club van hun school. Met Mizore op de oboe en Nozomi op de fluit, brengen ze hun dagen door in geluk, totdat de club liedjes begint te oefenen geïnspireerd op het sprookje van ''Liz and the Blue Bird''.","runtime":90,"tagline":"","title":"Rizu to Aoi Tori"}},{"iso_3166_1":"BR","iso_639_1":"pt","name":"Português","english_name":"Portuguese","data":{"homepage":"","overview":"A amizade de Mizore Yoroizuka e Nozomi Kasaki começa a mudar quando as duas são introduzidas ao conto de fadas \"Liz e o Pássaro Azul\". Apesar de terem personalidades bastantes distintas, as duas passam a maior parte do tempo juntas e possuem laços muito estreitos, fortalecidos pelo tempo que compartilham treinando para a banda da escola, da qual as duas são integrantes. No entanto, a imersão na trama do conto levará as duas a refletirem sobre os motivos dessa amizade.","runtime":0,"tagline":"","title":"Liz e o Pássaro Azul"}},{"iso_3166_1":"RU","iso_639_1":"ru","name":"Pусский","english_name":"Russian","data":{"homepage":"","overview":"Мизорэ Йоройзука и Нозоми Касаки — две лучшие подруги, учатся на последнем году старшей школы и обе состоят в клубе школьного духового оркестра. Тихая и застенчивая Мизорэ играет на гобое, а жизнерадостная Нозоми — на флейте. Они счастливо проводят свои дни в старшей школе, пока однажды клуб не начинает репетировать музыку, вдохновлённую сказкой «Лиз и синяя птица». Флейта и гобой изображают Лиз и Девушку, которые в конце обязательно расстаются. Погрузившись в эту удивительную историю, Мизорэ и Нозоми начинают осознавать, что сами не смогут быть вместе всегда. Ведь близится конец учебного года, это последний концерт школьного оркестра, и страх Мизорэ потерять подругу после выпуска серьёзно сказывается на качестве её игры.","runtime":0,"tagline":"","title":"Лиз и синяя птица"}},{"iso_3166_1":"UA","iso_639_1":"uk","name":"Український","english_name":"Ukrainian","data":{"homepage":"","overview":"Повністю самостійний спін-оф до серіалу Hibike! Euphonium про двох випускниць школи Кітауджі, які намагаються знайти свою роль у дорослому світі, до якого вони потраплять вже скоро. Уся дія фільму відбувається в школі, та у світі з книги, по якій їх шкільний оркестр готується робити виступ.","runtime":0,"tagline":"","title":"Ліза та блакитна пташка"}},{"iso_3166_1":"CN","iso_639_1":"zh","name":"普通话","english_name":"Mandarin","data":{"homepage":"","overview":"就读北宇治高中的铠塚霙，在管乐团中负责吹奏双簧管；伞木希美 则负责吹奏长笛。国中时，希美主动对孤单的霙搭话，从那刻起霙就将希美视为自己的全世界。霙现在每天都感到很幸福，因为有希美在身边陪伴她，但同时也害怕希美是否会再次消失在自己面前……身为高三生的两人，即将参加最后一次的音乐竞赛会，自选曲是〈莉兹与青鸟〉，这是一首以童话为蓝本所创作的曲子，为双簧管和长笛共演的独奏曲。「霙是莉兹，希美是青鸟」两人一边将自己的情感投射于童话故事中，一边练习曲子度过不安焦躁的每一天。总是不太契合的齿轮，为了寻求相合的瞬间，而不停地转动著……究竟霙是否能对希美坦露自己真正的烦恼呢？","runtime":90,"tagline":"","title":"莉兹与青鸟"}},{"iso_3166_1":"TW","iso_639_1":"zh","name":"普通话","english_name":"Mandarin","data":{"homepage":"","overview":"就讀北宇治高中的鎧塚霙（種崎敦美 配音），在管樂團中負責吹奏雙簧管；傘木希美（東山奈央 配音）則負責吹奏長笛。國中時，希美主動對孤單的霙搭話，從那刻起霙就將希美視為自己的全世界。霙現在每天都感到很幸福，因為有希美在身邊陪伴她，但同時也害怕希美是否會再次消失在自己面前……\r 　　身為高三生的兩人，即將參加最後一次的音樂競賽會，自選曲是〈莉茲與青鳥〉，這是一首以童話為藍本所創作的曲子，為雙簧管和長笛共演的獨奏曲。「霙是莉茲，希美是青鳥」兩人一邊將自己的情感投射於童話故事中，一邊練習曲子度過不安焦躁的每一天。總是不太契合的齒輪，為了尋求相合的瞬間，而不停地轉動著……究竟霙是否能對希美坦露自己真正的煩惱呢？","runtime":0,"tagline":"","title":"吹響吧！上低音號～莉茲與青鳥～"}}]},"videos":{"results":[{"id":"5ad5fec0c3a3680c12016dec","iso_639_1":"en","iso_3166_1":"US","key":"LV4AtEhT_Yc","name":"『リズと青い鳥』特報","site":"YouTube","size":720,"type":"Teaser"},{"id":"5ad5fee5c3a3680c0f017e75","iso_639_1":"en","iso_3166_1":"US","key":"hBkdgCvZPX0","name":"『リズと青い鳥』特報第2弾","site":"YouTube","size":720,"type":"Teaser"},{"id":"5ad5feed9251415dd2016b36","iso_639_1":"en","iso_3166_1":"US","key":"MBDaON4IPnc","name":"『リズと青い鳥』本予告 60秒ver.","site":"YouTube","size":720,"type":"Trailer"},{"id":"5adb1097c3a36803fa008632","iso_639_1":"en","iso_3166_1":"US","key":"lQxwNaoFdQQ","name":"『リズと青い鳥』ロングPV","site":"YouTube","size":720,"type":"Trailer"},{"id":"5be0cde2c3a36823e9000168","iso_639_1":"en","iso_3166_1":"US","key":"yyysLf1FkvE","name":"Liz and the Blue Bird | Official US Trailer","site":"YouTube","size":1080,"type":"Trailer"},{"id":"5be0cdf0c3a36823e9000175","iso_639_1":"en","iso_3166_1":"US","key":"OOtLT6aKOL0","name":"Liz and the Blue Bird | Official US Trailer 2","site":"YouTube","size":1080,"type":"Trailer"}]}}'
+        curl_info:
+            url: 'http://api.themoviedb.org/3/movie/482150?api_key=255946d78706eda1da6dc4f3a2e217e4&append_to_response=alternative_titles%2Cexternal_ids%2Cchanges%2Ccredits%2Cimages%2Ckeywords%2Clists%2Crelease_dates%2Creviews%2Csimilar%2Crecommendations%2Ctranslations%2Cvideos'
+            content_type: application/json;charset=utf-8
+            http_code: 200
+            header_size: 853
+            request_size: 374
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.278771
+            namelookup_time: 0.001634
+            connect_time: 0.008727
+            pretransfer_time: 0.008839
+            size_upload: !!float 0
+            size_download: !!float 56766
+            speed_download: !!float 203629
+            speed_upload: !!float 0
+            download_content_length: !!float 56766
+            upload_content_length: !!float 0
+            starttransfer_time: 0.263745
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 204.246.191.56
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 192.168.1.144
+            local_port: 34068
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 8727
+            namelookup_time_us: 1634
+            pretransfer_time_us: 8839
+            redirect_time_us: 0
+            starttransfer_time_us: 263745
+            total_time_us: 278771
+-
+    request:
+        method: GET
+        url: 'https://kitsu.io/api/edge/anime/13618/mappings?filter%5BexternalSite%5D=thetvdb/series&page%5Blimit%5D=1&'
+        headers:
+            Host: kitsu.io
+            Accept-Encoding: ''
+            User-Agent: GuzzleHttp/7
+            Content-Type: application/json
+            Accept: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 18 Jun 2021 18:34:05 GMT'
+            Content-Type: application/vnd.api+json
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            etag: 'W/"e17167157d564ced8fe74f01faf57614"'
+            cache-control: 'max-age=0, private, must-revalidate'
+            x-request-id: 4ccd1018-f791-465a-8e46-7b6eba471f17
+            x-runtime: '0.020043'
+            vary: Origin
+            CF-Cache-Status: DYNAMIC
+            cf-request-id: 0ac1ffe4810000eb653b147000000001
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=cKydejh0PogdpNi8YbeVpCVIfyg69vQoewdBgUlIEoaDSrH4gKQT4boeAaZfqlXW4TCBYn8%2FPEyIltxZ2XyiYiWqkWivHz816EG8qQBvqNGI9FkrQng%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"report_to":"cf-nel","max_age":604800}'
+            Strict-Transport-Security: 'max-age=31536000; preload'
+            Server: cloudflare
+            CF-RAY: 66169c1a6abbeb65-LAX
+            alt-svc: 'h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400'
+        body: '{"data":[],"meta":{"count":0},"links":{"first":"https://kitsu.io/api/edge/anime/13618/mappings?filter%5BexternalSite%5D=thetvdb%2Fseries&page%5Blimit%5D=1&page%5Boffset%5D=0","last":"https://kitsu.io/api/edge/anime/13618/mappings?filter%5BexternalSite%5D=thetvdb%2Fseries&page%5Blimit%5D=1&page%5Boffset%5D=0"}}'
+        curl_info:
+            url: 'https://kitsu.io/api/edge/anime/13618/mappings?filter%5BexternalSite%5D=thetvdb/series&page%5Blimit%5D=1&'
+            content_type: application/vnd.api+json
+            http_code: 200
+            header_size: 1210
+            request_size: 180
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.173679
+            namelookup_time: 0.001427
+            connect_time: 0.032518
+            pretransfer_time: 0.080446
+            size_upload: !!float 0
+            size_download: !!float 311
+            speed_download: !!float 1790
+            speed_upload: !!float 0
+            download_content_length: !!float -1
+            upload_content_length: !!float 0
+            starttransfer_time: 0.173532
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 104.21.58.52
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 192.168.1.144
+            local_port: 38846
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 80390
+            connect_time_us: 32518
+            namelookup_time_us: 1427
+            pretransfer_time_us: 80446
+            redirect_time_us: 0
+            starttransfer_time_us: 173532
+            total_time_us: 173679
+-
+    request:
+        method: GET
+        url: 'http://api.themoviedb.org/3/find/tt7089878?api_key=255946d78706eda1da6dc4f3a2e217e4&external_source=imdb_id'
+        headers:
+            Host: api.themoviedb.org
+            Accept-Encoding: ''
+            Accept: 'application/json; charset=utf-8'
+            User-Agent: 'php-tmdb/symfony/4.0.0 php-tmdb/api/4.0.0'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Content-Type: application/json;charset=utf-8
+            Content-Length: '580'
+            Connection: keep-alive
+            Date: 'Fri, 18 Jun 2021 18:34:06 GMT'
+            Server: openresty
+            Access-Control-Allow-Origin: '*'
+            Access-Control-Allow-Methods: 'GET, HEAD, POST, PUT, DELETE, OPTIONS'
+            Access-Control-Expose-Headers: 'ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After, Content-Length, Content-Range'
+            Cache-Control: 'public, max-age=28800'
+            X-Memc: HIT
+            X-Memc-Key: d4ab16cc63390b7633430ec20e20f6e32a8614ce
+            X-Memc-Age: '7288'
+            X-Memc-Expires: '14312'
+            ETag: 'W/"8abe3e1ed201e785e1dc02735f0e9bcc"'
+            Vary: 'Accept-Encoding,Accept-Encoding'
+            X-Cache: 'Miss from cloudfront'
+            Via: '1.1 1bfde73e7d02732154f58c7e03609d09.cloudfront.net (CloudFront)'
+            X-Amz-Cf-Pop: HIO50-C2
+            X-Amz-Cf-Id: iHOWa1somTKxwhBJY0bIgzKbpbJGMX40prMgfJb5hUmDHC-maR0aUA==
+        body: '{"movie_results":[{"overview":"Two girls grow closer as they practice for their last duet before graduating, a piece called \"Liz And The Blue Bird\".","release_date":"2018-04-21","id":482150,"adult":false,"backdrop_path":"/mG3CYBXgCPi0yYHSygKNtqGpEkd.jpg","genre_ids":[16,18,10402],"vote_count":53,"original_language":"ja","original_title":"リズと青い鳥","poster_path":"/7xRIkqWJy4cNpUxPo5aZ24O0Tyx.jpg","title":"Liz and the Blue Bird","video":false,"vote_average":7.0,"popularity":9.644}],"person_results":[],"tv_results":[],"tv_episode_results":[],"tv_season_results":[]}'
+        curl_info:
+            url: 'http://api.themoviedb.org/3/find/tt7089878?api_key=255946d78706eda1da6dc4f3a2e217e4&external_source=imdb_id'
+            content_type: application/json;charset=utf-8
+            http_code: 200
+            header_size: 835
+            request_size: 221
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.114972
+            namelookup_time: 0.001873
+            connect_time: 0.008904
+            pretransfer_time: 0.008977
+            size_upload: !!float 0
+            size_download: !!float 580
+            speed_download: !!float 5044
+            speed_upload: !!float 0
+            download_content_length: !!float 580
+            upload_content_length: !!float 0
+            starttransfer_time: 0.114927
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 204.246.191.26
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 192.168.1.144
+            local_port: 59958
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 8904
+            namelookup_time_us: 1873
+            pretransfer_time_us: 8977
+            redirect_time_us: 0
+            starttransfer_time_us: 114927
+            total_time_us: 114972

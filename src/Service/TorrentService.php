@@ -4,7 +4,7 @@ namespace App\Service;
 
 use App\Entity\BaseMedia;
 use App\Entity\Movie;
-use App\Entity\Show;
+use App\Entity\BaseShow;
 use App\Entity\Torrent\BaseTorrent;
 use App\Entity\Torrent\MovieTorrent;
 use App\Entity\Torrent\ShowTorrent;
@@ -217,7 +217,7 @@ class TorrentService
         }
     }
 
-    protected function selectActiveForShow(Show $show, string $language)
+    protected function selectActiveForShow(BaseShow $show, string $language)
     {
         /** @var BaseTorrent[][] $active */
         $active = [];

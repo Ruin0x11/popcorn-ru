@@ -6,6 +6,7 @@ use App\Entity\BaseMedia;
 use App\Entity\Locale\MovieLocale;
 use App\Entity\Locale\ShowLocale;
 use App\Entity\Movie;
+use App\Entity\Anime;
 use App\Repository\Locale\BaseLocaleRepository;
 use App\Request\LocaleRequest;
 use App\Request\PageRequest;
@@ -39,6 +40,11 @@ abstract class MediaRepository extends ServiceEntityRepository
     public function findByImdb(string $imdbId): ?BaseMedia
     {
         return $this->findOneBy(['imdb' => $imdbId]);
+    }
+
+    public function findByKitsu(string $kitsuId): ?Anime
+    {
+        return $this->findOneBy(['kitsu' => $kitsuId]);
     }
 
     /**

@@ -94,7 +94,7 @@ class AnimesController extends AbstractController
      */
     public function anime($id, LocaleRequest $localeParams)
     {
-        $anime = $this->repo->findByImdb($id);
+        $anime = $this->repo->findByKitsu($id);
         if (!$anime) {
             throw new NotFoundHttpException();
         }
@@ -115,7 +115,7 @@ class AnimesController extends AbstractController
      */
     public function torrents($id, LocaleRequest $localeParams)
     {
-        $anime = $this->repo->findByImdb($id);
+        $anime = $this->repo->findByKitsu($id);
         if (!$anime) {
             throw new NotFoundHttpException();
         }

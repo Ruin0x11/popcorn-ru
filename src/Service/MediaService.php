@@ -5,6 +5,7 @@ namespace App\Service;
 use DateTime;
 use App\Entity\BaseMedia;
 use App\Entity\Movie;
+use App\Entity\BaseShow;
 use App\Entity\Show;
 use App\Entity\Anime;
 use Tmdb\Client;
@@ -56,7 +57,7 @@ class MediaService
         $this->trakt = $trakt;
     }
 
-    public function getSeasonEpisodes(Show $show, int $season): array
+    public function getSeasonEpisodes(BaseShow $show, int $season): array
     {
         $search = $this->client->getFindApi()->findBy($show->getImdb(), ['external_source' => 'imdb_id']);
         if (empty($search['tv_results'])) {
@@ -73,7 +74,7 @@ class MediaService
         return $seasonInfo['episodes'];
     }
 
-    public function getEpisodeTranslations(Show $show, int $season, int $episode): array
+    public function getEpisodeTranslations(BaseShow $show, int $season, int $episode): array
     {
         $search = $this->client->getFindApi()->findBy($show->getImdb(), ['external_source' => 'imdb_id']);
         $id = $search['tv_results'][0]['id'];
@@ -202,7 +203,7 @@ class MediaService
             ->search()
             ->get();
 
-        if (count($response) == 1) {
+        if (!empty($response)) {
             return $response[0]['id'];
         }
 
@@ -264,7 +265,7 @@ class MediaService
 
         $imdbId = $anime->getType() == "show"
             ? $this->searchShowByTitle($anime->getTitle())
-            : $this->searchMovieByTitleAndYear($anime->getTitle(), $anime->getYear());
+            : ($anime->getYear() != '' ? $this->searchMovieByTitleAndYear($anime->getTitle(), (int) $anime->getYear()) : null);
         if ($imdbId) {
             $anime->setImdb($imdbId);
         }
@@ -285,6 +286,7 @@ class MediaService
             $movieInfo = $this->movieRepo->load($id);
             $anime->setType("movie")
                   ->setImdb($movieInfo->getImdbId());
+            $this->fillRating($anime, $movieInfo);
         }
         if (!empty($search['tv_results'])) {
             $id = $search['tv_results'][0]['id'];
@@ -304,6 +306,8 @@ class MediaService
             $anime
                 ->setCountry($country ? $country->getIso31661() : '')
                 ->setNetwork($network ? $network->getName() : '');
+
+            $this->fillRating($anime, $showInfo);
         }
 
         return $anime;
@@ -400,7 +404,7 @@ class MediaService
         }
 
         $anime
-            ->setImdb('')
+            ->setImdb("kitsu-" . $kitsu->id) // HACK must be unique
             ->setTvdb('')
             ->setKitsu($kitsu->id)
             ->setTitle($kitsu->attributes->canonicalTitle)
@@ -462,9 +466,9 @@ class MediaService
     private function fillRating(BaseMedia $media, $info): void
     {
         try {
-            if ($media instanceof Movie) {
+            if ($info instanceof TmdbMovie) {
                 $trakt = $this->trakt->get("movies/{$media->getImdb()}/stats");
-            } elseif ($media instanceof Show) {
+            } elseif ($info instanceof TmdbShow) {
                 $trakt = $this->trakt->get("shows/{$media->getImdb()}/stats");
             }
         } catch (\Exception $e) {

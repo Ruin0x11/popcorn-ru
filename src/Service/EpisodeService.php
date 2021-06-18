@@ -3,7 +3,7 @@
 namespace App\Service;
 
 use App\Entity\Episode;
-use App\Entity\Show;
+use App\Entity\BaseShow;
 use App\Entity\Torrent\ShowTorrent;
 use App\Repository\TorrentRepository;
 use Doctrine\ORM\EntityManagerInterface;
@@ -67,11 +67,15 @@ class EpisodeService
         foreach ($torrent->getFiles() as $file) {
             [$s, $e] = $this->getSEFromName($file->getName(), $torrent->getShow());
             if ($s === false) {
+                $this->logger->debug("Failed to parse season/episode", ["filename" =>  $file->getName()]);
                 continue;
             }
 
+            $this->logger->debug("Parsed season/episode", ["filename" => $file->getName(), "season" => $s, "episode" => $e]);
+
             $item = $this->getEpisode($torrent->getShow(), $s, $e);
             if (!$item) {
+                $this->logger->debug("Episode not found in season.", ["showId" => $torrent->getShow()->getId(), "season" => $s, "episode" => $e]);
                 continue;
             }
 
@@ -81,7 +85,7 @@ class EpisodeService
     }
 
     protected $showCache = [];
-    public function getEpisode(Show $show, int $s, int $e): ?Episode
+    public function getEpisode(BaseShow $show, int $s, int $e): ?Episode
     {
         $item = null;
         foreach ($show->getEpisodes() as $episode) {
@@ -147,14 +151,30 @@ class EpisodeService
         return $item;
     }
 
-    protected function getSEFromName($filePathAndName, Show $show)
+    protected function getSEFromName($filePathAndName, BaseShow $show)
     {
         $components = pathinfo($filePathAndName);
         $dir = $components['dirname'];
         $file = $components['filename'];
         $ext = $components['extension'];
+
         if (!in_array(strtolower($ext), ['avi', 'mkv', 'mp4'])) {
             return [false, false];
+        }
+
+        if ($show instanceof Anime) {
+            $anitomy = anitomy_parse($file);
+            $episode = @$anitomy["episode_number"];
+            if ($episode) {
+                $season = 1;
+                if (preg_match('#\b[sS]eason[\s]+(\d+)\b#', $title, $m)) {
+                    $season = (int)$m[1];
+                }
+                if (preg_match('#\bS(\d+)\b#', $title, $m)) {
+                    $season = (int)$m[1];
+                }
+                return [$season, $episode];
+            }
         }
 
         $file = str_replace(["\'", '_', '.'], ["'", ' ', ' '], $file);

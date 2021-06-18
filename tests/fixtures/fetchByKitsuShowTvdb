@@ -1,0 +1,689 @@
+
+-
+    request:
+        method: GET
+        url: 'https://kitsu.io/api/edge/anime/290'
+        headers:
+            Host: kitsu.io
+            Accept-Encoding: ''
+            User-Agent: GuzzleHttp/7
+            Content-Type: application/json
+            Accept: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 18 Jun 2021 18:34:00 GMT'
+            Content-Type: application/vnd.api+json
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            etag: 'W/"53b3b188407a43fd7fbf519654c6ec18"'
+            cache-control: 'max-age=0, private, must-revalidate'
+            x-request-id: 8a0d3981-e550-42e5-a181-48f52f475624
+            x-runtime: '0.015264'
+            vary: Origin
+            CF-Cache-Status: DYNAMIC
+            cf-request-id: 0ac1ffce1a00000ca30bae9000000001
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=XKolDxpLeo9rOL1%2BzN%2FnrN4mZEkx0Fo0o7vS3TVrBy1If6Y9sY6DS%2FhJAR0BsJ41Tv0AwtWjrc1ezdJkeD21NbQUnN5RhUY9TXC2Bf42ddS7zx8tsJc%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"report_to":"cf-nel","max_age":604800}'
+            Strict-Transport-Security: 'max-age=31536000; preload'
+            Server: cloudflare
+            CF-RAY: 66169bf688f80ca3-LAX
+            alt-svc: 'h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400'
+        body: '{"data":{"id":"290","type":"anime","links":{"self":"https://kitsu.io/api/edge/anime/290"},"attributes":{"createdAt":"2013-02-20T16:04:47.201Z","updatedAt":"2021-06-18T00:00:10.323Z","slug":"paranoia-agent","synopsis":"The infamous Shounen Bat (Lil'' Slugger) is terrorizing the residents of Musashino City. Flying around on his rollerblades and beating people down with a golden baseball bat, the assailant seems impossible to catch—much less understand. His first victim, the well-known yet timid character designer Tsukiko Sagi, is suspected of orchestrating the attacks. Believed only by her anthropomorphic pink stuffed animal, Maromi, Tsukiko is just one of Shounen Bat''s many victims.\nAs Shounen Bat continues his relentless assault on the town, detectives Keiichi Ikari and Mitsuhiro Maniwa begin to investigate the identity of the attacker. However, more and more people fall victim to the notorious golden bat, and news of the assailant begins circulating around the town. Paranoia starts to set in as chilling rumors spread amongst adults and children alike.\nWill the two detectives be able to unravel the truth behind Shounen Bat, or will the paranoia get to them first?\n[Written by MAL Rewrite]","description":"The infamous Shounen Bat (Lil'' Slugger) is terrorizing the residents of Musashino City. Flying around on his rollerblades and beating people down with a golden baseball bat, the assailant seems impossible to catch—much less understand. His first victim, the well-known yet timid character designer Tsukiko Sagi, is suspected of orchestrating the attacks. Believed only by her anthropomorphic pink stuffed animal, Maromi, Tsukiko is just one of Shounen Bat''s many victims.\nAs Shounen Bat continues his relentless assault on the town, detectives Keiichi Ikari and Mitsuhiro Maniwa begin to investigate the identity of the attacker. However, more and more people fall victim to the notorious golden bat, and news of the assailant begins circulating around the town. Paranoia starts to set in as chilling rumors spread amongst adults and children alike.\nWill the two detectives be able to unravel the truth behind Shounen Bat, or will the paranoia get to them first?\n[Written by MAL Rewrite]","coverImageTopOffset":379,"titles":{"en":"Paranoia Agent","en_jp":"Mousou Dairinin","en_us":"Paranoia Agent","ja_jp":"妄想代理人"},"canonicalTitle":"Mousou Dairinin","abbreviatedTitles":["Mousou Dairinin"],"averageRating":"77.53","ratingFrequencies":{"2":"78","3":"1","4":"76","5":"1","6":"74","7":"3","8":"276","9":"6","10":"352","11":"12","12":"1078","13":"31","14":"2108","15":"98","16":"2762","17":"136","18":"1578","19":"49","20":"1765"},"userCount":25639,"favoritesCount":485,"startDate":"2004-02-03","endDate":"2004-05-18","nextRelease":null,"popularityRank":410,"ratingRank":1076,"ageRating":"R","ageRatingGuide":"Mild Nudity","subtype":"TV","status":"finished","tba":null,"posterImage":{"tiny":"https://media.kitsu.io/anime/poster_images/290/tiny.jpg?1597697279","small":"https://media.kitsu.io/anime/poster_images/290/small.jpg?1597697279","medium":"https://media.kitsu.io/anime/poster_images/290/medium.jpg?1597697279","large":"https://media.kitsu.io/anime/poster_images/290/large.jpg?1597697279","original":"https://media.kitsu.io/anime/poster_images/290/original.jpg?1597697279","meta":{"dimensions":{"tiny":{"width":110,"height":156},"small":{"width":284,"height":402},"medium":{"width":390,"height":554},"large":{"width":550,"height":780}}}},"coverImage":{"tiny":"https://media.kitsu.io/anime/cover_images/290/tiny.jpg?1597702833","small":"https://media.kitsu.io/anime/cover_images/290/small.jpg?1597702833","large":"https://media.kitsu.io/anime/cover_images/290/large.jpg?1597702833","original":"https://media.kitsu.io/anime/cover_images/290/original.jpg?1597702833","meta":{"dimensions":{"tiny":{"width":840,"height":200},"small":{"width":1680,"height":400},"large":{"width":3360,"height":800}}}},"episodeCount":13,"episodeLength":24,"totalLength":312,"youtubeVideoId":"PzeddeDLouw","showType":"TV","nsfw":false},"relationships":{"genres":{"links":{"self":"https://kitsu.io/api/edge/anime/290/relationships/genres","related":"https://kitsu.io/api/edge/anime/290/genres"}},"categories":{"links":{"self":"https://kitsu.io/api/edge/anime/290/relationships/categories","related":"https://kitsu.io/api/edge/anime/290/categories"}},"castings":{"links":{"self":"https://kitsu.io/api/edge/anime/290/relationships/castings","related":"https://kitsu.io/api/edge/anime/290/castings"}},"installments":{"links":{"self":"https://kitsu.io/api/edge/anime/290/relationships/installments","related":"https://kitsu.io/api/edge/anime/290/installments"}},"mappings":{"links":{"self":"https://kitsu.io/api/edge/anime/290/relationships/mappings","related":"https://kitsu.io/api/edge/anime/290/mappings"}},"reviews":{"links":{"self":"https://kitsu.io/api/edge/anime/290/relationships/reviews","related":"https://kitsu.io/api/edge/anime/290/reviews"}},"mediaRelationships":{"links":{"self":"https://kitsu.io/api/edge/anime/290/relationships/media-relationships","related":"https://kitsu.io/api/edge/anime/290/media-relationships"}},"characters":{"links":{"self":"https://kitsu.io/api/edge/anime/290/relationships/characters","related":"https://kitsu.io/api/edge/anime/290/characters"}},"staff":{"links":{"self":"https://kitsu.io/api/edge/anime/290/relationships/staff","related":"https://kitsu.io/api/edge/anime/290/staff"}},"productions":{"links":{"self":"https://kitsu.io/api/edge/anime/290/relationships/productions","related":"https://kitsu.io/api/edge/anime/290/productions"}},"quotes":{"links":{"self":"https://kitsu.io/api/edge/anime/290/relationships/quotes","related":"https://kitsu.io/api/edge/anime/290/quotes"}},"episodes":{"links":{"self":"https://kitsu.io/api/edge/anime/290/relationships/episodes","related":"https://kitsu.io/api/edge/anime/290/episodes"}},"streamingLinks":{"links":{"self":"https://kitsu.io/api/edge/anime/290/relationships/streaming-links","related":"https://kitsu.io/api/edge/anime/290/streaming-links"}},"animeProductions":{"links":{"self":"https://kitsu.io/api/edge/anime/290/relationships/anime-productions","related":"https://kitsu.io/api/edge/anime/290/anime-productions"}},"animeCharacters":{"links":{"self":"https://kitsu.io/api/edge/anime/290/relationships/anime-characters","related":"https://kitsu.io/api/edge/anime/290/anime-characters"}},"animeStaff":{"links":{"self":"https://kitsu.io/api/edge/anime/290/relationships/anime-staff","related":"https://kitsu.io/api/edge/anime/290/anime-staff"}}}}}'
+        curl_info:
+            url: 'https://kitsu.io/api/edge/anime/290'
+            content_type: application/vnd.api+json
+            http_code: 200
+            header_size: 1214
+            request_size: 110
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.167391
+            namelookup_time: 0.002622
+            connect_time: 0.033445
+            pretransfer_time: 0.079405
+            size_upload: !!float 0
+            size_download: !!float 6561
+            speed_download: !!float 39195
+            speed_upload: !!float 0
+            download_content_length: !!float -1
+            upload_content_length: !!float 0
+            starttransfer_time: 0.16697
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 104.21.58.52
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 192.168.1.144
+            local_port: 38826
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 79325
+            connect_time_us: 33445
+            namelookup_time_us: 2622
+            pretransfer_time_us: 79405
+            redirect_time_us: 0
+            starttransfer_time_us: 166970
+            total_time_us: 167391
+-
+    request:
+        method: GET
+        url: 'https://kitsu.io/api/edge/anime/290/episodes'
+        headers:
+            Host: kitsu.io
+            Accept-Encoding: ''
+            User-Agent: GuzzleHttp/7
+            Content-Type: application/json
+            Accept: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 18 Jun 2021 18:34:00 GMT'
+            Content-Type: application/vnd.api+json
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            etag: 'W/"7deeb55909b31c089928ca31175f9d28"'
+            cache-control: 'max-age=0, private, must-revalidate'
+            x-request-id: b3e64a81-83d1-4ccd-a8b5-99e6d44618bb
+            x-runtime: '0.021079'
+            vary: Origin
+            CF-Cache-Status: DYNAMIC
+            cf-request-id: 0ac1ffced3000005a6c0212000000001
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=eE%2BkH6EEhA0NOdmc3C9VUaZdH%2FozjtcQqWalVgb%2BEt1VXInO9aMcSzdRo%2Fu%2ByxonFHc0bW9H2zlQaBD%2BCTWM%2Biqpf%2Fm6QZp00FU8rlUh5uyyD4w3TmY%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"report_to":"cf-nel","max_age":604800}'
+            Strict-Transport-Security: 'max-age=31536000; preload'
+            Server: cloudflare
+            CF-RAY: 66169bf7baa205a6-LAX
+            alt-svc: 'h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400'
+        body: '{"data":[{"id":"161773","type":"episodes","links":{"self":"https://kitsu.io/api/edge/episodes/161773"},"attributes":{"createdAt":"2014-11-16T20:33:16.444Z","updatedAt":"2018-11-27T20:44:42.560Z","synopsis":"Tsukiko Sagi is a shy character designer who created the extremely successful Maromi, a cute pink dog with eyes as big as Tsukiko''s. However, her company wants another character very soon and Tsukiko is out of ideas. Stressed out from the pressure and the jealously held by her co-workers, Tsukiko becomes depressed and wishes for a miracle. Her wish comes true as she is suddenly attacked with a golden baseball bat! She describes the suspect as a 6th grade boy wearing golden roller blades and a red hat to the detectives, Ikari and Maniwa. However, Ikari doesn''t buy Tsukiko''s story while Akio Kawazu, a sleazy tabloid reporter, tails Tsukiko trying to get a story out of her.","description":"Tsukiko Sagi is a shy character designer who created the extremely successful Maromi, a cute pink dog with eyes as big as Tsukiko''s. However, her company wants another character very soon and Tsukiko is out of ideas. Stressed out from the pressure and the jealously held by her co-workers, Tsukiko becomes depressed and wishes for a miracle. Her wish comes true as she is suddenly attacked with a golden baseball bat! She describes the suspect as a 6th grade boy wearing golden roller blades and a red hat to the detectives, Ikari and Maniwa. However, Ikari doesn''t buy Tsukiko''s story while Akio Kawazu, a sleazy tabloid reporter, tails Tsukiko trying to get a story out of her.","titles":{"en_jp":"Shounen Bat Sanjou","en_us":"Enter Lil'' Slugger","ja_jp":"少年バット参上"},"canonicalTitle":"Enter Lil'' Slugger","seasonNumber":1,"number":1,"relativeNumber":1,"airdate":"2004-02-02","length":24,"thumbnail":{"original":"https://media.kitsu.io/episodes/thumbnails/161773/original.jpg?1416169996","meta":{"dimensions":{}}}},"relationships":{"media":{"links":{"self":"https://kitsu.io/api/edge/episodes/161773/relationships/media","related":"https://kitsu.io/api/edge/episodes/161773/media"}},"videos":{"links":{"self":"https://kitsu.io/api/edge/episodes/161773/relationships/videos","related":"https://kitsu.io/api/edge/episodes/161773/videos"}}}},{"id":"161778","type":"episodes","links":{"self":"https://kitsu.io/api/edge/episodes/161778"},"attributes":{"createdAt":"2014-11-16T20:33:17.690Z","updatedAt":"2018-11-27T20:44:42.560Z","synopsis":"For Yuichi \"Ichi\" Taira, life is good.  He''s is the most popular kid in his school and excels in academics and sports and plans to run for Student Council President.  However, being that he has golden roller blades and wears a red baseball cap, the students think that Yuichi is Lil'' Slugger.  His life is turned upside down and he becomes paranoid.  He immediately suspects his opponent, Shogo \"Usshi\" Ushiyama, a transfer student from the country, spread those rumors.  Yuichi tries to expose Usshi''s misdeeds but they end up backfiring and Usshi ends up being attacked by the real Lil'' Slugger.","description":"For Yuichi \"Ichi\" Taira, life is good.  He''s is the most popular kid in his school and excels in academics and sports and plans to run for Student Council President.  However, being that he has golden roller blades and wears a red baseball cap, the students think that Yuichi is Lil'' Slugger.  His life is turned upside down and he becomes paranoid.  He immediately suspects his opponent, Shogo \"Usshi\" Ushiyama, a transfer student from the country, spread those rumors.  Yuichi tries to expose Usshi''s misdeeds but they end up backfiring and Usshi ends up being attacked by the real Lil'' Slugger.","titles":{"en_jp":"Kin no Kutsu","en_us":"The Golden Shoes","ja_jp":"金の靴"},"canonicalTitle":"The Golden Shoes","seasonNumber":1,"number":2,"relativeNumber":2,"airdate":"2004-02-09","length":24,"thumbnail":{"original":"https://media.kitsu.io/episodes/thumbnails/161778/original.jpg?1416169997","meta":{"dimensions":{}}}},"relationships":{"media":{"links":{"self":"https://kitsu.io/api/edge/episodes/161778/relationships/media","related":"https://kitsu.io/api/edge/episodes/161778/media"}},"videos":{"links":{"self":"https://kitsu.io/api/edge/episodes/161778/relationships/videos","related":"https://kitsu.io/api/edge/episodes/161778/videos"}}}},{"id":"161786","type":"episodes","links":{"self":"https://kitsu.io/api/edge/episodes/161786"},"attributes":{"createdAt":"2014-11-16T20:33:18.631Z","updatedAt":"2018-11-27T20:44:42.560Z","synopsis":"After being attacked by Lil'' Slugger, Yuichi''s name is cleared and he can finally relax.  However, Harumi Chono, Yuichi''s tutor and an assistant at a local university, has problems of her own.  She has another and hedonistic personality named Maria that spends the night as a prostitute.  Whenever Maria takes over, Harumi has no recollection or control of what happened.  However, they manage to live as they are until Harumi receives an offer of marriage from her co-worker at the university, Akihiko Ryu.  Harumi decides to end her life as Maria but Maria won''t take it sitting down.","description":"After being attacked by Lil'' Slugger, Yuichi''s name is cleared and he can finally relax.  However, Harumi Chono, Yuichi''s tutor and an assistant at a local university, has problems of her own.  She has another and hedonistic personality named Maria that spends the night as a prostitute.  Whenever Maria takes over, Harumi has no recollection or control of what happened.  However, they manage to live as they are until Harumi receives an offer of marriage from her co-worker at the university, Akihiko Ryu.  Harumi decides to end her life as Maria but Maria won''t take it sitting down.","titles":{"en_jp":"Double Lip","en_us":"Double Lips","ja_jp":"ダブルリップ"},"canonicalTitle":"Double Lips","seasonNumber":1,"number":3,"relativeNumber":3,"airdate":"2004-02-16","length":24,"thumbnail":{"original":"https://media.kitsu.io/episodes/thumbnails/161786/original.jpg?1416169998","meta":{"dimensions":{}}}},"relationships":{"media":{"links":{"self":"https://kitsu.io/api/edge/episodes/161786/relationships/media","related":"https://kitsu.io/api/edge/episodes/161786/media"}},"videos":{"links":{"self":"https://kitsu.io/api/edge/episodes/161786/relationships/videos","related":"https://kitsu.io/api/edge/episodes/161786/videos"}}}},{"id":"161792","type":"episodes","links":{"self":"https://kitsu.io/api/edge/episodes/161792"},"attributes":{"createdAt":"2014-11-16T20:33:19.860Z","updatedAt":"2018-11-27T20:44:42.560Z","synopsis":"After these strings of attacks by Lil'' Slugger, it turns out that each victim has some sort of relationship with previous victim.  Masami Hirukawa is a police officer in the same district where the Lil'' Slugger attacks have been happening.  Despite calling himself a family man, he accepts bribes in the form of cash and prostitutes (apparently, Maria was one of his favorites) from the local yakuza group.  Using the money, he builds a house for his family.  However, Masami becomes too greedy and the yakuza sends Makabe to get the money back with interest.  Masami ends up stealing money from people but always ends up short of Makabe''s demands who just adds more to the list.  In a drunken slur, Masami wants this all to end and ends up being clocked by Lil'' Slugger and goes down, or so he thinks.","description":"After these strings of attacks by Lil'' Slugger, it turns out that each victim has some sort of relationship with previous victim.  Masami Hirukawa is a police officer in the same district where the Lil'' Slugger attacks have been happening.  Despite calling himself a family man, he accepts bribes in the form of cash and prostitutes (apparently, Maria was one of his favorites) from the local yakuza group.  Using the money, he builds a house for his family.  However, Masami becomes too greedy and the yakuza sends Makabe to get the money back with interest.  Masami ends up stealing money from people but always ends up short of Makabe''s demands who just adds more to the list.  In a drunken slur, Masami wants this all to end and ends up being clocked by Lil'' Slugger and goes down, or so he thinks.","titles":{"en_jp":"Otoko Michi","en_us":"A Man''s Path","ja_jp":"男道"},"canonicalTitle":"A Man''s Path","seasonNumber":1,"number":4,"relativeNumber":4,"airdate":"2004-02-23","length":24,"thumbnail":{"original":"https://media.kitsu.io/episodes/thumbnails/161792/original.jpg?1416169999","meta":{"dimensions":{}}}},"relationships":{"media":{"links":{"self":"https://kitsu.io/api/edge/episodes/161792/relationships/media","related":"https://kitsu.io/api/edge/episodes/161792/media"}},"videos":{"links":{"self":"https://kitsu.io/api/edge/episodes/161792/relationships/videos","related":"https://kitsu.io/api/edge/episodes/161792/videos"}}}},{"id":"161799","type":"episodes","links":{"self":"https://kitsu.io/api/edge/episodes/161799"},"attributes":{"createdAt":"2014-11-16T20:33:21.438Z","updatedAt":"2018-11-27T20:44:42.560Z","synopsis":"Ikari and Maniwa interrogate Lil'' Slugger who turns out to be in the eight grade.  Still, he admits to the attacks.  However, he confuses his realities and believes that the world around him is a medieval-style RPG while his journey is to defeat the evil Gouma who posses other people to fight.  Ikari and Maniwa follows Lil'' Slugger through his \"journey\" and see that it does coincide with all of the attacks -- all except for Tsukiko Sagi.  However, Lil'' Slugger points the detectives to where the old lady is who may posses the truth.","description":"Ikari and Maniwa interrogate Lil'' Slugger who turns out to be in the eight grade.  Still, he admits to the attacks.  However, he confuses his realities and believes that the world around him is a medieval-style RPG while his journey is to defeat the evil Gouma who posses other people to fight.  Ikari and Maniwa follows Lil'' Slugger through his \"journey\" and see that it does coincide with all of the attacks -- all except for Tsukiko Sagi.  However, Lil'' Slugger points the detectives to where the old lady is who may posses the truth.","titles":{"en_jp":"Seisenshi","en_us":"The Holy Warrior","ja_jp":"聖戦士"},"canonicalTitle":"The Holy Warrior","seasonNumber":1,"number":5,"relativeNumber":5,"airdate":"2004-03-08","length":24,"thumbnail":{"original":"https://media.kitsu.io/episodes/thumbnails/161799/original.jpg?1416170001","meta":{"dimensions":{}}}},"relationships":{"media":{"links":{"self":"https://kitsu.io/api/edge/episodes/161799/relationships/media","related":"https://kitsu.io/api/edge/episodes/161799/media"}},"videos":{"links":{"self":"https://kitsu.io/api/edge/episodes/161799/relationships/videos","related":"https://kitsu.io/api/edge/episodes/161799/videos"}}}},{"id":"161809","type":"episodes","links":{"self":"https://kitsu.io/api/edge/episodes/161809"},"attributes":{"createdAt":"2014-11-16T20:33:22.277Z","updatedAt":"2018-11-27T20:44:42.560Z","synopsis":"Ikari and Maniwa find the old homeless woman while a typhoon is about to make landfall.  There they discover something from the old women that that turns the whole case around.  Meanwhile, Taeko is reminiscing over her life.  We learn that she was poor when growing up and was really attached to her father, Masami Hirukawa (the police officer from A Man''s Path).  However, not that surprisingly but quite disturbing, Taeko discovers a dirty little secret while leaving her father a present.  This explains why she is wandering around the city despite the typhoon warnings.  At the police station, Ikari and Maniwa are questioning Tsukiko again and try to make her tell what realy happened that night.  As for poor Taeko, she is about to throw herself into a torrent of rushing water when she sees herself in the torrent.  She realizes that it was the old lady who gets swept down stream.  Taeko collapses and weeps as her father desperately calls her.  Suddenly, Lil'' Slugger appears and hits Taeko while Tsukiko collapses and falls to the floor.","description":"Ikari and Maniwa find the old homeless woman while a typhoon is about to make landfall.  There they discover something from the old women that that turns the whole case around.  Meanwhile, Taeko is reminiscing over her life.  We learn that she was poor when growing up and was really attached to her father, Masami Hirukawa (the police officer from A Man''s Path).  However, not that surprisingly but quite disturbing, Taeko discovers a dirty little secret while leaving her father a present.  This explains why she is wandering around the city despite the typhoon warnings.  At the police station, Ikari and Maniwa are questioning Tsukiko again and try to make her tell what realy happened that night.  As for poor Taeko, she is about to throw herself into a torrent of rushing water when she sees herself in the torrent.  She realizes that it was the old lady who gets swept down stream.  Taeko collapses and weeps as her father desperately calls her.  Suddenly, Lil'' Slugger appears and hits Taeko while Tsukiko collapses and falls to the floor.","titles":{"en_jp":"Chokugeki no Fuan","en_us":"Fear of a Direct Hit","ja_jp":"直撃の不安"},"canonicalTitle":"Fear of a Direct Hit","seasonNumber":1,"number":6,"relativeNumber":6,"airdate":"2004-03-15","length":24,"thumbnail":{"original":"https://media.kitsu.io/episodes/thumbnails/161809/original.jpg?1416170002","meta":{"dimensions":{}}}},"relationships":{"media":{"links":{"self":"https://kitsu.io/api/edge/episodes/161809/relationships/media","related":"https://kitsu.io/api/edge/episodes/161809/media"}},"videos":{"links":{"self":"https://kitsu.io/api/edge/episodes/161809/relationships/videos","related":"https://kitsu.io/api/edge/episodes/161809/videos"}}}},{"id":"161820","type":"episodes","links":{"self":"https://kitsu.io/api/edge/episodes/161820"},"attributes":{"createdAt":"2014-11-16T20:33:23.410Z","updatedAt":"2018-11-27T20:44:42.560Z","synopsis":"Ikari and Maniwa are receive word of Taeko''s attack from the previous episode.  Masami is devastated by Taeko''s amnesia as Ikari looks from the sideline since it happened in a different district.  Ikari and Maniwa interrogate Kozuka again to make him confess that he is merely a copycat.  They manage to get out of him that he only attacked Usshi and Hirukawa but Ikari tries to get a full confession. However, Maniwa soon discovers another connection between the victims; they all were under some kind of stress and were relieved after the attack.  But, he soon figures out that Taeko was also emotionally stressed and finds out that Taeko was attacked about the same time that Tsukiko fainted, meaning that Lil'' Slugger can be nowhere and everywhere and that he feeds on paranoia. He tells Ikari but gives him an application for leave and tells him to take a break. However, Maniwa still pushes and soon realizes that the next target is Kozuka.","description":"Ikari and Maniwa are receive word of Taeko''s attack from the previous episode.  Masami is devastated by Taeko''s amnesia as Ikari looks from the sideline since it happened in a different district.  Ikari and Maniwa interrogate Kozuka again to make him confess that he is merely a copycat.  They manage to get out of him that he only attacked Usshi and Hirukawa but Ikari tries to get a full confession. However, Maniwa soon discovers another connection between the victims; they all were under some kind of stress and were relieved after the attack.  But, he soon figures out that Taeko was also emotionally stressed and finds out that Taeko was attacked about the same time that Tsukiko fainted, meaning that Lil'' Slugger can be nowhere and everywhere and that he feeds on paranoia. He tells Ikari but gives him an application for leave and tells him to take a break. However, Maniwa still pushes and soon realizes that the next target is Kozuka.","titles":{"en_jp":"MHz","en_us":"MHz","ja_jp":"MHz"},"canonicalTitle":"MHz","seasonNumber":1,"number":7,"relativeNumber":7,"airdate":"2004-03-22","length":24,"thumbnail":{"original":"https://media.kitsu.io/episodes/thumbnails/161820/original.jpg?1416170003","meta":{"dimensions":{}}}},"relationships":{"media":{"links":{"self":"https://kitsu.io/api/edge/episodes/161820/relationships/media","related":"https://kitsu.io/api/edge/episodes/161820/media"}},"videos":{"links":{"self":"https://kitsu.io/api/edge/episodes/161820/relationships/videos","related":"https://kitsu.io/api/edge/episodes/161820/videos"}}}},{"id":"161833","type":"episodes","links":{"self":"https://kitsu.io/api/edge/episodes/161833"},"attributes":{"createdAt":"2014-11-16T20:33:24.863Z","updatedAt":"2018-11-27T20:44:42.560Z","synopsis":"Fuyubachi (Winter Bee), an old man, Zebra, a young man, and Kamome (Seagull), a cute 11-year old girl, seek different ways of committing suicide.  After a big adventure going from Tokyo to the countryside, they encounter Lil'' Slugger at a hot spring.","description":"Fuyubachi (Winter Bee), an old man, Zebra, a young man, and Kamome (Seagull), a cute 11-year old girl, seek different ways of committing suicide.  After a big adventure going from Tokyo to the countryside, they encounter Lil'' Slugger at a hot spring.","titles":{"en_jp":"Akarui Kazoku Keikaku","en_us":"Happy Family Planning","ja_jp":"明るい家族計画"},"canonicalTitle":"Happy Family Planning","seasonNumber":1,"number":8,"relativeNumber":8,"airdate":"2004-04-05","length":24,"thumbnail":{"original":"https://media.kitsu.io/episodes/thumbnails/161833/original.jpg?1416170004","meta":{"dimensions":{}}}},"relationships":{"media":{"links":{"self":"https://kitsu.io/api/edge/episodes/161833/relationships/media","related":"https://kitsu.io/api/edge/episodes/161833/media"}},"videos":{"links":{"self":"https://kitsu.io/api/edge/episodes/161833/relationships/videos","related":"https://kitsu.io/api/edge/episodes/161833/videos"}}}},{"id":"161848","type":"episodes","links":{"self":"https://kitsu.io/api/edge/episodes/161848"},"attributes":{"createdAt":"2014-11-16T20:33:27.485Z","updatedAt":"2018-11-27T20:44:42.560Z","synopsis":"After hearing of the incident in the previous episode, several women share rumors related to Lil'' Slugger, most of which is farfetched. However, one of the women is having a hard time understanding the truth behind the rumors and impressing the other women. Returning to her apartment, she discovers that her husband has been attacked by Lil'' Slugger.  She tries to get the story out of him as he begs her to call an ambulance and slowly dies.\n\nEach of the ten Lil'' Slugger rumors is a mini-story. In chronological order, they are named IQ, LDK, EBM, OH, HR, TKO, UMA, SOS, HH. The framing episode (ETC) comprises the tenth and final mini-story.","description":"After hearing of the incident in the previous episode, several women share rumors related to Lil'' Slugger, most of which is farfetched. However, one of the women is having a hard time understanding the truth behind the rumors and impressing the other women. Returning to her apartment, she discovers that her husband has been attacked by Lil'' Slugger.  She tries to get the story out of him as he begs her to call an ambulance and slowly dies.\n\nEach of the ten Lil'' Slugger rumors is a mini-story. In chronological order, they are named IQ, LDK, EBM, OH, HR, TKO, UMA, SOS, HH. The framing episode (ETC) comprises the tenth and final mini-story.","titles":{"en_jp":"ETC","en_us":"ETC","ja_jp":"ETC"},"canonicalTitle":"ETC","seasonNumber":1,"number":9,"relativeNumber":9,"airdate":"2004-04-12","length":24,"thumbnail":{"original":"https://media.kitsu.io/episodes/thumbnails/161848/original.jpg?1416170007","meta":{"dimensions":{}}}},"relationships":{"media":{"links":{"self":"https://kitsu.io/api/edge/episodes/161848/relationships/media","related":"https://kitsu.io/api/edge/episodes/161848/media"}},"videos":{"links":{"self":"https://kitsu.io/api/edge/episodes/161848/relationships/videos","related":"https://kitsu.io/api/edge/episodes/161848/videos"}}}},{"id":"161863","type":"episodes","links":{"self":"https://kitsu.io/api/edge/episodes/161863"},"attributes":{"createdAt":"2014-11-16T20:33:29.747Z","updatedAt":"2018-11-27T20:44:42.560Z","synopsis":"Maromi is getting her very own anime! However, the staff begins to fall behind as the deadline approaches. In the midst of this is bumbling Saruta Naoyki, the Production Manager. Things get even worse as, one by one, members of the production staff end up in the hospital (or the morgue), apparently courtesy of Lil'' Slugger. Ultimately, it falls to Saruta to deliver the finished pilot episode to the TV station before airtime. There''s just one problem: Lil'' Slugger''s after him, too!","description":"Maromi is getting her very own anime! However, the staff begins to fall behind as the deadline approaches. In the midst of this is bumbling Saruta Naoyki, the Production Manager. Things get even worse as, one by one, members of the production staff end up in the hospital (or the morgue), apparently courtesy of Lil'' Slugger. Ultimately, it falls to Saruta to deliver the finished pilot episode to the TV station before airtime. There''s just one problem: Lil'' Slugger''s after him, too!","titles":{"en_jp":"Maromi Madoromi","en_us":"Mellow Maromi","ja_jp":"マロミまどろみ"},"canonicalTitle":"Mellow Maromi","seasonNumber":1,"number":10,"relativeNumber":10,"airdate":"2004-04-19","length":24,"thumbnail":{"original":"https://media.kitsu.io/episodes/thumbnails/161863/original.jpg?1416170009","meta":{"dimensions":{}}}},"relationships":{"media":{"links":{"self":"https://kitsu.io/api/edge/episodes/161863/relationships/media","related":"https://kitsu.io/api/edge/episodes/161863/media"}},"videos":{"links":{"self":"https://kitsu.io/api/edge/episodes/161863/relationships/videos","related":"https://kitsu.io/api/edge/episodes/161863/videos"}}}}],"meta":{"count":13},"links":{"first":"https://kitsu.io/api/edge/anime/290/episodes?page%5Blimit%5D=10&page%5Boffset%5D=0","next":"https://kitsu.io/api/edge/anime/290/episodes?page%5Blimit%5D=10&page%5Boffset%5D=10","last":"https://kitsu.io/api/edge/anime/290/episodes?page%5Blimit%5D=10&page%5Boffset%5D=3"}}'
+        curl_info:
+            url: 'https://kitsu.io/api/edge/anime/290/episodes'
+            content_type: application/vnd.api+json
+            http_code: 200
+            header_size: 1224
+            request_size: 119
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.177402
+            namelookup_time: 0.00183
+            connect_time: 0.03261
+            pretransfer_time: 0.081812
+            size_upload: !!float 0
+            size_download: !!float 22135
+            speed_download: !!float 124773
+            speed_upload: !!float 0
+            download_content_length: !!float -1
+            upload_content_length: !!float 0
+            starttransfer_time: 0.174772
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 172.67.201.18
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 192.168.1.144
+            local_port: 47618
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 81751
+            connect_time_us: 32610
+            namelookup_time_us: 1830
+            pretransfer_time_us: 81812
+            redirect_time_us: 0
+            starttransfer_time_us: 174772
+            total_time_us: 177402
+-
+    request:
+        method: GET
+        url: 'https://kitsu.io/api/edge/anime/290/genres'
+        headers:
+            Host: kitsu.io
+            Accept-Encoding: ''
+            User-Agent: GuzzleHttp/7
+            Content-Type: application/json
+            Accept: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 18 Jun 2021 18:34:00 GMT'
+            Content-Type: application/vnd.api+json
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            etag: 'W/"a9ca9b32162c4410d80ed41bd3f35b0f"'
+            cache-control: 'max-age=0, private, must-revalidate'
+            x-request-id: 89c928cc-d5e3-4a83-9683-4bf8c1d63592
+            x-runtime: '0.025511'
+            vary: Origin
+            CF-Cache-Status: DYNAMIC
+            cf-request-id: 0ac1ffcfba000036dd292e4000000001
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=sHl6UOEWz7%2FNBv4BHWGwKElutEPlztKsvSvv5GFc8xj1xFN7Zos7ANc%2Fc1TLYdp0u8PJkY2Zk4jYDq%2Bshb9q8EhE8ZdjCZCewRSnYqCbJeXBMutJxu8%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"report_to":"cf-nel","max_age":604800}'
+            Strict-Transport-Security: 'max-age=31536000; preload'
+            Server: cloudflare
+            CF-RAY: 66169bf92d2636dd-LAX
+            alt-svc: 'h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400'
+        body: '{"data":[{"id":"7","type":"genres","links":{"self":"https://kitsu.io/api/edge/genres/7"},"attributes":{"createdAt":"2013-02-20T16:00:17.012Z","updatedAt":"2013-02-20T16:00:17.012Z","name":"Mystery","slug":"mystery","description":null}},{"id":"9","type":"genres","links":{"self":"https://kitsu.io/api/edge/genres/9"},"attributes":{"createdAt":"2013-02-20T16:00:18.777Z","updatedAt":"2013-02-20T16:00:18.777Z","name":"Supernatural","slug":"supernatural","description":null}},{"id":"10","type":"genres","links":{"self":"https://kitsu.io/api/edge/genres/10"},"attributes":{"createdAt":"2013-02-20T16:00:18.880Z","updatedAt":"2013-02-20T16:00:18.880Z","name":"Police","slug":"police","description":null}},{"id":"20","type":"genres","links":{"self":"https://kitsu.io/api/edge/genres/20"},"attributes":{"createdAt":"2013-02-20T16:00:24.673Z","updatedAt":"2013-02-20T16:00:24.673Z","name":"Psychological","slug":"psychological","description":null}},{"id":"21","type":"genres","links":{"self":"https://kitsu.io/api/edge/genres/21"},"attributes":{"createdAt":"2013-02-20T16:00:24.688Z","updatedAt":"2013-02-20T16:00:24.688Z","name":"Thriller","slug":"thriller","description":null}},{"id":"29","type":"genres","links":{"self":"https://kitsu.io/api/edge/genres/29"},"attributes":{"createdAt":"2013-02-20T16:00:34.901Z","updatedAt":"2013-02-20T16:00:34.901Z","name":"Dementia","slug":"dementia","description":null}},{"id":"4","type":"genres","links":{"self":"https://kitsu.io/api/edge/genres/4"},"attributes":{"createdAt":"2013-02-20T16:00:15.686Z","updatedAt":"2016-06-10T11:23:00.431Z","name":"Drama","slug":"drama","description":""}}],"meta":{"count":7},"links":{"first":"https://kitsu.io/api/edge/anime/290/genres?page%5Blimit%5D=10&page%5Boffset%5D=0","last":"https://kitsu.io/api/edge/anime/290/genres?page%5Blimit%5D=10&page%5Boffset%5D=0"}}'
+        curl_info:
+            url: 'https://kitsu.io/api/edge/anime/290/genres'
+            content_type: application/vnd.api+json
+            http_code: 200
+            header_size: 1214
+            request_size: 117
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.186407
+            namelookup_time: 0.001602
+            connect_time: 0.032605
+            pretransfer_time: 0.09003
+            size_upload: !!float 0
+            size_download: !!float 1835
+            speed_download: !!float 9844
+            speed_upload: !!float 0
+            download_content_length: !!float -1
+            upload_content_length: !!float 0
+            starttransfer_time: 0.186225
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 104.21.58.52
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 192.168.1.144
+            local_port: 38828
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 89991
+            connect_time_us: 32605
+            namelookup_time_us: 1602
+            pretransfer_time_us: 90030
+            redirect_time_us: 0
+            starttransfer_time_us: 186225
+            total_time_us: 186407
+-
+    request:
+        method: GET
+        url: 'https://kitsu.io/api/edge/anime/290/mappings?filter%5BexternalSite%5D=myanimelist/anime&page%5Blimit%5D=1&'
+        headers:
+            Host: kitsu.io
+            Accept-Encoding: ''
+            User-Agent: GuzzleHttp/7
+            Content-Type: application/json
+            Accept: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 18 Jun 2021 18:34:00 GMT'
+            Content-Type: application/vnd.api+json
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            etag: 'W/"9f848fdff8b4f3b8327ea2617db172dd"'
+            cache-control: 'max-age=0, private, must-revalidate'
+            x-request-id: 8938d7d6-f3b1-41a5-8b73-06b6893fb28d
+            x-runtime: '0.018113'
+            vary: Origin
+            CF-Cache-Status: DYNAMIC
+            cf-request-id: 0ac1ffd0ab0000058113afc000000001
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=jatNM3Ph9WyL3%2F%2BXVY4txGCTOsAhJbbcRhhQDzq1HvQFkedzlDtYqQHo2U%2B%2Bug9WHkeAoTnTxg7AoL1Fg38SCKo2OJuY3NSFUQwbOv2ANtWvhH7RhT0%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"report_to":"cf-nel","max_age":604800}'
+            Strict-Transport-Security: 'max-age=31536000; preload'
+            Server: cloudflare
+            CF-RAY: 66169bfaa8420581-LAX
+            alt-svc: 'h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400'
+        body: '{"data":[{"id":"5785","type":"mappings","links":{"self":"https://kitsu.io/api/edge/mappings/5785"},"attributes":{"createdAt":null,"updatedAt":null,"externalSite":"myanimelist/anime","externalId":"323"},"relationships":{"item":{"links":{"self":"https://kitsu.io/api/edge/mappings/5785/relationships/item","related":"https://kitsu.io/api/edge/mappings/5785/item"}}}}],"meta":{"count":1},"links":{"first":"https://kitsu.io/api/edge/anime/290/mappings?filter%5BexternalSite%5D=myanimelist%2Fanime&page%5Blimit%5D=1&page%5Boffset%5D=0","last":"https://kitsu.io/api/edge/anime/290/mappings?filter%5BexternalSite%5D=myanimelist%2Fanime&page%5Blimit%5D=1&page%5Boffset%5D=0"}}'
+        curl_info:
+            url: 'https://kitsu.io/api/edge/anime/290/mappings?filter%5BexternalSite%5D=myanimelist/anime&page%5Blimit%5D=1&'
+            content_type: application/vnd.api+json
+            http_code: 200
+            header_size: 1216
+            request_size: 181
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.171478
+            namelookup_time: 0.001693
+            connect_time: 0.032605
+            pretransfer_time: 0.089148
+            size_upload: !!float 0
+            size_download: !!float 668
+            speed_download: !!float 3895
+            speed_upload: !!float 0
+            download_content_length: !!float -1
+            upload_content_length: !!float 0
+            starttransfer_time: 0.171329
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 172.67.201.18
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 192.168.1.144
+            local_port: 47620
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 89037
+            connect_time_us: 32605
+            namelookup_time_us: 1693
+            pretransfer_time_us: 89148
+            redirect_time_us: 0
+            starttransfer_time_us: 171329
+            total_time_us: 171478
+-
+    request:
+        method: GET
+        url: 'http://api.themoviedb.org/3/search/tv?api_key=255946d78706eda1da6dc4f3a2e217e4&query=Mousou+Dairinin'
+        headers:
+            Host: api.themoviedb.org
+            Accept-Encoding: ''
+            Accept: 'application/json; charset=utf-8'
+            User-Agent: 'php-tmdb/symfony/4.0.0 php-tmdb/api/4.0.0'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Content-Type: application/json;charset=utf-8
+            Content-Length: '1370'
+            Connection: keep-alive
+            Date: 'Fri, 18 Jun 2021 18:34:01 GMT'
+            Server: openresty
+            Access-Control-Allow-Origin: '*'
+            Access-Control-Allow-Methods: 'GET, HEAD, POST, PUT, DELETE, OPTIONS'
+            Access-Control-Expose-Headers: 'ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After, Content-Length, Content-Range'
+            ETag: 28cfce5cec4c35e66921e2b4b14efa72
+            Cache-Control: 'public, max-age=600'
+            Vary: 'Accept-Encoding,Accept-Encoding,Accept-Encoding'
+            X-Cache: 'Miss from cloudfront'
+            Via: '1.1 c3270a6ec9acbf35e35962d1054f78d5.cloudfront.net (CloudFront)'
+            X-Amz-Cf-Pop: HIO50-C2
+            X-Amz-Cf-Id: 71x7w9eFgjwwusy-gRiROWU6sArqHyIWQthcbVilVLce-sFjI_Zc7Q==
+        body: '{"page":1,"results":[{"backdrop_path":"/6ugaYfLhkEyVXzw4EYawMIV30qx.jpg","first_air_date":"2004-02-03","genre_ids":[16,18,9648,10765],"id":9343,"name":"Paranoia Agent","origin_country":["JP"],"original_language":"ja","original_name":"妄想代理人","overview":"The infamous Shounen Bat (Lil'' Slugger) is terrorizing the residents of Musashino City. Flying around on his rollerblades and beating people down with a golden baseball bat, the assailant seems impossible to catch—much less understand. His first victim, the well-known yet timid character designer Tsukiko Sagi, is suspected of orchestrating the attacks. Believed only by her anthropomorphic pink stuffed animal, Maromi, Tsukiko is just one of Shounen Bat''s many victims. As Shounen Bat continues his relentless assault on the town, detectives Keiichi Ikari and Mitsuhiro Maniwa begin to investigate the identity of the attacker. However, more and more people fall victim to the notorious golden bat, and news of the assailant begins circulating around the town. Paranoia starts to set in as chilling rumors spread amongst adults and children alike. Will the two detectives be able to unravel the truth behind Shounen Bat, or will the paranoia get to them first?","popularity":14.206,"poster_path":"/cQ6YiBTUlsKGm2mWa7mE9eZnlS2.jpg","vote_average":7.9,"vote_count":120}],"total_pages":1,"total_results":1}'
+        curl_info:
+            url: 'http://api.themoviedb.org/3/search/tv?api_key=255946d78706eda1da6dc4f3a2e217e4&query=Mousou+Dairinin'
+            content_type: application/json;charset=utf-8
+            http_code: 200
+            header_size: 738
+            request_size: 214
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.16586
+            namelookup_time: 0.053429
+            connect_time: 0.060245
+            pretransfer_time: 0.060405
+            size_upload: !!float 0
+            size_download: !!float 1370
+            speed_download: !!float 8259
+            speed_upload: !!float 0
+            download_content_length: !!float 1370
+            upload_content_length: !!float 0
+            starttransfer_time: 0.165777
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 204.246.191.99
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 192.168.1.144
+            local_port: 60618
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 60245
+            namelookup_time_us: 53429
+            pretransfer_time_us: 60405
+            redirect_time_us: 0
+            starttransfer_time_us: 165777
+            total_time_us: 165860
+-
+    request:
+        method: GET
+        url: 'http://api.themoviedb.org/3/tv/9343?api_key=255946d78706eda1da6dc4f3a2e217e4&append_to_response=credits%2Cexternal_ids%2Cimages%2Ctranslations%2Csimilar%2Crecommendations%2Ckeywords%2Cchanges%2Ccontent_ratings%2Calternative_titles%2Cvideos'
+        headers:
+            Host: api.themoviedb.org
+            Accept-Encoding: ''
+            Accept: 'application/json; charset=utf-8'
+            User-Agent: 'php-tmdb/symfony/4.0.0 php-tmdb/api/4.0.0'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Content-Type: application/json;charset=utf-8
+            Content-Length: '49858'
+            Connection: keep-alive
+            Date: 'Fri, 18 Jun 2021 18:34:01 GMT'
+            Server: openresty
+            Access-Control-Allow-Origin: '*'
+            Access-Control-Allow-Methods: 'GET, HEAD, POST, PUT, DELETE, OPTIONS'
+            Access-Control-Expose-Headers: 'ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After, Content-Length, Content-Range'
+            Cache-Control: 'public, max-age=28800'
+            X-Memc: HIT
+            X-Memc-Key: a294431190f50c9404d84607cec48c5fb2f36a05
+            X-Memc-Age: '500'
+            X-Memc-Expires: '3100'
+            ETag: 'W/"fd30eb1680218d0c026f8ddabc293b92"'
+            Vary: 'Accept-Encoding,Accept-Encoding,Accept-Encoding'
+            X-Cache: 'Miss from cloudfront'
+            Via: '1.1 c1c7bd66e338154bf556b9c8414debe9.cloudfront.net (CloudFront)'
+            X-Amz-Cf-Pop: HIO50-C2
+            X-Amz-Cf-Id: ddQwmxe5QJb1P-gsi83Jy3TP2HYCT93rTF7AjXGU95JpxG56ob_CzA==
+        body: '{"backdrop_path":"/6ugaYfLhkEyVXzw4EYawMIV30qx.jpg","created_by":[{"id":40333,"credit_id":"544a8800c3a3680fae0045e3","name":"Satoshi Kon","gender":2,"profile_path":"/ivdAAPkwZLTIjaJgSw7VNeHCAmt.jpg"}],"episode_run_time":[25],"first_air_date":"2004-02-03","genres":[{"id":16,"name":"Animation"},{"id":18,"name":"Drama"},{"id":9648,"name":"Mystery"},{"id":10765,"name":"Sci-Fi & Fantasy"}],"homepage":"http://mousou.asmik-ace.co.jp/","id":9343,"in_production":false,"languages":["ja"],"last_air_date":"2004-05-18","last_episode_to_air":{"air_date":"2004-05-18","episode_number":13,"id":406466,"name":"The Final Episode","overview":"A dark formless flow that Maniwa identifies as Lil'' Slugger starts to overrun Tokyo as a result of Maromi''s disappearance.  Meanwhile in Ikari''s world, Ikari comfortable hangs about his world with Tsukiko tagging along.  With the help of the old man, Misae appears  and says goodbye to Keiichi as she fades away.  Ikari realizes that the world he is in isn''t real and tears it apart as the building blocks of the world turn out to be Maromi dolls.  Back in their dilapidated world, Lil'' Slugger appears as Maniwa appears with a weapon that can destroy Lil'' Slugger... or not.","production_code":"","season_number":1,"still_path":"/xiVDx9CEEoSApIPLhmzsywRvXco.jpg","vote_average":7.0,"vote_count":1},"name":"Paranoia Agent","next_episode_to_air":null,"networks":[{"name":"ANIMAX","id":171,"logo_path":"/5S9xrNouNbaYlhDkaZopIpcmbp2.png","origin_country":"JP"},{"name":"WOWOW Prime","id":172,"logo_path":"/dCN47YS5lugkwts5ellpW51cBzL.png","origin_country":"JP"}],"number_of_episodes":13,"number_of_seasons":1,"origin_country":["JP"],"original_language":"ja","original_name":"妄想代理人","overview":"The infamous Shounen Bat (Lil'' Slugger) is terrorizing the residents of Musashino City. Flying around on his rollerblades and beating people down with a golden baseball bat, the assailant seems impossible to catch—much less understand. His first victim, the well-known yet timid character designer Tsukiko Sagi, is suspected of orchestrating the attacks. Believed only by her anthropomorphic pink stuffed animal, Maromi, Tsukiko is just one of Shounen Bat''s many victims. As Shounen Bat continues his relentless assault on the town, detectives Keiichi Ikari and Mitsuhiro Maniwa begin to investigate the identity of the attacker. However, more and more people fall victim to the notorious golden bat, and news of the assailant begins circulating around the town. Paranoia starts to set in as chilling rumors spread amongst adults and children alike. Will the two detectives be able to unravel the truth behind Shounen Bat, or will the paranoia get to them first?","popularity":14.206,"poster_path":"/cQ6YiBTUlsKGm2mWa7mE9eZnlS2.jpg","production_companies":[{"id":3464,"logo_path":"/9k0nr75nwnNeT2MHerf1OXJN0hj.png","name":"Madhouse","origin_country":"JP"}],"production_countries":[{"iso_3166_1":"JP","name":"Japan"}],"seasons":[{"air_date":"2004-02-03","episode_count":13,"id":19239,"name":"Season 1","overview":"","poster_path":"/cQ6YiBTUlsKGm2mWa7mE9eZnlS2.jpg","season_number":1}],"spoken_languages":[{"english_name":"Japanese","iso_639_1":"ja","name":"日本語"}],"status":"Ended","tagline":"","type":"Scripted","vote_average":7.9,"vote_count":120,"credits":{"cast":[{"adult":false,"gender":1,"id":89903,"known_for_department":"Acting","name":"Mamiko Noto","original_name":"Mamiko Noto","popularity":2.6,"profile_path":"/raDUy21NNUHKAM24OUcQMcp6kAJ.jpg","character":"Tsukiko Sagi (voice)","credit_id":"5257966f760ee36aaa727028","order":0},{"adult":false,"gender":2,"id":40331,"known_for_department":"Acting","name":"Daisuke Sakaguchi","original_name":"Daisuke Sakaguchi","popularity":2.412,"profile_path":"/7aHA3ELUwyrzPRm6UCZJe87x1mL.jpg","character":"Lil'' Slugger (voice)","credit_id":"5257966f760ee36aaa727018","order":1},{"adult":false,"gender":1,"id":1241347,"known_for_department":"Acting","name":"Haruko Momoi","original_name":"Haruko Momoi","popularity":1.537,"profile_path":"/9sQMb6Xmazkv4sdxAJpMGnXGJQb.jpg","character":"Maromi (voice)","credit_id":"5257966f760ee36aaa727038","order":2},{"adult":false,"gender":2,"id":223309,"known_for_department":"Acting","name":"Shozo Iizuka","original_name":"Shozo Iizuka","popularity":2.456,"profile_path":"/msqe5A1q5YUUND0RhzB9dw1AEAO.jpg","character":"Keiichi Ikari (voice)","credit_id":"5257966f760ee36aaa727048","order":3},{"adult":false,"gender":2,"id":90571,"known_for_department":"Acting","name":"Toshihiko Seki","original_name":"Toshihiko Seki","popularity":1.905,"profile_path":"/esu8zw5fb3f7IAyQ2CDVfypbB2U.jpg","character":"Mitsuhiro Maniwa (voice)","credit_id":"52579670760ee36aaa7270cb","order":4},{"adult":false,"gender":1,"id":615,"known_for_department":"Acting","name":"Hisako Kyoda","original_name":"Hisako Kyoda","popularity":1.892,"profile_path":"/7p7kVXNp1ZhJp2KejBPQwD8j9nE.jpg","character":"Mysterious Old Woman (voice)","credit_id":"5257966f760ee36aaa727058","order":5},{"adult":false,"gender":2,"id":553057,"known_for_department":"Acting","name":"Ryūji Saikachi","original_name":"Ryūji Saikachi","popularity":1.13,"profile_path":"/fGCuIdYNTiP7U6jqfPEUaPn8FXi.jpg","character":"Mysterious Old Man (voice)","credit_id":"52579670760ee36aaa72706b","order":6},{"adult":false,"gender":2,"id":83930,"known_for_department":"Acting","name":"Kenji Utsumi","original_name":"Kenji Utsumi","popularity":1.286,"profile_path":"/8rNvgs40LJbCbjf7qFCfDeKBnIk.jpg","character":"Akio Kawazu (voice)","credit_id":"52579670760ee36aaa72707b","order":7},{"adult":false,"gender":1,"id":568288,"known_for_department":"Acting","name":"Mayumi Yamaguchi","original_name":"Mayumi Yamaguchi","popularity":0.766,"profile_path":"/uzkuXAZqQhbW03ELeLpmjcIzGpS.jpg","character":"Yūichi Taira (voice)","credit_id":"52579670760ee36aaa72708b","order":8},{"adult":false,"gender":1,"id":1222151,"known_for_department":"Acting","name":"Makoto Tsumura","original_name":"Makoto Tsumura","popularity":1.77,"profile_path":"/81DYZwZ4M7Atf6w5Zk1e18QeIW8.jpg","character":"Shōgo Ushiyama (voice)","credit_id":"52579670760ee36aaa72709b","order":9},{"adult":false,"gender":1,"id":77931,"known_for_department":"Acting","name":"Kotono Mitsuishi","original_name":"Kotono Mitsuishi","popularity":2.335,"profile_path":"/1kqWHBmMGEjdyySvRPjh4ZHAnrm.jpg","character":"Harumi Chono (voice)","credit_id":"52579670760ee36aaa7270db","order":10},{"adult":false,"gender":2,"id":126287,"known_for_department":"Acting","name":"Toshihiko Nakajima","original_name":"Toshihiko Nakajima","popularity":1.661,"profile_path":"/wgAsVGwqLEgIUkIYk50lItu7WwO.jpg","character":"Masami Hirukawa (voice)","credit_id":"52579670760ee36aaa7270ab","order":11},{"adult":false,"gender":2,"id":40331,"known_for_department":"Acting","name":"Daisuke Sakaguchi","original_name":"Daisuke Sakaguchi","popularity":2.412,"profile_path":"/7aHA3ELUwyrzPRm6UCZJe87x1mL.jpg","character":"Makoto Kozuka (voice)","credit_id":"52579670760ee36aaa7270bb","order":12},{"adult":false,"gender":1,"id":24651,"known_for_department":"Acting","name":"Nana Mizuki","original_name":"Nana Mizuki","popularity":3.133,"profile_path":"/oKTYwmtfWoQPbOEQqVXVFUEYy7e.jpg","character":"Taeko Hirukawa (voice)","credit_id":"52579670760ee36aaa7270eb","order":13},{"adult":false,"gender":1,"id":623,"known_for_department":"Acting","name":"Mina Tominaga","original_name":"Mina Tominaga","popularity":1.96,"profile_path":"/hjuS06UcHyHc57TJe68zdeK13QL.jpg","character":"Kamome (voice)","credit_id":"6016fad9bc865700406d0e27","order":500},{"adult":false,"gender":2,"id":144104,"known_for_department":"Acting","name":"Kiyoshi Kawakubo","original_name":"Kiyoshi Kawakubo","popularity":1.11,"profile_path":"/pYJuvpcjuB7o51xZgFSe9W9Vqq1.jpg","character":"Fuyubachi (voice)","credit_id":"6016faf7976a23003da5244c","order":500},{"adult":false,"gender":0,"id":2945203,"known_for_department":"Acting","name":"Yasunori Mastumoto","original_name":"Yasunori Mastumoto","popularity":0.6,"profile_path":null,"character":"Zebra (voice)","credit_id":"6016fb0a2d3721003dc3f3db","order":500}],"crew":[{"adult":false,"gender":0,"id":40336,"known_for_department":"Visual Effects","name":"Masashi Ando","original_name":"Masashi Ando","popularity":0.98,"profile_path":null,"credit_id":"553451d09251417eb8000505","department":"Visual Effects","job":"Animation"},{"adult":false,"gender":2,"id":40333,"known_for_department":"Writing","name":"Satoshi Kon","original_name":"Satoshi Kon","popularity":2.047,"profile_path":"/ivdAAPkwZLTIjaJgSw7VNeHCAmt.jpg","credit_id":"58f73303c3a368415e00998c","department":"Directing","job":"Director"},{"adult":false,"gender":0,"id":40339,"known_for_department":"Sound","name":"Susumu Hirasawa","original_name":"Susumu Hirasawa","popularity":0.6,"profile_path":null,"credit_id":"5cba0f9dc3a3683abf859987","department":"Sound","job":"Theme Song Performance"},{"adult":false,"gender":0,"id":40335,"known_for_department":"Writing","name":"Seishi Minakami","original_name":"Seishi Minakami","popularity":0.6,"profile_path":null,"credit_id":"5ec8a31d8e2e0000212782da","department":"Writing","job":"Writer"},{"adult":false,"gender":0,"id":1612284,"known_for_department":"Production","name":"Rika Tsurusaki","original_name":"Rika Tsurusaki","popularity":0.6,"profile_path":null,"credit_id":"6016fb87b5bc21003ea0ae5d","department":"Production","job":"Producer"},{"adult":false,"gender":0,"id":1197453,"known_for_department":"Production","name":"Mitsuru Uda","original_name":"Mitsuru Uda","popularity":0.6,"profile_path":"/r0dH4XD2exwl2yfS24pjjSQyauB.jpg","credit_id":"6016fb9fbb1057003c93ba43","department":"Production","job":"Producer"},{"adult":false,"gender":0,"id":929976,"known_for_department":"Production","name":"Hideki Goto","original_name":"Hideki Goto","popularity":0.6,"profile_path":null,"credit_id":"6016fbb17314a1003df343af","department":"Production","job":"Producer"},{"adult":false,"gender":2,"id":1135799,"known_for_department":"Production","name":"Yasuteru Iwase","original_name":"Yasuteru Iwase","popularity":0.6,"profile_path":null,"credit_id":"6016fbc2713ed40040e4f05b","department":"Production","job":"Producer"},{"adult":false,"gender":0,"id":2901416,"known_for_department":"Production","name":"Tokuji Hasegawa","original_name":"Tokuji Hasegawa","popularity":0.6,"profile_path":null,"credit_id":"6016fbcf0816c700418a2aa7","department":"Production","job":"Producer"},{"adult":false,"gender":0,"id":40339,"known_for_department":"Sound","name":"Susumu Hirasawa","original_name":"Susumu Hirasawa","popularity":0.6,"profile_path":null,"credit_id":"60c27eab477215005713b23f","department":"Sound","job":"Original Music Composer"},{"adult":false,"gender":0,"id":117622,"known_for_department":"Camera","name":"Katsutoshi Sugai","original_name":"Katsutoshi Sugai","popularity":0.6,"profile_path":null,"credit_id":"60cc2f847614210040fddba5","department":"Crew","job":"Cinematography"},{"adult":false,"gender":1,"id":1352117,"known_for_department":"Editing","name":"Kashiko Kimura","original_name":"Kashiko Kimura","popularity":1.22,"profile_path":null,"credit_id":"60cc2f97e72fe8002503f539","department":"Editing","job":"Editor"},{"adult":false,"gender":2,"id":1697,"known_for_department":"Editing","name":"Takeshi Seyama","original_name":"Takeshi Seyama","popularity":1.141,"profile_path":null,"credit_id":"60cc2fa2a217c000566be4d6","department":"Editing","job":"Editor"},{"adult":false,"gender":0,"id":40336,"known_for_department":"Visual Effects","name":"Masashi Ando","original_name":"Masashi Ando","popularity":0.98,"profile_path":null,"credit_id":"60cc2fc842d8a500298e018a","department":"Visual Effects","job":"Character Designer"}]},"external_ids":{"imdb_id":"tt0433722","freebase_mid":"/m/062sl7","freebase_id":"/en/paranoia_agent","tvdb_id":75092,"tvrage_id":null,"facebook_id":null,"instagram_id":null,"twitter_id":null},"images":{"backdrops":[{"aspect_ratio":1.777777777777778,"file_path":"/6ugaYfLhkEyVXzw4EYawMIV30qx.jpg","height":1125,"iso_639_1":null,"vote_average":5.522,"vote_count":4,"width":2000},{"aspect_ratio":1.777777777777778,"file_path":"/tI6p4VA5ULnuSxZO6UI3V7Pilwr.jpg","height":1080,"iso_639_1":null,"vote_average":5.384,"vote_count":2,"width":1920},{"aspect_ratio":1.777777777777778,"file_path":"/qxkyDYPSzvCjgjj0Sthhcmgb7Rp.jpg","height":720,"iso_639_1":null,"vote_average":5.312,"vote_count":1,"width":1280},{"aspect_ratio":1.777777777777778,"file_path":"/h0uF52Xm3U3vK1gUtcQN4ny4WoH.jpg","height":720,"iso_639_1":null,"vote_average":5.252,"vote_count":4,"width":1280},{"aspect_ratio":1.777777777777778,"file_path":"/8RRhEYUMxHBrF8DulRXXwnRVfz6.jpg","height":720,"iso_639_1":null,"vote_average":5.18,"vote_count":3,"width":1280},{"aspect_ratio":1.777777777777778,"file_path":"/jDF6pQdECluwugquXPCj4YiQCAY.jpg","height":1080,"iso_639_1":null,"vote_average":0.0,"vote_count":0,"width":1920},{"aspect_ratio":1.777777777777778,"file_path":"/tRamP3UeAOOyhieI9T58kR8otub.jpg","height":1080,"iso_639_1":null,"vote_average":0.0,"vote_count":0,"width":1920},{"aspect_ratio":1.777777777777778,"file_path":"/lkouJtWoy6TD10xmAjADJ0nLCXK.jpg","height":1080,"iso_639_1":"ja","vote_average":0.0,"vote_count":0,"width":1920},{"aspect_ratio":1.777777777777778,"file_path":"/lsHN7lvzp7RzuHgX2rt7RJSWw82.jpg","height":1080,"iso_639_1":null,"vote_average":0.0,"vote_count":0,"width":1920},{"aspect_ratio":1.777777777777778,"file_path":"/onoAMPVJu3HhfvK0Pe7JhmCOjUP.jpg","height":720,"iso_639_1":null,"vote_average":0.0,"vote_count":0,"width":1280}],"posters":[{"aspect_ratio":0.6666666666666666,"file_path":"/cQ6YiBTUlsKGm2mWa7mE9eZnlS2.jpg","height":3000,"iso_639_1":"en","vote_average":5.652,"vote_count":6,"width":2000},{"aspect_ratio":0.6666666666666666,"file_path":"/gVsTX3EJIsq3fHx2xLDFEeWMYDe.jpg","height":1500,"iso_639_1":"ja","vote_average":5.384,"vote_count":2,"width":1000},{"aspect_ratio":0.6663124335812965,"file_path":"/u1LNn3w6SxMexQnsqz7hwtMp3Qr.jpg","height":941,"iso_639_1":"ja","vote_average":5.384,"vote_count":2,"width":627},{"aspect_ratio":0.7,"file_path":"/eEOYikOmnVCWoKyxjoS7SEgiNRE.jpg","height":1800,"iso_639_1":"zh","vote_average":5.312,"vote_count":1,"width":1260},{"aspect_ratio":0.7,"file_path":"/c3hN6eij6h8uYSu6j7YrFQqD9ie.jpg","height":2000,"iso_639_1":"zh","vote_average":5.312,"vote_count":1,"width":1400},{"aspect_ratio":0.6666666666666666,"file_path":"/f8ZPrRKa5qpz1AcX51woSKzD8mx.jpg","height":3000,"iso_639_1":"en","vote_average":5.106,"vote_count":2,"width":2000},{"aspect_ratio":0.6801275239107333,"file_path":"/iXwjGY82X18QB2JHToxSMqCQMOn.jpg","height":941,"iso_639_1":"en","vote_average":0.0,"vote_count":0,"width":640}]},"translations":{"translations":[{"iso_3166_1":"DE","iso_639_1":"de","name":"Deutsch","english_name":"German","data":{"name":"Paranoia Agent","overview":"Eine Serie brutaler und wahllos scheinender Angriffe erschüttert die Ordnungshüter von Tokio. Genaue Angaben zum Täter kann keines der traumatisierten, jedoch nach der Tat seltsamerweise auch erleichtert scheinenden Opfer machen. Allen Beschreibungen gemein ist jedoch die Tatsache, dass es sich bei dem mysteriösen Angreifer um einen Jungen mit Rollerblades und einem goldenen Baseballschläger handeln soll. \n\nDie beiden ermittelnden Polizisten Ikari und Maniwa merken nach anfänglicher Skepsis schnell, dass es bei diesem Fall nicht mit rechten Dingen zugeht. Das erste Opfer des mittlerweile schon zu einer modernen Legende gewordenen Attentäters “Shounen Bat”, die erfolgreiche, jedoch unter enormen Erfolgsdruck stehende Charakterdesignerin Tsukiko Sagi, hütet vor den Polizisten ein schreckliches Geheimnis…","homepage":"","tagline":""}},{"iso_3166_1":"US","iso_639_1":"en","name":"English","english_name":"English","data":{"name":"Paranoia Agent","overview":"The infamous Shounen Bat (Lil'' Slugger) is terrorizing the residents of Musashino City. Flying around on his rollerblades and beating people down with a golden baseball bat, the assailant seems impossible to catch—much less understand. His first victim, the well-known yet timid character designer Tsukiko Sagi, is suspected of orchestrating the attacks. Believed only by her anthropomorphic pink stuffed animal, Maromi, Tsukiko is just one of Shounen Bat''s many victims. As Shounen Bat continues his relentless assault on the town, detectives Keiichi Ikari and Mitsuhiro Maniwa begin to investigate the identity of the attacker. However, more and more people fall victim to the notorious golden bat, and news of the assailant begins circulating around the town. Paranoia starts to set in as chilling rumors spread amongst adults and children alike. Will the two detectives be able to unravel the truth behind Shounen Bat, or will the paranoia get to them first?","homepage":"","tagline":""}},{"iso_3166_1":"ES","iso_639_1":"es","name":"Español","english_name":"Spanish","data":{"name":"Paranoia Agent","overview":"Una diseñadora gráfica de Tokyo, autora de una mascota muy popular, es la envidia de todos sus compañeros de trabajo y, al mismo tiempo, por ello, sufre una cierta depresión porque la dejan de lado, además de la presión de su jefe para la creación de una nueva mascota con tanto reclamo como su anterior trabajo. Un día, regresando a casa de noche, es atacada violentamente y recibe un golpe, siendo hospitalizada. Pero muchos creen que no es más que una invención suya para deshacerse de la situación en la que se encuentra en su trabajo en ese momento. El autor del ataque es Shounen Bat, un chico en patines y con un bate ligeramete doblado que se convierte en una auténtica leyenda urbana al ir golpeando a personas en sus cabezas durante la noche por toda la ciudad. Dos detectives se encargarán de llevar el caso e irán comprobando que no todo es lo que parece...","homepage":"","tagline":""}},{"iso_3166_1":"FR","iso_639_1":"fr","name":"Français","english_name":"French","data":{"name":"Paranoia Agent","overview":"Au milieu de la vie frénétique de Tokyo, la créatrice d''un personnage à la mode (le chien Maromi) est agressée devant chez elle par un jeune garçon portant une casquette, des rollers et une batte de base-ball dorés. \n\nDeux inspecteurs de police, l''un jeune et enthousiaste, son aîné plus blasé, mènent leur enquête pendant que de nouvelles agressions ont lieu, toujours par celui que l''on nomme \"le jeune homme à la batte\". Alors que les victimes ne semblent posséder aucun lien entre elles, la paranoïa s''installe au sein de la population de la capitale... ","homepage":"","tagline":""}},{"iso_3166_1":"IT","iso_639_1":"it","name":"Italiano","english_name":"Italian","data":{"name":"Paranoia Agent","overview":"Tsukiko Sagi, la famosa disegnatrice che ha partorito la mascotte Maromi, viene aggredita con una mazza da baseball da uno squilibrato di cui la ragazza ricorda solo essere un bambino su pattini a rotelle color oro e con indosso un cappellino da baseball. Le ricerche partono immediatamente anche se il sospetto che la ragazza abbia mentito sull''accaduto viene subito avanzato da uno degli investigatori. Giorni dopo altre persone vengono però colpite da questo maniaco, che viene soprannominato Shonen Bat, ed il misterioso ragazzino diventa una sorta di leggenda metropolitana.\n\nDopo diversi casi i due detective riescono a mettere le mani su un sospetto che combacia con la descrizione fatta dalla prima vittima. Il ragazzo confessa di aver perpetrato la riprovevole azione perché crede di essere il guerriero protagonista di un gioco di ruolo. Dopo vari interrogatori, però, i poliziotti scoprono che in realtà il ragazzo non è altro che un emulo e che il vero Shonen Bat è ancora a piede libero. Ma il confronto con il giovane mitomane porta la narrazione su un piano surreale, con Maniwa che intraprende un percorso d''indagine a metà tra il videogioco ed una trama fantasy. Da questo punto in poi la storia continua a snodarsi su più piani di realtà, fondendo in un''unica dimensione elementi onirici, psicoanalitici e sociologici, per poi sfociare in un epilogo catastrofico alla Ōtomo.","homepage":"","tagline":""}},{"iso_3166_1":"JP","iso_639_1":"ja","name":"日本語","english_name":"Japanese","data":{"name":"","overview":"疲れた現代社会を癒す人気マスコットキャラクター「マロミ」をデザインした鷺月子は心の闇を持っていた。そして、月子に感化された人々が次々に通り魔少年バットに襲われ、市井の人々を恐怖へと陥れていく。しかし、幾人も被害者が出て、多くの目撃者がいるにもかかわらず、少年バットは一向に捕まりそうになかった。\n\n少年バット事件を担当する刑事の猪狩慶一と馬庭光弘は、捜査を進める中で、被害者の持つ『不思議な共通項』に辿り着 く。「マロミ」の正体は、この時代に大量増発した、人々を楽しませた愉楽そのものを意味した。「マロミ」に熱中する人々は、現実との対面から目を背け、幻 の愉楽に逃げがちになって行く。そして人々のこの行動パタン自体が、「マロミ」とゆう愉楽、化け物の食料になり、やがて人々の災いを召う。","homepage":"","tagline":"人々の内側で蠢く不安と弱さが最大限に増減されたとき、 “少年バット”は現れる——"}},{"iso_3166_1":"KR","iso_639_1":"ko","name":"한국어/조선말","english_name":"Korean","data":{"name":"망상대리인","overview":"『퍼펙트 블루』, 『천년여우』, 『도쿄 갓 파더즈』 등 TV 시리즈의 인기에 힘입은 팬 서비스형 극장판과는 성격을 달리하는 묵직한 작품을 통해 그 명성을 확고히한 콘 사토시 감독. 그가 원작과 총감독을 맡은 첫번째 TV 시리즈 『망상대리인』은 그래서 더욱 주목을 받고 있다. 안정된 흥행성을 찾아 패턴화된 다른 애니메이션들에서 느껴지는 진부함을 탈피하겠다는 감독 스스로의 사자후처럼 이 작품은 여러면에서 독특함을 드러내고 있다. 한번 시작된 거짓말에서 점점 퍼져나가 걷잡을 수 없는 현실처럼 이어지고 있는 이 어둡고도 무서운 망상과 그 희생자가 된 제물들, 그리고 이를 쫒는 형사의 이야기는 이 작품을 더욱 입체적으로 만들고 있다. 매회 주인공이 바뀌는 주인공 릴레이 방식의 사이코 서스펜스 드라마를 표방하고 있긴 하지만 블랙 코미디의 조소마저 느껴지는 이 작품은 어느 한 장르로 구분 짓기엔 꽤나 자유분방하다.","homepage":"","tagline":""}},{"iso_3166_1":"BR","iso_639_1":"pt","name":"Português","english_name":"Portuguese","data":{"name":"Mousou Dairinin","overview":"Uma série de ataques vem amedrontando as pessoas e o autor destes ataques é chamado de \"Shounen Bat\". Sua primeira vítima é uma tímida e jovem design chamada Tsukiko Sagi. Dois detetives estão determinados a encontrar o responsável e assim impedir novos ataques, mas isso não é tão fácil quanto parece e eles encontram uma série de dificuldades e peculiariedades no caso.","homepage":"","tagline":""}},{"iso_3166_1":"RU","iso_639_1":"ru","name":"Pусский","english_name":"Russian","data":{"name":"Агент паранойи","overview":"Вооруженный бейсбольной битой ученик начальной школы совершает серию нападений на людей. По его следам идут двое детективов, которые вскоре понимают, что это дело не похоже ни на какое другое.","homepage":"","tagline":""}},{"iso_3166_1":"SE","iso_639_1":"sv","name":"svenska","english_name":"Swedish","data":{"name":"Paranoia Agent","overview":"En stadens legend är född. Ett överfall sker i Tokyo och gärningsmannen är okänd. Det första offrets skakande historia följs av stor misstänksamhet mot – offret. Men så sker ett överfall till och ett till…","homepage":"","tagline":""}},{"iso_3166_1":"UA","iso_639_1":"uk","name":"Український","english_name":"Ukrainian","data":{"name":"Агент марення","overview":"Місто сколихнула хвиля насилля. Невідомий школяр, якого прозвали Малий бучка, нападає на людей. Але чи так це? Чи справді він існує? І що не так з людьми, якщо суспільство створило такого монстра... Це все марення, омана, ілюзія, але в чиїй голові? Відповідь ви знайдете, переглянувши дане аніме... Або ж не знайдете.:)","homepage":"","tagline":""}},{"iso_3166_1":"CN","iso_639_1":"zh","name":"普通话","english_name":"Mandarin","data":{"name":"妄想代理人","overview":"喧嚣嘈杂的东京，都市人为了生计奔波劳碌，承受着巨大的压力，当一切逼近极限时，悲剧不可避免地上演。美丽安静的鹭月子凭借小狗娃娃麻露美成为炙手可热的设计师，与此同时她也遭遇来自同行的妒嫉以及下一次创作的瓶颈。在一次夜归途中，月子受伤住院，她声称遭到一名手持弯曲金属球棍、脚蹬黄金滑轮的少年的袭击。在此之后，“球棍少年”的袭击案件不断发生，警官猪狩和马庭介入调查，发现受害者在遇袭前大都承受着巨大的压力。不久，“球棍少年”落网，看似一切终于要告一段落，然而整个事态却朝着更加糟糕的方向发展。社会上遇袭事件越来越多，“球棍少年”也成为令人费解的谜团……","homepage":"","tagline":""}},{"iso_3166_1":"TW","iso_639_1":"zh","name":"普通话","english_name":"Mandarin","data":{"name":"妄想代理人","overview":"著名的設計師鷺月子在一天夜裡突然遭到神秘少年襲擊。在此之後接連出現新的受害者，城裡的人一度陷入恐慌。事件的真相究竟是……","homepage":"","tagline":""}}]},"similar":{"page":1,"results":[{"backdrop_path":"/fgTu7zADTGdliBdjB8zqfAYQqb9.jpg","first_air_date":"2010-01-07","genre_ids":[10759,16,18,10765],"id":37183,"name":"Dance in the Vampire Bund","origin_country":["JP"],"original_language":"ja","original_name":"ダンスインザヴァンパイアバンド","overview":"Mina Tepeş, the Princess of the ancient covenant and ruler of all vampires, wants her race to stop hiding from the humans. Using her vast wealth, she has paid off Japan''s entire national debt and by doing so, gained the right to create a district off Japan''s coast that is to become the future haven to vampires worldwide. But when she finally attempts to make public the existence of vampires to the world some politicians, terrorists and rival factions are plotting to assassinate Mina before she has a chance to get Japan''s and international recognition for the Vampire Bund. Now she must rely on her strength, cruelty and those closest to her, while trying to make a normal life.","poster_path":"/dakyi8YmADxi70nPzXxbOOxtZVt.jpg","vote_average":7.5,"vote_count":16,"popularity":11.22},{"backdrop_path":"/zsBnRVthjKXgZaXSCPohR6JefP0.jpg","first_air_date":"2012-04-09","genre_ids":[16,9648,35,10765],"id":54930,"name":"Dusk Maiden of Amnesia","origin_country":["JP"],"original_language":"ja","original_name":"黄昏乙女×アムネジア","overview":"The story revolves around a first-year high school student, Teiichi Niiya who had just enrolled at Seikyou Private Academy. When he gets lost in one of the school''s old building, he meets a girl named Yuuko Kanoe who reveals herself as a ghost with no memories. Teiichi then decides to investigate her death by delving deep into the infamous Seven Mysteries of the storied school along with Kirie Kanoe, Yuuko''s relative, and the oblivious second year Momoe Okonogi.  Throughout the story, Teiichi and Yuuko discover the truth about these ghost stories and help those who are troubled all the while inching closer to the truth behind Yuuko''s death.","poster_path":"/yC0Ia6TukxzsEe0dtwjbn24a2Jp.jpg","vote_average":8.4,"vote_count":64,"popularity":27.641},{"backdrop_path":"/aKKuD92zo3VuA61fB9aadaxwRkC.jpg","first_air_date":"2017-01-08","genre_ids":[16,35,10765],"id":69282,"name":"Interviews with Monster Girls","origin_country":["JP"],"original_language":"ja","original_name":"亜人ちゃんは語りたい","overview":"The story takes place in an age where \"Ajin\" (demi-human), more casually known as \"Demi,\" have slowly started to become accepted into human society. Tetsuo Takahashi is a biology teacher who ends up teaching three such Demi, hoping to understand more about them while also managing to catch their attention.","poster_path":"/wdMSKByZ9DMF2FDuFTsRcW42S7j.jpg","vote_average":7.5,"vote_count":22,"popularity":15.562},{"backdrop_path":"/5KibTSRCggpQc1wGfjoxOQHQCVj.jpg","first_air_date":"2001-07-05","genre_ids":[16,35,18],"id":36941,"name":"Fruits Basket","origin_country":["JP"],"original_language":"ja","original_name":"フルーツバスケット","overview":"Tohru Honda is 16 year old orphaned girl who gets invited to live in the house of her classmate, the handsome boy Sohma Yuki, and his cousins, 16 year old Kyo and 27 year old Shigure. However, these young men and parts of the rest of their family (both close and distant) hold a curse; if they are hugged by the opposite gender, they transform into animals of the Chinese Zodiac. Everyday is an adventure for sweet Tohru, as she gets to know everyone in the large family better (especially Yuki and Kyo), in both common and bizarre situations. But, the Sohma Family curse is certainly no laughing matter... it also holds horrible cruelty and heartbreak.","poster_path":"/7cewiZDj66DhGVk7u9yELLiiLvI.jpg","vote_average":7.5,"vote_count":36,"popularity":14.055},{"backdrop_path":"/kDssH6sbp3cL3qogtTBLp7s9g63.jpg","first_air_date":"2020-07-04","genre_ids":[16,35,10759],"id":96120,"name":"SUPER HXEROS","origin_country":["JP"],"original_language":"ja","original_name":"ド級編隊エグゼロス","overview":"Earth faces an unprecedented threat from an invasion by the mysterious Kiseichuu. The Kiseichuu feed on human sexual energy, also known as “H-energy,” and weaken the human population.\n\nHigh school student Retto Enjo is a member of the hero group HxEROS, who fight together to save the earth from the Kiseichuu.","poster_path":"/myqtIeEhLxtU5eOfv0tjRhoLod8.jpg","vote_average":5.7,"vote_count":12,"popularity":27.231},{"backdrop_path":"/fouk1bcHcALx1zCwOWT6VTj9vVs.jpg","first_air_date":"2013-10-07","genre_ids":[16,35],"id":66875,"name":"Non Non Biyori","origin_country":["JP"],"original_language":"ja","original_name":"のんのんびより","overview":"Elementary school student Ichijou Hotaru has moved with her parents from Tokyo to the middle of the country. Now she must adapt to her new school, where there are a total of 5 students in the same class who range through elementary and middle school ages. Join their everyday adventures in the countryside.","poster_path":"/uEFfrd2xBV2XEGkbNtMrHgLXFM1.jpg","vote_average":7.5,"vote_count":28,"popularity":53.55},{"backdrop_path":"/ftpjln5qa8xAqnDGamIHtYweRHY.jpg","first_air_date":"2020-07-11","genre_ids":[35,16],"id":96316,"name":"Rent-a-Girlfriend","origin_country":["JP"],"original_language":"ja","original_name":"Kanojo, Okarishimasu (彼女、お借りします)","overview":"In today’s Japan, \"rental\" services can deliver an afternoon with a \"friend,\" a \"parent,\" even a fake girlfriend! Kinoshita Kazuya is a 20-year-old failure of a college student. He managed to kiss his girlfriend once, but was dumped after a month.  Completely spiteful, Kazuya gets just desperate enough to give it a try. But he quickly discovers how complicated it can be to \"rent\" an emotional connection… and his new \"girlfriend,\" Mizuhara Chizuru, who’s trying to keep her side hustle secret, will panic when she finds out her real life and Kazuya’s are intertwined in surprising ways! A reckless rom-com filled with love and excitement is about to begin!","poster_path":"/4rqyyM0R3a0EeSlEvdpxDKbjiKB.jpg","vote_average":8.9,"vote_count":518,"popularity":73.855},{"backdrop_path":"/8UwpclMJMPbJV0FCgDd8R8XilRY.jpg","first_air_date":"2009-04-03","genre_ids":[16,35],"id":42253,"name":"K-ON!","origin_country":["JP"],"original_language":"ja","original_name":"けいおん!","overview":"The Sakuragoaka Girls'' Academy curriculum traditionally focuses on the three \"R\"s of reading, writing and arithmetic, but Ritsu Tainaka wants to add two more \"R\"s: Rock and Roll! To do that, however, Ritsu has to save the Light Music Club from being shut down due to little problems like not having any other members or a faculty advisor. After strong-arming her best friend Mio into joining and convincing Tsumugi Kotobuki to make it a trio, Ritsu''s would-be rockers are soon only one talented guitarist short of the quartet they need for school approval. What they get, unfortunately, is Yui Hirasawa, who''s never held a guitar in her life, but she''s determined to learn! Will the school halls come alive with the sound of music?","poster_path":"/kjun1ktN6Xdkk94ejhhZp9jAo3G.jpg","vote_average":7.6,"vote_count":57,"popularity":43.518},{"backdrop_path":"/dZ5kvYcMgSb7M5lFehnNtKrwwwk.jpg","first_air_date":"2007-04-08","genre_ids":[16,35],"id":42500,"name":"Lucky Star","origin_country":["JP"],"original_language":"ja","original_name":"らき☆すた","overview":"Having fun in school, doing homework together, cooking and eating, playing video games, watching anime. All those little things make up the daily life of the anime-and chocolate-loving-Izumi Konata and her friends.","poster_path":"/dk7LbdxOHiQZVOQBLSoIVZl2jnx.jpg","vote_average":7.4,"vote_count":34,"popularity":16.888},{"backdrop_path":"/v0fs6QuCurAFsFC2i3NX39vxrms.jpg","first_air_date":"2004-07-25","genre_ids":[16,10765,18],"id":42671,"name":"Elfen Lied","origin_country":["JP"],"original_language":"ja","original_name":"エルフェンリート","overview":"The Diclonius, a mutated homo sapien that is said to be selected by God and will eventually become the destruction of mankind, possesses two horns in their heads, and has a \"sixth sense\" which gives it telekinetic abilities. Due to this dangerous power, they have been captured and isolated in laboratories by the government. Lucy, a young and psychotic Diclonius, manages to break free of her confines and brutally murder most of the guards in the laboratory, only to get shot in the head as she makes her escape. She survives and manages to drift along to a beach, where two teenagers named Kouta and Yuka discovers her. Having lost her memories, she was named after the only thing that she can now say, \"Nyuu,\" and the two allow her to stay at Kouta''s home. However, it appears that the evil \"Lucy\" is not dead just yet...","poster_path":"/1Qaei4Vst8i0DfzdqhOJJHc5JAY.jpg","vote_average":8.5,"vote_count":828,"popularity":26.323},{"overview":"High-school girl Yuri suddenly finds herself on the rooftop of a high-rise building. She''s trapped in a bizarre world surrounded by skyscrapers, where a masked man cracked open a man''s head with an axe before her eyes. Finding a way to survive this bizarre world, find her beloved brother, and escape becomes her top priority, but she is beset by danger not just from the mysterious Masks, which possess both inhuman strength and cruelty, but other survivors turned cruel or desparate by the insanity of the high-rise world.","original_name":"天空侵犯","origin_country":["JP"],"backdrop_path":"/mpbLQla2rkFjgouzWAHpAZPSfwR.jpg","genre_ids":[16,9648,10759],"name":"High-Rise Invasion","original_language":"ja","poster_path":"/5uXaWe0LXTpBQVBBXL1ynae1DED.jpg","vote_count":368,"first_air_date":"2021-02-25","id":112163,"vote_average":8.5,"popularity":50.815},{"backdrop_path":"/lthkKBLe1rX6iThgVFg22O02sJw.jpg","genre_ids":[16,10759,10765],"original_language":"ja","vote_count":1102,"poster_path":"/g1rK2nRXSidcMwNliWDIroWWGTn.jpg","original_name":"呪術廻戦","origin_country":["JP"],"vote_average":8.5,"overview":"With his days numbered, high schooler Yuji decides to hunt down and consume the remaining 19 fingers of a deadly curse so it can die with him.","name":"Jujutsu Kaisen","first_air_date":"2020-10-03","id":95479,"popularity":237.847},{"overview":"When the world is struck by a deadly pandemic that turns humans into zombies, Takashi Komuro and several of his classmates at Fujimi High School try to survive the apocalypse.","id":56998,"name":"High School of the Dead","backdrop_path":"/ivWNDYPxDMjc82ajeSPuyq70hu9.jpg","genre_ids":[10759,16],"vote_count":484,"original_language":"ja","vote_average":8.4,"poster_path":"/wf3bBKp1RgCJjyCBLfEAbZjVr31.jpg","first_air_date":"2010-07-05","original_name":"学園黙示録 HIGHSCHOOL OF THE DEAD","origin_country":["JP"],"popularity":37.708},{"backdrop_path":"/oAfc1oNsURepm6VegBSBw1IGMF4.jpg","first_air_date":"2012-01-10","genre_ids":[16,18,9648],"id":42589,"name":"Another","origin_country":["JP"],"original_language":"ja","original_name":"アナザー","overview":"When Kouichi arrives at his new school, he immediately senses something frightening in the atmosphere of his new class, something that no student wants to talk about and that seems to be related to a mysterious and silent girl.","poster_path":"/cwaEn7Gg11avVtn1BZ5qaFV1aEd.jpg","vote_average":8.6,"vote_count":595,"popularity":29.92},{"backdrop_path":"/dkq4GO8Ubcu6ketU6MZNmc4Eksi.jpg","first_air_date":"2011-01-09","genre_ids":[16,35,18],"id":38603,"name":"Beelzebub","origin_country":["JP"],"original_language":"ja","original_name":"べるぜバブ","overview":"Violent delinquent Oga encounters a baby one day, which crawls onto his back and immediately forms an attachment to him. Though he doesn''t know it yet, this baby is named Kaiser de Emperana Beelzebub IV, or \"Baby Beel\" for short—the son of the Demon Lord!","poster_path":"/h6INRqObg9TphXXtNJaUIkAQMkP.jpg","vote_average":8.3,"vote_count":137,"popularity":29.078},{"overview":"Hitori Bocchi suffers from extreme social anxiety, she''s not good at talking to people, takes pretty extreme actions, is surprisingly adept at avoiding people, her legs cramp when she overexerts herself, gets full of herself when alone, will vomit when exposed to extreme tension and often comes up with plans. Now she is entering middle school and her only friend, Yawara Kai, is attending a different school. This leaves Bocchi alone, surrounded by new classmates with whom she must make friends before Kai will talk to her again.","id":85990,"backdrop_path":"/790rH1ByeDJg6VPwBFxdzxHRepI.jpg","vote_count":112,"genre_ids":[16,35],"first_air_date":"2019-04-06","original_language":"ja","original_name":"ひとりぼっちの○○生活","name":"Hitori Bocchi no Marumaru Seikatsu","poster_path":"/btoTzCw3zmjRtB99g2M5Mw2GUQG.jpg","origin_country":["JP"],"vote_average":8.8,"popularity":11.007},{"backdrop_path":"/45PNVTcVCYL8DR4ZAp290PSo3W2.jpg","first_air_date":"2016-06-28","genre_ids":[16,35,10765],"id":65956,"name":"The Morose Mononokean","origin_country":["JP"],"original_language":"ja","original_name":"不機嫌なモノノケ庵","overview":"Ashiya has spent the first seven days of high school stuck in the infirmary because of a youkai attaching itself to him. He ends up asking the owner of a small tea room called the \"Mononokean\" for help. This is a tale involving the very morose owner of Mononokean guiding the youkai that happened to wander into this world go to the next world.","poster_path":"/spX0QB8smjL2P7CDcVamnsIj5CD.jpg","vote_average":7.4,"vote_count":19,"popularity":12.516},{"backdrop_path":"/aeJAPG0OaOKMSnqvmDHWU9E5UQD.jpg","first_air_date":"2014-07-07","genre_ids":[16,35],"id":61379,"name":"Monthly Girls'' Nozaki-kun","origin_country":["JP"],"original_language":"ja","original_name":"月刊少女野崎くん","overview":"High school student Chiyo Sakura has a crush on schoolmate Umetarō Nozaki, but when she confesses her love to him, he mistakes her for a fan and gives her an autograph. When she says that she always wants to be with him, he invites her to his house and has her help on some drawings. Chiyo discovers that Nozaki is actually a renowned shōjo manga artist named Sakiko Yumeno. She then agrees to be his assistant in order to get closer to him. As they work on his manga Let''s Fall in Love (恋しよっ), they encounter other schoolmates who assist them or serve as inspirations for characters in the stories.","poster_path":"/maPv22inKIcyfOCil3wrWiyJ7gC.jpg","vote_average":7.1,"vote_count":38,"popularity":14.847},{"backdrop_path":"/mR3GPTvUFlKO9mbrx8o2CZBNDRb.jpg","first_air_date":"2019-07-06","genre_ids":[16,35,18],"id":88042,"name":"O Maidens in Your Savage Season","origin_country":["JP"],"original_language":"ja","original_name":"荒ぶる季節の乙女どもよ。","overview":"The girls in a high school literature club do a little icebreaker to get to know each other: answering the question, \"What''s one thing you want to do before you die?\" One of the girls blurts out, \"Sex.\" Little do they know, the whirlwind unleashed by that word pushes each of these girls, with different backgrounds and personalities, onto their own clumsy, funny, painful, and emotional paths toward adulthood.","poster_path":"/woxT7a6VTElGzrxFH19WDmN7gQ7.jpg","vote_average":8.3,"vote_count":90,"popularity":12.609},{"backdrop_path":"/oUjYTgiMwRRqNBpr9O6u9a0DdaN.jpg","first_air_date":"2019-04-06","genre_ids":[16,35],"id":87445,"name":"Senryu Girl","origin_country":["JP"],"original_language":"ja","original_name":"川柳少女","overview":"At first glance Yukishiro Nanako seems like a normal high school girl, but she has a notable eccentricity: instead of speaking, she communicates only through written senryu poetry! This means she expresses herself only in 5-7-5 syllables. To most this might seem like an inconvenience, but for Nanako and her ex-delinquent bestie, Busujima Eiji, it adds to the experience of their high school lives as they run the Literature Club.","poster_path":"/4W2mdiVE6vKnSumIQyD3g2S7Mw0.jpg","vote_average":7.7,"vote_count":24,"popularity":7.095}],"total_pages":142,"total_results":2826},"recommendations":{"page":1,"results":[{"adult":false,"backdrop_path":"/oM55x1xvdqfW9rJ48Dl7wEkBPC9.jpg","genre_ids":[16,18,10765,9648],"id":1087,"media_type":"tv","name":"Serial Experiments Lain","origin_country":["JP"],"original_language":"ja","original_name":"シリアルエクスペリメンツレイン","overview":"Lain—driven by the abrupt suicide of a classmate—logs on to the Wired and promptly loses herself in a twisted mass of hallucinations, memories, and interconnected-psyches.","popularity":12.646,"poster_path":"/oQOhIIZWKZpeQS6uZejS9rhaHWO.jpg","first_air_date":"1998-07-06","vote_average":8.171,"vote_count":240},{"adult":false,"backdrop_path":"/n2EFmkreI79Ih5nNdeMMi13gsK1.jpg","genre_ids":[10759,16,80,18,10765],"id":30991,"media_type":"tv","name":"Cowboy Bebop","origin_country":["JP"],"original_language":"ja","original_name":"カウボーイビバップ","overview":"In 2071, roughly fifty years after an accident with a hyperspace gateway made the Earth almost uninhabitable, humanity has colonized most of the rocky planets and moons of the Solar System. Amid a rising crime rate, the Inter Solar System Police (ISSP) set up a legalized contract system, in which registered bounty hunters (also referred to as \"Cowboys\") chase criminals and bring them in alive in return for a reward.","popularity":45.233,"poster_path":"/oD7X1vYb0O8DegvkEHWD08bml27.jpg","first_air_date":"1998-04-03","vote_average":8.483,"vote_count":807},{"adult":false,"backdrop_path":"/fGXhmKyqRmx6NN3gQHeWNmiEryl.jpg","genre_ids":[10765,16,18],"id":890,"media_type":"tv","name":"Neon Genesis Evangelion","origin_country":["JP"],"original_language":"ja","original_name":"新世紀エヴァンゲリオン","overview":"At the turn of the century, the Angels returned to Earth, seeking to wipe out humanity in an apocalyptic fury. Devastated, mankind''s last remnants moved underground to wait for the day when the Angels would come back to finish the job. Fifteen years later, that day has come... but this time, humanity is ready to fight back with terrifying bio-mechanical weapons known as the Evangelions. Watch as Shinji, Rei, Asuka and the rest of the mysterious shadow agency Nerv battle to save earth from total annihilation.","popularity":54.518,"poster_path":"/y2ah9t0navXyIvoHg1uIbIHO3tt.jpg","first_air_date":"1995-10-04","vote_average":8.615,"vote_count":759},{"adult":false,"backdrop_path":"/v0fs6QuCurAFsFC2i3NX39vxrms.jpg","genre_ids":[16,10765,18],"id":42671,"media_type":"tv","name":"Elfen Lied","origin_country":["JP"],"original_language":"ja","original_name":"エルフェンリート","overview":"The Diclonius, a mutated homo sapien that is said to be selected by God and will eventually become the destruction of mankind, possesses two horns in their heads, and has a \"sixth sense\" which gives it telekinetic abilities. Due to this dangerous power, they have been captured and isolated in laboratories by the government. Lucy, a young and psychotic Diclonius, manages to break free of her confines and brutally murder most of the guards in the laboratory, only to get shot in the head as she makes her escape. She survives and manages to drift along to a beach, where two teenagers named Kouta and Yuka discovers her. Having lost her memories, she was named after the only thing that she can now say, \"Nyuu,\" and the two allow her to stay at Kouta''s home. However, it appears that the evil \"Lucy\" is not dead just yet...","popularity":26.323,"poster_path":"/1Qaei4Vst8i0DfzdqhOJJHc5JAY.jpg","first_air_date":"2004-07-25","vote_average":8.475,"vote_count":828},{"adult":false,"backdrop_path":"/jdl9v9qnozlMAux1CRn0qAewlCM.jpg","genre_ids":[18,9648],"id":1920,"media_type":"tv","name":"Twin Peaks","origin_country":["US"],"original_language":"en","original_name":"Twin Peaks","overview":"The body of Laura Palmer is washed up on a beach near the small Washington state town of Twin Peaks. FBI Special Agent Dale Cooper is called in to investigate her strange demise only to uncover a web of mystery that ultimately leads him deep into the heart of the surrounding woodland and his very own soul.","popularity":68.628,"poster_path":"/lA9CNSdo50iQPZ8A2fyVpMvJZAf.jpg","first_air_date":"1990-04-08","vote_average":8.215,"vote_count":1177},{"adult":false,"backdrop_path":"/2Yfzm5857lprGonYPl30XgEpTry.jpg","genre_ids":[16,9648],"id":13916,"media_type":"tv","name":"Death Note","origin_country":["JP"],"original_language":"ja","original_name":"DEATH NOTE","overview":"Light Yagami is an ace student with great prospects—and he’s bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami death god. Any human whose name is written in the notebook dies, and Light has vowed to use the power of the Death Note to rid the world of evil. But will Light succeed in his noble goal, or will the Death Note turn him into the very thing he fights against?","popularity":114.472,"poster_path":"/b1LDp0faskUOoORqg1U6A6F3OkI.jpg","first_air_date":"2006-10-04","vote_average":8.664,"vote_count":2221},{"adult":false,"backdrop_path":"/7uihCghJiyYFTXSh1BOPdHQN8xK.jpg","genre_ids":[35,16],"id":2190,"media_type":"tv","name":"South Park","origin_country":["US"],"original_language":"en","original_name":"South Park","overview":"Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.","popularity":165.607,"poster_path":"/iiCY2QIGSnmtVkIdjkKAfwDs0KF.jpg","first_air_date":"1997-08-13","vote_average":8.241,"vote_count":2418}],"total_pages":1,"total_results":7},"keywords":{"results":[{"name":"horror","id":8087},{"name":"police investigation","id":158927},{"name":"anime","id":210024}]},"changes":{"changes":[{"key":"crew","items":[{"id":"60cc2f857614210040fddba7","action":"added","time":"2021-06-18 05:30:45 UTC","iso_639_1":"","iso_3166_1":"","value":{"add_to_every_season":false,"credit_id":"60cc2f847614210040fddba5","department":"Crew","job":"Cinematography","person_id":117622,"season_id":19239}},{"id":"60cc2f97e72fe8002503f53b","action":"added","time":"2021-06-18 05:31:03 UTC","iso_639_1":"","iso_3166_1":"","value":{"add_to_every_season":false,"credit_id":"60cc2f97e72fe8002503f539","department":"Editing","job":"Editor","person_id":1352117,"season_id":19239}},{"id":"60cc2fa3a217c000566be4d8","action":"added","time":"2021-06-18 05:31:15 UTC","iso_639_1":"","iso_3166_1":"","value":{"add_to_every_season":false,"credit_id":"60cc2fa2a217c000566be4d6","department":"Editing","job":"Editor","person_id":1697,"season_id":19239}},{"id":"60cc2fc942d8a500298e018c","action":"added","time":"2021-06-18 05:31:53 UTC","iso_639_1":"","iso_3166_1":"","value":{"add_to_every_season":false,"credit_id":"60cc2fc842d8a500298e018a","department":"Visual Effects","job":"Character Designer","person_id":40336,"season_id":19239}}]}]},"content_ratings":{"results":[{"iso_3166_1":"US","rating":"TV-MA"},{"iso_3166_1":"AU","rating":"MA15+"},{"iso_3166_1":"RU","rating":"18+"},{"iso_3166_1":"DE","rating":"16"},{"iso_3166_1":"GB","rating":"18"}]},"alternative_titles":{"results":[{"iso_3166_1":"JP","title":"Mōsō Dairinin","type":"Roman"},{"iso_3166_1":"JP","title":"Mousou Dairinin","type":""},{"iso_3166_1":"KR","title":"망상대리인","type":""}]},"videos":{"results":[{"id":"5fc36550174a87003fe2e9fa","iso_639_1":"en","iso_3166_1":"US","key":"QEsNDDwhSJ4","name":"Paranoia Agent - Opening Theme - Dream Island Obsessional Park","site":"YouTube","size":1080,"type":"Opening Credits"}]}}'
+        curl_info:
+            url: 'http://api.themoviedb.org/3/tv/9343?api_key=255946d78706eda1da6dc4f3a2e217e4&append_to_response=credits%2Cexternal_ids%2Cimages%2Ctranslations%2Csimilar%2Crecommendations%2Ckeywords%2Cchanges%2Ccontent_ratings%2Calternative_titles%2Cvideos'
+            content_type: application/json;charset=utf-8
+            http_code: 200
+            header_size: 851
+            request_size: 353
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.224041
+            namelookup_time: 0.001626
+            connect_time: 0.008515
+            pretransfer_time: 0.008594
+            size_upload: !!float 0
+            size_download: !!float 49858
+            speed_download: !!float 222539
+            speed_upload: !!float 0
+            download_content_length: !!float 49858
+            upload_content_length: !!float 0
+            starttransfer_time: 0.215824
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 204.246.191.26
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 192.168.1.144
+            local_port: 59954
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 8515
+            namelookup_time_us: 1626
+            pretransfer_time_us: 8594
+            redirect_time_us: 0
+            starttransfer_time_us: 215824
+            total_time_us: 224041
+-
+    request:
+        method: GET
+        url: 'https://kitsu.io/api/edge/anime/290/mappings?filter%5BexternalSite%5D=thetvdb/series&page%5Blimit%5D=1&'
+        headers:
+            Host: kitsu.io
+            Accept-Encoding: ''
+            User-Agent: GuzzleHttp/7
+            Content-Type: application/json
+            Accept: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 18 Jun 2021 18:34:01 GMT'
+            Content-Type: application/vnd.api+json
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+            x-download-options: noopen
+            x-permitted-cross-domain-policies: none
+            referrer-policy: strict-origin-when-cross-origin
+            etag: 'W/"e3750ba28fdb3aad1c32c1fe25e97582"'
+            cache-control: 'max-age=0, private, must-revalidate'
+            x-request-id: afc0e356-a058-4039-8d1d-37f0dd81840f
+            x-runtime: '0.019313'
+            vary: Origin
+            CF-Cache-Status: DYNAMIC
+            cf-request-id: 0ac1ffd3b70000e7e5629c6000000001
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Report-To: '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=C2WWaTopvj83VMqfEuPfqg2jFrDCSviIaYELpZrDghmj%2BFO74rBc%2Bhef6ueTQPuuRZKntxP%2BRAfGyAwK3Tku1%2BqjU%2By6Keq8BM%2FRhcRmj6gJoaI4yQ8%3D"}],"group":"cf-nel","max_age":604800}'
+            NEL: '{"report_to":"cf-nel","max_age":604800}'
+            Strict-Transport-Security: 'max-age=31536000; preload'
+            Server: cloudflare
+            CF-RAY: 66169bff8870e7e5-LAX
+            alt-svc: 'h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400'
+        body: '{"data":[{"id":"14184","type":"mappings","links":{"self":"https://kitsu.io/api/edge/mappings/14184"},"attributes":{"createdAt":null,"updatedAt":null,"externalSite":"thetvdb/series","externalId":"75092"},"relationships":{"item":{"links":{"self":"https://kitsu.io/api/edge/mappings/14184/relationships/item","related":"https://kitsu.io/api/edge/mappings/14184/item"}}}}],"meta":{"count":1},"links":{"first":"https://kitsu.io/api/edge/anime/290/mappings?filter%5BexternalSite%5D=thetvdb%2Fseries&page%5Blimit%5D=1&page%5Boffset%5D=0","last":"https://kitsu.io/api/edge/anime/290/mappings?filter%5BexternalSite%5D=thetvdb%2Fseries&page%5Blimit%5D=1&page%5Boffset%5D=0"}}'
+        curl_info:
+            url: 'https://kitsu.io/api/edge/anime/290/mappings?filter%5BexternalSite%5D=thetvdb/series&page%5Blimit%5D=1&'
+            content_type: application/vnd.api+json
+            http_code: 200
+            header_size: 1220
+            request_size: 178
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.196598
+            namelookup_time: 0.001501
+            connect_time: 0.031954
+            pretransfer_time: 0.084005
+            size_upload: !!float 0
+            size_download: !!float 665
+            speed_download: !!float 3382
+            speed_upload: !!float 0
+            download_content_length: !!float -1
+            upload_content_length: !!float 0
+            starttransfer_time: 0.196448
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 104.21.58.52
+            certinfo: {  }
+            primary_port: 443
+            local_ip: 192.168.1.144
+            local_port: 38830
+            http_version: 2
+            protocol: 2
+            ssl_verifyresult: 0
+            scheme: HTTPS
+            appconnect_time_us: 83943
+            connect_time_us: 31954
+            namelookup_time_us: 1501
+            pretransfer_time_us: 84005
+            redirect_time_us: 0
+            starttransfer_time_us: 196448
+            total_time_us: 196598
+-
+    request:
+        method: GET
+        url: 'http://api.themoviedb.org/3/find/75092?api_key=255946d78706eda1da6dc4f3a2e217e4&external_source=tvdb_id'
+        headers:
+            Host: api.themoviedb.org
+            Accept-Encoding: ''
+            Accept: 'application/json; charset=utf-8'
+            User-Agent: 'php-tmdb/symfony/4.0.0 php-tmdb/api/4.0.0'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Content-Type: application/json;charset=utf-8
+            Content-Length: '1934'
+            Connection: keep-alive
+            Date: 'Fri, 18 Jun 2021 18:34:01 GMT'
+            Server: openresty
+            Access-Control-Allow-Origin: '*'
+            Access-Control-Allow-Methods: 'GET, HEAD, POST, PUT, DELETE, OPTIONS'
+            Access-Control-Expose-Headers: 'ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After, Content-Length, Content-Range'
+            Cache-Control: 'public, max-age=28800'
+            X-Memc: HIT
+            X-Memc-Key: 1eee0608b725e89a4a18d395a48dfeac56aff055
+            X-Memc-Age: '12074'
+            X-Memc-Expires: '9526'
+            ETag: 'W/"e0fa880590af54c378af2a810a582b42"'
+            Vary: 'Accept-Encoding,Accept-Encoding,Accept-Encoding'
+            X-Cache: 'Miss from cloudfront'
+            Via: '1.1 9f4bc08bf8fe4d53ba73713387d5ab3f.cloudfront.net (CloudFront)'
+            X-Amz-Cf-Pop: HIO50-C2
+            X-Amz-Cf-Id: ZzNibQqdfgA5LsOk5DwJsrq1G0kj73me0m2SuEb4LFKoBtV6JekQXA==
+        body: '{"movie_results":[],"person_results":[],"tv_results":[{"original_name":"妄想代理人","origin_country":["JP"],"original_language":"ja","first_air_date":"2004-02-03","overview":"The infamous Shounen Bat (Lil'' Slugger) is terrorizing the residents of Musashino City. Flying around on his rollerblades and beating people down with a golden baseball bat, the assailant seems impossible to catch—much less understand. His first victim, the well-known yet timid character designer Tsukiko Sagi, is suspected of orchestrating the attacks. Believed only by her anthropomorphic pink stuffed animal, Maromi, Tsukiko is just one of Shounen Bat''s many victims. As Shounen Bat continues his relentless assault on the town, detectives Keiichi Ikari and Mitsuhiro Maniwa begin to investigate the identity of the attacker. However, more and more people fall victim to the notorious golden bat, and news of the assailant begins circulating around the town. Paranoia starts to set in as chilling rumors spread amongst adults and children alike. Will the two detectives be able to unravel the truth behind Shounen Bat, or will the paranoia get to them first?","name":"Paranoia Agent","vote_average":7.9,"poster_path":"/cQ6YiBTUlsKGm2mWa7mE9eZnlS2.jpg","vote_count":120,"backdrop_path":"/6ugaYfLhkEyVXzw4EYawMIV30qx.jpg","id":9343,"genre_ids":[16,18,9648,10765],"popularity":14.206}],"tv_episode_results":[{"air_date":null,"episode_number":12,"id":423957,"name":"Boston Celtics vs. Washington Senators","overview":"During their dismal last season of existence, the Washington Senators (A.L.) baseball team makes its only Sports Challenge appearance.  Most of the time, manager Ted Williams speaks for the team.  That doesn''t matter at all to the Celtics, who win their second straight.","production_code":"","season_number":1,"show_id":10356,"still_path":"/fbX6td7Bg7WSJybFHiKmNyVWFpa.jpg","vote_average":0.0,"vote_count":0}],"tv_season_results":[]}'
+        curl_info:
+            url: 'http://api.themoviedb.org/3/find/75092?api_key=255946d78706eda1da6dc4f3a2e217e4&external_source=tvdb_id'
+            content_type: application/json;charset=utf-8
+            http_code: 200
+            header_size: 852
+            request_size: 217
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.116227
+            namelookup_time: 0.001733
+            connect_time: 0.008591
+            pretransfer_time: 0.008667
+            size_upload: !!float 0
+            size_download: !!float 1934
+            speed_download: !!float 16639
+            speed_upload: !!float 0
+            download_content_length: !!float 1934
+            upload_content_length: !!float 0
+            starttransfer_time: 0.116151
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 204.246.191.99
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 192.168.1.144
+            local_port: 60620
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 8591
+            namelookup_time_us: 1733
+            pretransfer_time_us: 8667
+            redirect_time_us: 0
+            starttransfer_time_us: 116151
+            total_time_us: 116227
+-
+    request:
+        method: GET
+        url: 'http://api.trakt.tv/shows/tt0433722/stats.json'
+        headers:
+            Host: api.trakt.tv
+            Accept-Encoding: ''
+            User-Agent: GuzzleHttp/7
+            Content-Type: application/json
+            trakt-api-version: '2'
+            trakt-api-key: e78a5232d6b6f56c0892e61a24ff79436439cff25eddd912cf03bcc918058985
+            Accept: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 18 Jun 2021 18:34:02 GMT'
+            Content-Type: 'application/json; charset=utf-8'
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            X-Frame-Options: SAMEORIGIN
+            X-XSS-Protection: '1; mode=block'
+            X-Content-Type-Options: nosniff
+            X-Download-Options: noopen
+            X-Permitted-Cross-Domain-Policies: none
+            Referrer-Policy: strict-origin-when-cross-origin
+            Expires: 'Sat, 19 Jun 2021 02:34:01 GMT'
+            ETag: 'W/"06539dbcc64dcd941cf59b8cef36bc84"'
+            Cache-Control: 'public, max-age=28800'
+            Vary: Accept-Encoding
+            X-Ratelimit: '{"name":"UNAUTHED_API_GET_LIMIT","period":300,"limit":1000,"remaining":975,"until":"2021-06-18T18:35:00Z"}'
+            X-Request-Id: 5aaab9b2-e76b-496e-85f9-cb44ffb56904
+            X-Runtime: '0.006317'
+            CF-Cache-Status: MISS
+            cf-request-id: 0ac1ffd546000009231e19f000000001
+            Server: cloudflare
+            CF-RAY: 66169c020e160923-SEA
+        body: '{"watchers":13010,"plays":168476,"collectors":14377,"collected_episodes":153984,"comments":3,"lists":2240,"votes":516,"recommended":20}'
+        curl_info:
+            url: 'http://api.trakt.tv/shows/tt0433722/stats.json'
+            content_type: 'application/json; charset=utf-8'
+            http_code: 200
+            header_size: 830
+            request_size: 225
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.209156
+            namelookup_time: 0.020492
+            connect_time: 0.023192
+            pretransfer_time: 0.023279
+            size_upload: !!float 0
+            size_download: !!float 135
+            speed_download: !!float 645
+            speed_upload: !!float 0
+            download_content_length: !!float -1
+            upload_content_length: !!float 0
+            starttransfer_time: 0.209097
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 172.67.3.215
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 192.168.1.144
+            local_port: 50036
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 23192
+            namelookup_time_us: 20492
+            pretransfer_time_us: 23279
+            redirect_time_us: 0
+            starttransfer_time_us: 209097
+            total_time_us: 209156
