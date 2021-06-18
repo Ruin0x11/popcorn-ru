@@ -134,19 +134,28 @@ class MediaService
         return null;
     }
 
-    public function searchAnimeByTitle(string $title): ?string
+    public function searchAnimeByTitle(string $title, ?string $year = null): ?string
     {
         $searchBuilder = new SearchBuilder();
-        $response = $searchBuilder
+        $searchBuilder = $searchBuilder
             ->setEndpoint('anime')
             ->addFilter('text', $title)
-            ->addFilter('subtype', 'ONA|OVA|TV|movie')
-            ->addLimit(1)
+            ->addFilter('subtype', 'ONA|OVA|TV|movie');
+
+        if ($year) {
+            $searchBuilder = $searchBuilder->addFilter('year', $year);
+        }
+
+        $response = $searchBuilder->addLimit(1)
             ->search()
             ->get(true);
 
         if (!empty($response)) {
             return $response[0]["id"];
+        }
+
+        if ($year) {
+            return $this->searchAnimeByTitle($title, null);
         }
 
         return null;
@@ -188,23 +197,6 @@ class MediaService
                 return null;
             }
             return $this->fillShow($showInfo, new Show());
-        }
-
-        return null;
-    }
-
-    public function searchAnimeByTitleKitsu(string $title): ?string
-    {
-        $searchBuilder = new SearchBuilder();
-        $response = $searchBuilder
-            ->setEndpoint('anime')
-            ->addFilter('text', title)
-            ->addLimit(1)
-            ->search()
-            ->get();
-
-        if (!empty($response)) {
-            return $response[0]['id'];
         }
 
         return null;

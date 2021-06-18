@@ -91,9 +91,9 @@ class TorrentService
     {
         return $this->mediaInfo->searchShowByTitle($title);
     }
-    public function searchAnimeByTitle(string $title)
+    public function searchAnimeByTitle(string $title, ?string $year = null)
     {
-        return $this->mediaInfo->searchAnimeByTitle($title);
+        return $this->mediaInfo->searchAnimeByTitle($title, $year);
     }
 
     public function getMediaByImdb(string $imdbId): ?BaseMedia

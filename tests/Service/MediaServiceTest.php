@@ -23,6 +23,7 @@ class MediaServiceTest extends KernelTestCase
         $this->assertEquals("tt0433722", $anime->getImdb());
         $this->assertEquals("75092", $anime->getTvdb());
         $this->assertEquals("paranoia-agent", $anime->getSlug());
+        $this->assertEquals("2004", $anime->getYear());
         $this->assertEquals("JP", $anime->getCountry());
         $this->assertEquals("ANIMAX", $anime->getNetwork());
         $this->assertEquals("", $anime->getAirDay());
@@ -51,6 +52,7 @@ class MediaServiceTest extends KernelTestCase
         $this->assertEquals("tt13248076", $anime->getImdb());
         $this->assertEquals("390028", $anime->getTvdb());
         $this->assertEquals("wonder-egg-priority", $anime->getSlug());
+        $this->assertEquals("2021", $anime->getYear());
         $this->assertEquals("JP", $anime->getCountry());
         $this->assertEquals("NTV", $anime->getNetwork());
         $this->assertEquals("", $anime->getAirDay());
@@ -78,6 +80,7 @@ class MediaServiceTest extends KernelTestCase
         $this->assertEquals("tt7089878", $anime->getImdb());
         $this->assertEquals("", $anime->getTvdb());
         $this->assertEquals("liz-to-aoi-tori", $anime->getSlug());
+        $this->assertEquals("2018", $anime->getYear());
         $this->assertEquals("JP", $anime->getCountry());
         $this->assertEquals("", $anime->getNetwork());
         $this->assertEquals("", $anime->getAirDay());

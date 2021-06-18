@@ -90,4 +90,34 @@ final class NyaaSiTest extends SpiderTestCase
 
         $this->assertEquals("tt1773185", $anime->getImdb());
     }
+
+    public function testNyaaSiGetTopicAmbiguousYear()
+    {
+        $spider = $this->getService(NyaaSi::class);
+
+        $topic = new TopicDto("/view/1399634", 10, 3, 10);
+
+        // might match 2004 version instead of 1980 version
+        VCR::insertCassette("nyaaSiGetTopicAmbiguousYear");
+        $spider->getTopic($topic);
+        VCR::eject();
+
+        $entityManager = $this->getService('doctrine')->getManager();
+
+        $torrentRepo = $entityManager->getRepository(\App\Entity\Torrent\BaseTorrent::class);
+        $torrent = $torrentRepo->findOneBy(["provider" => "NyaaSi"]);
+
+        $this->assertEquals("NyaaSi", $torrent->getProvider());
+        $this->assertEquals("Tetsujin #28 (1980) [TSHS] episode 01 (Betamax rip) original broadcast with subtitled commercials [26D3B260].mkv", $torrent->getProviderTitle());
+        $this->assertEquals("346.5 MB", $torrent->getFilesize());
+        $this->assertEquals("480p", $torrent->getQuality());
+        $this->assertEquals("en", $torrent->getLanguage());
+        $this->assertEquals(10, $torrent->getSeed());
+        $this->assertEquals(13, $torrent->getPeer());
+
+        $anime = $torrent->getMedia();
+
+        $this->assertEquals("tt0458218", $anime->getImdb());
+        $this->assertEquals("1980", $anime->getYear());
+    }
 }

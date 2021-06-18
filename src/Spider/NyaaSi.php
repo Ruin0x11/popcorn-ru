@@ -129,7 +129,9 @@ class NyaaSi extends AbstractSpider
         }
         $this->context["anitomy"] = $anitomy;
 
-        $kitsu = $this->torrentService->searchAnimeByTitle($animeTitle);
+        $animeYear = @$anitomy["anime_year"];
+
+        $kitsu = $this->torrentService->searchAnimeByTitle($animeTitle, $animeYear);
         if (!$kitsu) {
             $this->logger->info('No Kitsu', $this->context);
             return;
@@ -172,6 +174,7 @@ class NyaaSi extends AbstractSpider
             $torrent = $this->getEpisodeTorrentByKitsu($topic->id, $kitsu, $season, (int)$episode);
         }
 
+
         if (!$torrent) {
             return;
         }
@@ -181,8 +184,7 @@ class NyaaSi extends AbstractSpider
             ->setSeed($topic->seed)
             ->setPeer($topic->seed + $topic->leech)
             ->setQuality($quality)
-            ->setLanguage($lang)
-        ;
+            ->setLanguage($lang);
 
         $torrent->setFiles($files);
 
