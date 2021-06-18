@@ -108,7 +108,7 @@ abstract class AbstractSpider implements SpiderInterface
             $newTorrent = new MovieTorrent();
             $newTorrent->setMovie($media);
         }
-        if ($media instanceof Show) {
+        if ($media instanceof BaseShow) {
             $newTorrent = new ShowTorrent();
             $newTorrent->setShow($media);
         }
@@ -119,7 +119,7 @@ abstract class AbstractSpider implements SpiderInterface
     protected function getEpisodeTorrentByImdb(string $topicId, string $imdb, int $s, int $e)
     {
         $media = $this->torrentService->getMediaByImdb($imdb);
-        if (!($media instanceof Show)) {
+        if (!($media instanceof BaseShow)) {
             return null;
         }
         $episode = $this->episodeService->getEpisode($media, $s, $e);

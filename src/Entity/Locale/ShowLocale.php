@@ -12,7 +12,7 @@ class ShowLocale extends BaseLocale
 {
     /**
      * @var Show
-     * @ORM\ManyToOne(targetEntity="App\Entity\Show", inversedBy="locales")
+     * @ORM\ManyToOne(targetEntity="App\Entity\BaseShow", inversedBy="locales")
      * @ORM\JoinColumn(name="media_id")
      */
     protected $show;

@@ -51,7 +51,7 @@ class LocaleService
         {
             if ($media instanceof Movie) {
                 $mediaLocale = $this->localeRepo->findOrCreateByMovieAndLocale($media, $locale);
-            } else if ($media instanceof Show) {
+            } else if ($media instanceof BaseShow) {
                 $mediaLocale = $this->localeRepo->findOrCreateByShowAndLocale($media, $locale);
             }
 

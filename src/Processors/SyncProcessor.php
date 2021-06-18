@@ -7,6 +7,7 @@ use App\Entity\Movie;
 use App\Entity\Show;
 use App\Repository\MovieRepository;
 use App\Repository\ShowRepository;
+use App\Repository\AnimeRepository;
 use App\Repository\TorrentRepository;
 use App\Service\MediaService;
 use Doctrine\ORM\EntityManagerInterface;
@@ -50,6 +51,7 @@ class SyncProcessor extends AbstractProcessor implements TopicSubscriberInterfac
         TorrentRepository $torrentRepository,
         MovieRepository $movieRepository,
         ShowRepository $showRepository,
+        AnimeRepository $animeRepository,
         ProducerInterface $producer,
         LoggerInterface $logger)
     {
@@ -58,6 +60,7 @@ class SyncProcessor extends AbstractProcessor implements TopicSubscriberInterfac
         $this->torrentRepository = $torrentRepository;
         $this->movieRepository = $movieRepository;
         $this->showRepository = $showRepository;
+        $this->animeRepository = $animeRepository;
         $this->extractor = $extractor;
         $this->em = $em;
     }
@@ -105,6 +108,15 @@ class SyncProcessor extends AbstractProcessor implements TopicSubscriberInterfac
                 }
                 $this->extractor->updateMedia($show);
                 $show->sync();
+            }
+            if ($data['type'] === 'anime') {
+                /** @var Anime $anime */
+                $anime = $this->animeRepository->find($data['id']);
+                if (!$anime) {
+                    return self::ACK;
+                }
+                $this->extractor->updateAnime($anime->getKitsu(), $anime);
+                $anime->sync();
             }
 
             $this->em->flush();

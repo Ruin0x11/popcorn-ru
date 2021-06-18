@@ -15,7 +15,7 @@ class ShowTorrent extends BaseTorrent
 {
     /**
      * @var Show
-     * @ORM\ManyToOne(targetEntity="App\Entity\Show", inversedBy="torrents")
+     * @ORM\ManyToOne(targetEntity="App\Entity\BaseShow", inversedBy="torrents")
      * @ORM\JoinColumn(name="media_id")
      */
     protected $show;

@@ -5,6 +5,7 @@
     "license": "proprietary",
     "require": {
         "php": "^7.4",
+        "ext-anitomy": "*",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-json": "*",
@@ -17,6 +18,8 @@
         "php-http/cache-plugin": "^1.7",
         "php-tmdb/symfony": "4.0.x-dev",
         "ramsey/uuid-doctrine": "^1.5",
+        "ruin0x11/anitomy": "dev-master",
+        "s1njar/kitsu-php": "dev-master",
         "sensio/framework-extra-bundle": "^5.5",
         "sentry/sentry-symfony": "^3.2",
         "symfony/console": "^5.1",
@@ -32,9 +35,12 @@
         "symfony/yaml": "^5.1"
     },
     "require-dev": {
-        "roave/security-advisories": "dev-master",
         "doctrine/doctrine-fixtures-bundle": "^3.3",
-        "symfony/maker-bundle": "^1.15"
+        "phpunit/phpunit": "^9.5",
+        "roave/security-advisories": "dev-master",
+        "symfony/browser-kit": "^5.3",
+        "symfony/maker-bundle": "^1.15",
+        "symfony/phpunit-bridge": "^5.3"
     },
     "config": {
         "platform": {
@@ -66,7 +72,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/bbaronSVK/traktor"
+            "url": "https://github.com/Ruin0x11/traktor"
         },
         {
             "type": "git",

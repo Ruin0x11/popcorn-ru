@@ -2,9 +2,11 @@
 
 namespace App\Service;
 
+use DateTime;
 use App\Entity\BaseMedia;
 use App\Entity\Movie;
 use App\Entity\Show;
+use App\Entity\Anime;
 use Tmdb\Client;
 use Tmdb\Exception\TmdbApiException;
 use Tmdb\Model\Common\Country;
@@ -14,6 +16,7 @@ use Tmdb\Model\Network;
 use Tmdb\Model\Tv as TmdbShow;
 use Tmdb\Repository\MovieRepository;
 use Tmdb\Repository\TvRepository;
+use S1njar\Kitsu\Builder\SearchBuilder;
 
 class MediaService
 {
@@ -152,6 +155,113 @@ class MediaService
         return null;
     }
 
+    public function searchAnimeByTitleKitsu(string $title): ?string
+    {
+        $searchBuilder = new SearchBuilder();
+        $response = $searchBuilder
+            ->setEndpoint('anime')
+            ->addFilter('text', title)
+            ->addLimit(1)
+            ->search()
+            ->get();
+
+        if (count($response) == 1) {
+            return $response[0]['id'];
+        }
+
+        return null;
+    }
+
+    private function getKitsuExternalId(string $kitsuId, string $externalSite): ?string
+    {
+        $searchBuilder = new SearchBuilder();
+        $mapping = $searchBuilder
+            ->setEndpoint('anime/' . $kitsuId . '/mappings')
+            ->addFilter('externalSite', $externalSite)
+            ->addLimit(1)
+            ->search()
+            ->get(true);
+
+        if (!empty($mapping)) {
+            return $mapping[0]["attributes"]["externalId"];
+        }
+
+        return null;
+    }
+
+    private function kitsuToMal(string $kitsuId): ?string
+    {
+        return $this->getKitsuExternalId($kitsuId, "myanimelist/anime");
+    }
+
+    private function kitsuToTvdb(string $kitsuId): ?string
+    {
+        return $this->getKitsuExternalId($kitsuId, "thetvdb/series");
+    }
+
+    public function fetchAnime(string $kitsuId): ?Anime
+    {
+        return $this->updateAnime($kitsuId, new Anime());
+    }
+
+    public function updateAnime(string $kitsuId, Anime $anime): ?Anime
+    {
+        $searchBuilder = new SearchBuilder();
+        $response = $searchBuilder
+            ->setEndpoint('anime')
+            ->addLimit(1)
+            ->searchById((int)$kitsuId)
+            ->get();
+
+        if (empty($response)) {
+            return null;
+        }
+
+        $kitsuResponse = $response[0];
+        $anime = $this->fillAnime($kitsuResponse, $anime);
+
+        $malId = $this->kitsuToMal($kitsuId);
+        if ($malId) {
+            $anime->setMal($malId);
+        }
+
+        $tvdbId = $this->kitsuToTvdb($kitsuId);
+        if (!$tvdbId) {
+            return $anime;
+        }
+        $anime->setTvdb($tvdbId);
+
+        $search = $this->client->getFindApi()->findBy($tvdbId, ['external_source' => 'tvdb_id']);
+        if (!empty($search['movie_results'])) {
+            $id = $search['movie_results'][0]['id'];
+            /** @var TmdbMovie $movieInfo */
+            $movieInfo = $this->movieRepo->load($id);
+            $anime->setType("movie")
+                  ->setImdb($movieInfo->getImdbId());
+        }
+        if (!empty($search['tv_results'])) {
+            $id = $search['tv_results'][0]['id'];
+            /** @var TmdbShow $showInfo */
+            $showInfo = $this->showRepo->load($id);
+            if (!$showInfo->getExternalIds()->getTvdbId()) {
+                return null;
+            }
+            $anime->setType("show")
+                  ->setImdb($showInfo->getExternalIds()->getImdbId())
+                  ->setNumSeasons($showInfo->getNumberOfSeasons())
+                  ->setLastUpdated($showInfo->getLastAirDate() ? $showInfo->getLastAirDate()->getTimestamp() : 0);
+            /** @var Country $country */
+            $country = current($showInfo->getOriginCountry()->toArray());
+            /** @var Network $network */
+            $network = current(current($showInfo->getNetworks()));
+            $anime
+                ->setCountry($country ? $country->getIso31661() : '')
+                ->setNetwork($network ? $network->getName() : '');
+        }
+
+        return $anime;
+    }
+
     protected function fillShow(TmdbShow $showInfo, Show $show): Show
     {
         $show
@@ -222,6 +332,38 @@ class MediaService
         $this->localeService->fillMedia($movie, $movieInfo);
 
         return $movie;
+    }
+
+    protected function fillAnime($kitsu, Anime $anime): Anime
+    {
+        $year = '';
+        $startDate = $kitsu->attributes->startDate;
+        if ($startDate) {
+            $startDate = DateTime::createFromFormat("Y-m-d", $startDate);
+            $year = $startDate->format('Y');
+        }
+
+        $anime
+            ->setKitsu($kitsu->id)
+            ->setTitle($kitsu->attributes->canonicalTitle)
+            ->setSynopsis($kitsu->attributes->synopsis)
+            ->setYear($year)
+            ->setCountry('Japan')
+            ->setAirDay('') // TODO: инфы нет
+            ->setAirTime('') // TODO: инфы нет
+            ->setRuntime((string)$kitsu->attributes->episodeLength)
+            ->setStatus($kitsu->attributes->status)
+            ->setSlug($kitsu->attributes->slug);
+
+        $type = "movie";
+        if ($kitsu->attributes->subtype == "TV") {
+            $type = "show";
+        }
+        $anime->setType($type);
+
+        $this->fillAnimeImagesGenres($anime, $kitsu);
+
+        return $anime;
     }
 
     public function updateMedia(BaseMedia $media)
@@ -310,5 +452,26 @@ class MediaService
         }
         $genres = $genres ?: ['unknown'];
         $media->setGenres($genres);
+    }
+
+    private function fillAnimeImagesGenres(Anime $anime, $kitsu): void
+    {
+        $anime->getImages()
+            ->setPoster($kitsu->attributes->posterImage ? $kitsu->attributes->posterImage->original : '')
+            ->setFanart($kitsu->attributes->coverImage ? $kitsu->attributes->coverImage->original : '')
+            ->setBanner($kitsu->attributes->coverImage ? $kitsu->attributes->coverImage->original : '');
+
+        $searchBuilder = new SearchBuilder();
+        $results = $searchBuilder
+            ->setEndpoint('anime/' . $kitsu->id . '/genres')
+            ->search()
+            ->get(true);
+
+        $genres = [];
+        foreach($results as $genre) {
+            $genres[] = strtolower($genre["attributes"]["name"]);
+        }
+        $genres = $genres ?: ['unknown'];
+        $anime->setGenres($genres);
     }
 }

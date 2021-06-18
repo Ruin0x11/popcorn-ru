@@ -57,7 +57,7 @@ class Episode
 
     /**
      * @var Show
-     * @ORM\ManyToOne(targetEntity="App\Entity\Show", inversedBy="episodes")
+     * @ORM\ManyToOne(targetEntity="App\Entity\BaseShow", inversedBy="episodes")
      */
     protected $show;
     public function getShow(): Show { return $this->show; }
