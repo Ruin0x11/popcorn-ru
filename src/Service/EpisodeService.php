@@ -67,11 +67,10 @@ class EpisodeService
         foreach ($torrent->getFiles() as $file) {
             [$s, $e] = $this->getSEFromName($file->getName(), $torrent->getShow());
             if ($s === false) {
-                $this->logger->debug("Failed to parse season/episode", ["filename" =>  $file->getName()]);
                 continue;
             }
 
-            $this->logger->debug("Parsed season/episode", ["filename" => $file->getName(), "season" => $s, "episode" => $e]);
+            $this->logger->debug("Parsed season/episode", ["filepath" => $file->getName(), "season" => $s, "episode" => $e]);
 
             $item = $this->getEpisode($torrent->getShow(), $s, $e);
             if (!$item) {
@@ -260,6 +259,8 @@ class EpisodeService
                 return [1, (int) $m[1]];
             }
         }
+
+        $this->logger->debug("Failed to parse season/episode", ["filename" =>  $file]);
 
         return [false, false];
     }
