@@ -16,4 +16,6 @@ class Show extends BaseShow
     {
         parent::__construct();
     }
+
+    public function getShowType() { return parent::TYPE_SHOW; }
 }

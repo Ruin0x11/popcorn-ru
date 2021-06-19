@@ -5359,3 +5359,115 @@
             redirect_time_us: 0
             starttransfer_time_us: 12665
             total_time_us: 12741
+-
+    request:
+        method: POST
+        url: 'http://localhost:9200/animes/_bulk'
+        headers:
+            Host: 'localhost:9200'
+            Content-Type: application/x-ndjson
+        body: "{\"delete\":{\"_id\":\"c3565bd4-409c-40a7-90e8-f0083d9d2f6d\"}}\n"
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            content-type: 'application/json; charset=UTF-8'
+            content-encoding: gzip
+            content-length: '212'
+        body: '{"took":6,"errors":false,"items":[{"delete":{"_index":"animes","_type":"_doc","_id":"c3565bd4-409c-40a7-90e8-f0083d9d2f6d","_version":1,"result":"not_found","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":33,"_primary_term":1,"status":404}}]}'
+        curl_info:
+            url: 'http://localhost:9200/animes/_bulk'
+            content_type: 'application/json; charset=UTF-8'
+            http_code: 200
+            header_size: 111
+            request_size: 218
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.009882
+            namelookup_time: 0.001254
+            connect_time: 0.001375
+            pretransfer_time: 0.001424
+            size_upload: !!float 58
+            size_download: !!float 212
+            speed_download: !!float 21453
+            speed_upload: !!float 5869
+            download_content_length: !!float 212
+            upload_content_length: !!float 58
+            starttransfer_time: 0.009825
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: '::1'
+            certinfo: {  }
+            primary_port: 9200
+            local_ip: '::1'
+            local_port: 51252
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 1375
+            namelookup_time_us: 1254
+            pretransfer_time_us: 1424
+            redirect_time_us: 0
+            starttransfer_time_us: 9825
+            total_time_us: 9882
+-
+    request:
+        method: POST
+        url: 'http://localhost:9200/animes/_bulk'
+        headers:
+            Host: 'localhost:9200'
+            Content-Type: application/x-ndjson
+        body: "{\"delete\":{\"_id\":\"b16e3631-3213-420a-9118-6fcf9476fc19\"}}\n"
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            content-type: 'application/json; charset=UTF-8'
+            content-encoding: gzip
+            content-length: '212'
+        body: '{"took":7,"errors":false,"items":[{"delete":{"_index":"animes","_type":"_doc","_id":"b16e3631-3213-420a-9118-6fcf9476fc19","_version":1,"result":"not_found","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":36,"_primary_term":1,"status":404}}]}'
+        curl_info:
+            url: 'http://localhost:9200/animes/_bulk'
+            content_type: 'application/json; charset=UTF-8'
+            http_code: 200
+            header_size: 111
+            request_size: 218
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.011381
+            namelookup_time: 0.00062
+            connect_time: 0.000766
+            pretransfer_time: 0.000802
+            size_upload: !!float 58
+            size_download: !!float 212
+            speed_download: !!float 18627
+            speed_upload: !!float 5096
+            download_content_length: !!float 212
+            upload_content_length: !!float 58
+            starttransfer_time: 0.011329
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: '::1'
+            certinfo: {  }
+            primary_port: 9200
+            local_ip: '::1'
+            local_port: 51258
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 766
+            namelookup_time_us: 620
+            pretransfer_time_us: 802
+            redirect_time_us: 0
+            starttransfer_time_us: 11329
+            total_time_us: 11381

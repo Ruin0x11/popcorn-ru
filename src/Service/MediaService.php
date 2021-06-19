@@ -526,8 +526,8 @@ class MediaService
     {
         $anime->getImages()
             ->setPoster($kitsu->attributes->posterImage ? $kitsu->attributes->posterImage->original : '')
-            ->setFanart($kitsu->attributes->coverImage ? $kitsu->attributes->coverImage->original : '')
-            ->setBanner($kitsu->attributes->coverImage ? $kitsu->attributes->coverImage->original : '');
+            ->setFanart($kitsu->attributes->coverImage ? $kitsu->attributes->coverImage->large : '')
+            ->setBanner($kitsu->attributes->coverImage ? $kitsu->attributes->coverImage->large : '');
 
         $searchBuilder = new SearchBuilder();
         $results = $searchBuilder

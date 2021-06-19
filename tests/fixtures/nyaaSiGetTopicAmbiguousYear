@@ -2255,3 +2255,115 @@
             redirect_time_us: 0
             starttransfer_time_us: 9813
             total_time_us: 9893
+-
+    request:
+        method: POST
+        url: 'http://localhost:9200/_bulk'
+        headers:
+            Host: 'localhost:9200'
+            Content-Type: application/x-ndjson
+        body: "{\"update\":{\"_id\":\"0f382693-cfb5-43b5-a858-be103750a2e4\",\"_index\":\"animes\"}}\n{\"doc\":{\"imdb\":\"tt0458218\",\"title\":\"Tetsujin 28-gou (1980)\",\"year\":\"1980\",\"created\":\"2021-06-19T00:58:54+00:00\",\"released\":370224000,\"genres\":[\"action\",\"mecha\"],\"existTranslations\":[\"en\"],\"locales\":[],\"rating\":{\"percentage\":70.0,\"watching\":0,\"watchers\":0,\"popularity\":16.609,\"weightRating\":7.0}},\"doc_as_upsert\":true}\n"
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            content-type: 'application/json; charset=UTF-8'
+            content-encoding: gzip
+            content-length: '211'
+        body: '{"took":7,"errors":false,"items":[{"update":{"_index":"animes","_type":"_doc","_id":"0f382693-cfb5-43b5-a858-be103750a2e4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":34,"_primary_term":1,"status":201}}]}'
+        curl_info:
+            url: 'http://localhost:9200/_bulk'
+            content_type: 'application/json; charset=UTF-8'
+            http_code: 200
+            header_size: 111
+            request_size: 548
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.012006
+            namelookup_time: 0.000655
+            connect_time: 0.000797
+            pretransfer_time: 0.000842
+            size_upload: !!float 394
+            size_download: !!float 211
+            speed_download: !!float 17574
+            speed_upload: !!float 32816
+            download_content_length: !!float 211
+            upload_content_length: !!float 394
+            starttransfer_time: 0.0119
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: '::1'
+            certinfo: {  }
+            primary_port: 9200
+            local_ip: '::1'
+            local_port: 51254
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 797
+            namelookup_time_us: 655
+            pretransfer_time_us: 842
+            redirect_time_us: 0
+            starttransfer_time_us: 11900
+            total_time_us: 12006
+-
+    request:
+        method: POST
+        url: 'http://localhost:9200/_bulk'
+        headers:
+            Host: 'localhost:9200'
+            Content-Type: application/x-ndjson
+        body: "{\"update\":{\"_id\":\"aed245de-e6af-451b-a0e6-a3b776cf94dc\",\"_index\":\"animes\"}}\n{\"doc\":{\"imdb\":\"tt0458218\",\"title\":\"Tetsujin 28-gou (1980)\",\"year\":\"1980\",\"created\":\"2021-06-19T01:00:04+00:00\",\"released\":370224000,\"genres\":[\"action\",\"mecha\"],\"existTranslations\":[\"en\"],\"locales\":[],\"rating\":{\"percentage\":70.0,\"watching\":0,\"watchers\":0,\"popularity\":16.609,\"weightRating\":7.0}},\"doc_as_upsert\":true}\n"
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            content-type: 'application/json; charset=UTF-8'
+            content-encoding: gzip
+            content-length: '210'
+        body: '{"took":7,"errors":false,"items":[{"update":{"_index":"animes","_type":"_doc","_id":"aed245de-e6af-451b-a0e6-a3b776cf94dc","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":37,"_primary_term":1,"status":201}}]}'
+        curl_info:
+            url: 'http://localhost:9200/_bulk'
+            content_type: 'application/json; charset=UTF-8'
+            http_code: 200
+            header_size: 111
+            request_size: 548
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.011349
+            namelookup_time: 0.000656
+            connect_time: 0.000806
+            pretransfer_time: 0.000844
+            size_upload: !!float 394
+            size_download: !!float 210
+            speed_download: !!float 18503
+            speed_upload: !!float 34716
+            download_content_length: !!float 210
+            upload_content_length: !!float 394
+            starttransfer_time: 0.011287
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: '::1'
+            certinfo: {  }
+            primary_port: 9200
+            local_ip: '::1'
+            local_port: 51260
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 806
+            namelookup_time_us: 656
+            pretransfer_time_us: 844
+            redirect_time_us: 0
+            starttransfer_time_us: 11287
+            total_time_us: 11349

@@ -23,6 +23,7 @@ final class AnimeTest extends TestCase
     {
         $result = anitomy_parse("[Golumpa] WONDER EGG PRIORITY - 07 [English Dub] [FuniDub 720p x264 AAC] [MKV] [91BD87A8]");
 
+        $this->assertSame($result["success"], true);
         $this->assertSame($result["file_name"], "[Golumpa] WONDER EGG PRIORITY - 07 [English Dub] [FuniDub 720p x264 AAC] [MKV] [91BD87A8]");
         $this->assertSame($result["video_resolution"], "720p");
         $this->assertSame($result["language"], "English");
@@ -33,5 +34,11 @@ final class AnimeTest extends TestCase
         $this->assertSame($result["episode_number"], "07");
         $this->assertSame($result["anime_title"], "WONDER EGG PRIORITY");
         $this->assertSame($result["release_group"], "Golumpa");
+    }
+
+    public function testAnitomyExtensionFailing() : void {
+        $result = anitomy_parse("");
+
+        $this->assertSame($result["success"], false);
     }
 }

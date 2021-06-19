@@ -17,6 +17,8 @@ class Anime extends BaseShow
         parent::__construct();
     }
 
+    public function getShowType() { return parent::TYPE_ANIME; }
+
     //<editor-fold desc="Show Api Data">
     /**
      * @var string

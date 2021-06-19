@@ -4838,12 +4838,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ruin0x11/anitomy-php.git",
-                "reference": "a7b8bd4ad2db8d8ea413b6650be23428f75f7985"
+                "reference": "a0e5cebfb89ed983eb2fa636776a507c8cbb3a38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ruin0x11/anitomy-php/zipball/a7b8bd4ad2db8d8ea413b6650be23428f75f7985",
-                "reference": "a7b8bd4ad2db8d8ea413b6650be23428f75f7985",
+                "url": "https://api.github.com/repos/Ruin0x11/anitomy-php/zipball/a0e5cebfb89ed983eb2fa636776a507c8cbb3a38",
+                "reference": "a0e5cebfb89ed983eb2fa636776a507c8cbb3a38",
                 "shasum": ""
             },
             "require": {

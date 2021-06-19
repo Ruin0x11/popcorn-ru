@@ -20,12 +20,17 @@ use Generator;
  */
 abstract class BaseShow extends BaseMedia
 {
+
     public function __construct()
     {
         parent::__construct();
         $this->torrents = new ArrayCollection();
         $this->episodes = new ArrayCollection();
     }
+
+    const TYPE_SHOW = 0;
+    const TYPE_ANIME  = 1;
+    abstract public function getShowType();
 
     /**
      * @var ShowTorrent[]&Collection
