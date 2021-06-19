@@ -79,7 +79,7 @@ final class NyaaSiTest extends SpiderTestCase
         $this->assertEquals("[VCB-Studio] Puella Magi Madoka Magica/魔法少女まどか☆マギカ TV+Movies 10bit 1080p HEVC BDRip [Rev Fin]", $torrent->getProviderTitle());
         $this->assertEquals("55.36 GB", $torrent->getFilesize());
         $this->assertEquals("1080p", $torrent->getQuality());
-        $this->assertEquals("ja", $torrent->getLanguage());
+        $this->assertEquals("en", $torrent->getLanguage());
         $this->assertEquals(10, $torrent->getSeed());
         $this->assertEquals(13, $torrent->getPeer());
         $this->assertEquals(308, count($torrent->getFiles()));

@@ -159,9 +159,9 @@ class NyaaSi extends AbstractSpider
         $category = $params['c'];
 
         $lang = "en";
-        if ($category == "1_4") { // Anime - Raw
-            $lang = "ja";
-        }
+        // if ($category == "1_4") { // Anime - Raw
+        //     $lang = "ja";
+        // }
 
         if ($this->isBatchRelease($anitomy)) {
             $torrent = $this->getTorrentByKitsu($topic->id, $kitsu);

@@ -41,12 +41,20 @@ class Elastic implements SearchInterface
 
     public static function isIndexShow(Show $show)
     {
-        return $show->getEpisodes()->count() > 0;
+        // There seems to be a race condition when linking episodes through
+        // EpisodeService. The new show won't be indexed after the episodes are
+        // linked and won't be listed in the API, but they will if
+        // fos:elastica:populate is run by hand.
+        //
+        // return $anime->getEpisodes()->count() > 0;
+        //
+        return true;
     }
 
     public static function isIndexAnime(Anime $anime)
     {
-        return $anime->getEpisodes()->count() > 0;
+        // return $anime->getEpisodes()->count() > 0;
+        return true;
     }
 
     public function search(QueryBuilder $qb, ClassMetadata $class, PageRequest $pageRequest, string $locale, int $offset, int $limit): array

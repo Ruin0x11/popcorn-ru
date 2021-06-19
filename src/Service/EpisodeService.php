@@ -161,15 +161,20 @@ class EpisodeService
             return [false, false];
         }
 
-        if ($show instanceof Anime) {
-            $anitomy = anitomy_parse($file);
+        if ($show->getShowType() == BaseShow::TYPE_ANIME) {
+            if (preg_match('#(/SP[s]?\b|/CD[s]?\b|/Special[s]?\b|/Extra[s]?\b|/BK\b)#i', $dir)) {
+                return [false, false];
+            }
+
+            $filename = $file . "." . $ext;
+            $anitomy = anitomy_parse($filename);
             $episode = @$anitomy["episode_number"];
             if ($episode) {
                 $season = 1;
-                if (preg_match('#\b[sS]eason[\s]+(\d+)\b#', $file, $m)) {
+                if (preg_match('#\b[sS]eason[\s]+(\d+)\b#', $filename, $m)) {
                     $season = (int)$m[1];
                 }
-                if (preg_match('#\bS(\d+)\b#', $file, $m)) {
+                if (preg_match('#\b[sS](\d+)\b#', $filename, $m)) {
                     $season = (int)$m[1];
                 }
                 return [$season, $episode];
