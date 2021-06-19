@@ -10,6 +10,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Generator;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Table(name="show")
@@ -17,6 +18,11 @@ use Generator;
  * @ORM\InheritanceType("SINGLE_TABLE")
  * @ORM\DiscriminatorColumn(name="show_type", type="string")
  * @ORM\DiscriminatorMap({"show" = "Show", "anime" = "Anime"})
+ * @UniqueEntity(
+ *   fields={"imdb"},
+ *   errorPath="imdb",
+ *   message="IMDB ID is already in use."
+ * )
  */
 abstract class BaseShow extends BaseMedia
 {

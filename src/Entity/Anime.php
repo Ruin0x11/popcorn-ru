@@ -4,11 +4,16 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Generator;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Table(name="animes")
  * @ORM\Entity(repositoryClass="App\Repository\AnimeRepository")
- *
+ * @UniqueEntity(
+ *   fields={"imdb"},
+ *   errorPath="imdb",
+ *   message="IMDB ID is already in use."
+ * )
  */
 class Anime extends BaseShow
 {

@@ -396,7 +396,7 @@ class MediaService
         }
 
         $anime
-            ->setImdb("kitsu-" . $kitsu->id) // HACK must be unique
+            ->setImdb("kitsu-" . $kitsu->id)
             ->setTvdb('')
             ->setKitsu($kitsu->id)
             ->setTitle($kitsu->attributes->canonicalTitle)

@@ -117,7 +117,7 @@ class TorrentService
         return $media;
     }
 
-    public function getAnimeByKitsu(string $kitsuId): ?\App\Entity\Anime
+    public function getMediaByKitsu(string $kitsuId): ?BaseMedia
     {
         $anime = $this->animeRepo->findByKitsu($kitsuId);
 
@@ -127,6 +127,18 @@ class TorrentService
                 $this->logger->warning('Not found anime', ['kitsu' => $kitsuId]);
                 return null;
             }
+
+            // IMDB ID is a unique key, so don't try to insert it twice
+            $imdbId = $anime->getImdb();
+            if ($imdbId) {
+                $animeImdb = $this->animeRepo->findByImdb($imdbId);
+                if ($animeImdb) {
+                    return $animeImdb;
+                }
+            } else {
+                $anime->setImdb("kitsu-" . $kitsuId);
+            }
+
             $anime->sync();
             $this->em->persist($anime);
             $this->em->flush();
