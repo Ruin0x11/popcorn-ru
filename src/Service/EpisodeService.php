@@ -166,10 +166,10 @@ class EpisodeService
             $episode = @$anitomy["episode_number"];
             if ($episode) {
                 $season = 1;
-                if (preg_match('#\b[sS]eason[\s]+(\d+)\b#', $title, $m)) {
+                if (preg_match('#\b[sS]eason[\s]+(\d+)\b#', $file, $m)) {
                     $season = (int)$m[1];
                 }
-                if (preg_match('#\bS(\d+)\b#', $title, $m)) {
+                if (preg_match('#\bS(\d+)\b#', $file, $m)) {
                     $season = (int)$m[1];
                 }
                 return [$season, $episode];
