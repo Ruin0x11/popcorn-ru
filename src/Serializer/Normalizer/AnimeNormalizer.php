@@ -3,6 +3,7 @@
 namespace App\Serializer\Normalizer;
 
 use App\Entity\Anime;
+use App\Repository\TorrentRepository;
 use App\Request\LocaleRequest;
 use Symfony\Component\Serializer\Normalizer\CacheableSupportsMethodInterface;
 use Symfony\Component\Serializer\Normalizer\NormalizerAwareInterface;
@@ -13,9 +14,13 @@ class AnimeNormalizer implements NormalizerInterface, CacheableSupportsMethodInt
 {
     private $normalizer;
 
-    public function __construct(ObjectNormalizer $normalizer)
+    /** @var TorrentRepository */
+    private $torrentRepo;
+
+    public function __construct(ObjectNormalizer $normalizer, TorrentRepository $torrentRepo)
     {
         $this->normalizer = $normalizer;
+        $this->torrentRepo = $torrentRepo;
     }
 
     public function setNormalizer(NormalizerInterface $normalizer)
@@ -53,24 +58,42 @@ class AnimeNormalizer implements NormalizerInterface, CacheableSupportsMethodInt
             case 'list':
                 return $base;
             case 'item':
-                $episodes = $this->normalizer->normalize($object->getEpisodes(), $format, $context);
-                $episodes = array_values(array_filter($episodes, static function ($episode) {
-                    return !empty($episode['torrents']);
-                }));
+                if ($object->getType() == "movie") {
+                    $torrents = [];
+                    /** @var LocaleRequest $localeParams */
+                    $localeParams = $context['localeParams'];
+                    foreach ($this->torrentRepo->getMediaTorrents($object, $localeParams->contentLocale) as $torrent) {
+                        $torrents[$localeParams->contentLocale][$torrent->getQuality()] =
+                            $this->normalizer->normalize($torrent, $format, $context);
+                    }
+                    $locale = [];
+                    if ($localeParams->needLocale) {
+                        $l = $object->getLocale($localeParams->locale);
+                        if ($l) {
+                            $locale['locale'] = $this->normalizer->normalize($l, $format, $context);
+                        }
+                    }
+                    $base["torrents"] = $torrents;
+                } else { // "show"
+                    $episodes = $this->normalizer->normalize($object->getEpisodes(), $format, $context);
+                    $episodes = array_values(array_filter($episodes, static function ($episode) {
+                        return !empty($episode['torrents']);
+                    }));
+                    $base["episodes"] = $episodes;
+                    $base["num_seasons"] = $object->getNumSeasons();
+                    $base["air_day"] = $object->getAirDay();
+                    $base["air_time"] = $object->getAirTime();
+                }
                 return array_merge(
                     $base,
                     [
                         '__v' => 0,
-                        'num_seasons' => $object->getNumSeasons(),
                         'synopsis' => $object->getSynopsis(),
                         'runtime' => $object->getRuntime(),
                         'country' => $object->getCountry(),
                         'network' => $object->getNetwork(),
                         'last_updated' => $object->getSynAt()->getTimestamp(),
-                        'air_day' => $object->getAirDay(),
-                        'air_time' => $object->getAirTime(),
-                        'status' => $object->getStatus(),
-                        'episodes' => $episodes,
+                        'status' => $object->getStatus()
                     ]
                 );
             default:

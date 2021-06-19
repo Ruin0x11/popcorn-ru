@@ -157,6 +157,7 @@ class TorrentService
      */
     public function updateTorrent(BaseTorrent $torrent)
     {
+        $this->logger->debug("Indexing torrent", ['title' => $torrent->getProviderTitle(), 'provider', $torrent->getProvider()]);
         $torrent->sync();
         $torrent->setActive(true);
         $this->em->flush();
