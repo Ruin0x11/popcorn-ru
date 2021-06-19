@@ -34,36 +34,4 @@ final class AnimeTest extends TestCase
         $this->assertSame($result["anime_title"], "WONDER EGG PRIORITY");
         $this->assertSame($result["release_group"], "Golumpa");
     }
-
-    public function testKitsuLookup(): void
-    {
-        $searchBuilder = new SearchBuilder();
-        $response = $searchBuilder
-            ->setEndpoint('anime')
-            ->addFilter('text', 'ワンダーエッグ・プライオリティ')
-            ->addLimit(1)
-            ->search()
-            ->get(true);
-
-        $tvdb = $searchBuilder
-            ->setEndpoint('anime/8/mappings')
-            ->addFilter('externalSite', 'thetvdb/series')
-            ->addLimit(1)
-            ->search()
-            ->get(true);
-
-        $results = $searchBuilder
-            ->setEndpoint('anime/' . $response[0]["id"] . '/relationships/genres')
-            ->search()
-            ->get(true);
-        $genres = [];
-        foreach($results as $genreId) {
-            $genre = $searchBuilder
-                ->setEndpoint('genres')
-                ->searchById((int)$genreId["id"])
-                ->get(true);
-            $genres[] = strtolower($genre[0]["attributes"]["name"]);
-        }
-        $genres = $genres ?: ['unknown'];
-    }
 }

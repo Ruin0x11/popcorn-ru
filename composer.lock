@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4dc735fb830e5cc16a1e7dde09815d50",
+    "content-hash": "1c169f29cc0308a1ee97a269e31bc8d2",
     "packages": [
         {
             "name": "alanly/traktor",
-            "version": "dev-master",
+            "version": "dev-fix",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ruin0x11/traktor",
-                "reference": "7329614676724fa78310542913cb9bc0a05ca69d"
+                "reference": "3021fd00df9880557e17c26db1c61d543b7d23b0"
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.1",
@@ -22,7 +22,6 @@
                 "mockery/mockery": "^1.4",
                 "phpunit/phpunit": "^9.5"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -42,7 +41,7 @@
             ],
             "description": "A Trakt.tv API client library in PHP, compatible with PSR-4 and Composer.",
             "homepage": "https://github.com/alanly/traktor",
-            "time": "2021-06-18T10:17:57+00:00"
+            "time": "2021-06-18T23:51:10+00:00"
         },
         {
             "name": "alextartan/guzzle-psr18-adapter",
@@ -4880,30 +4879,22 @@
         },
         {
             "name": "s1njar/kitsu-php",
-            "version": "dev-master",
+            "version": "dev-fix",
             "source": {
                 "type": "git",
-                "url": "https://github.com/s1njar/kitsu-php.git",
-                "reference": "7a43cbb50ca028bc1421f0239d3c0dbe2dd8ec4c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/s1njar/kitsu-php/zipball/7a43cbb50ca028bc1421f0239d3c0dbe2dd8ec4c",
-                "reference": "7a43cbb50ca028bc1421f0239d3c0dbe2dd8ec4c",
-                "shasum": ""
+                "url": "https://github.com/Ruin0x11/kitsu-php",
+                "reference": "2979461b277cb6d475e2b246b3c2e16d4ca60fd3"
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.1@dev",
                 "php": ">=7.3"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "S1njar\\Kitsu\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4922,11 +4913,7 @@
                 "php-wrapper",
                 "s1njar"
             ],
-            "support": {
-                "issues": "https://github.com/s1njar/kitsu-php/issues",
-                "source": "https://github.com/s1njar/kitsu-php/tree/master"
-            },
-            "time": "2020-07-26T15:48:57+00:00"
+            "time": "2021-06-19T00:04:40+00:00"
         },
         {
             "name": "sensio/framework-extra-bundle",
