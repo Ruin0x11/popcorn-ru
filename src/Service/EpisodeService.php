@@ -155,9 +155,9 @@ class EpisodeService
         $components = pathinfo($filePathAndName);
         $dir = $components['dirname'];
         $file = $components['filename'];
-        $ext = $components['extension'];
+        $ext = @$components['extension'];
 
-        if (!in_array(strtolower($ext), ['avi', 'mkv', 'mp4'])) {
+        if (!$ext || !in_array(strtolower($ext), ['avi', 'mkv', 'mp4'])) {
             return [false, false];
         }
 
@@ -169,15 +169,14 @@ class EpisodeService
             $filename = $file . "." . $ext;
             $anitomy = anitomy_parse($filename);
             $episode = @$anitomy["episode_number"];
-            if ($episode) {
+            if ($episode && preg_match("#(\d+)#", $episode, $n)) {
                 $season = 1;
                 if (preg_match('#\b[sS]eason[\s]+(\d+)\b#', $filename, $m)) {
                     $season = (int)$m[1];
-                }
-                if (preg_match('#\b[sS](\d+)\b#', $filename, $m)) {
+                } elseif (preg_match('#\b[sS](\d+)\b#', $filename, $m)) {
                     $season = (int)$m[1];
                 }
-                return [$season, $episode];
+                return [$season, (int) $n[1]];
             }
         }
 
